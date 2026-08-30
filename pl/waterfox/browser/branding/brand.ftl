@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-## Waterfox and BrowserWorks Brand
+## Firefox and Mozilla Brand
 ##
-## Waterfox and BrowserWorks must be treated as a brand.
+## Firefox and Mozilla must be treated as a brand.
 ##
 ## They cannot be:
 ## - Transliterated.
@@ -19,58 +19,58 @@
 
 -brand-shorter-name =
     { $case ->
-       *[nom] Waterfox
         [gen] Firefoksa
         [dat] Firefoksowi
         [acc] Firefoksa
         [ins] Firefoksem
         [loc] Firefoksie
+       *[nom] Waterfox
     }
 -brand-short-name =
     { $case ->
-       *[nom] Waterfox
         [gen] Firefoksa
         [dat] Firefoksowi
         [acc] Firefoksa
         [ins] Firefoksem
         [loc] Firefoksie
+       *[nom] Waterfox
     }
 -brand-shortcut-name =
     { $case ->
-       *[nom] Waterfox
         [gen] Firefoksa
         [dat] Firefoksowi
         [acc] Firefoksa
         [ins] Firefoksem
         [loc] Firefoksie
+       *[nom] Waterfox
     }
 -brand-full-name =
     { $case ->
-       *[nom] Waterfox
         [gen] Mozilli Waterfox
         [dat] Mozilli Waterfox
         [acc] Mozillę Waterfox
         [ins] Mozillą Waterfox
         [loc] Mozilli Waterfox
+       *[nom] Waterfox
     }
 # This brand name can be used in messages where the product name needs to
 # remain unchanged across different versions (Nightly, Beta, etc.).
 -brand-product-name =
     { $case ->
-       *[nom] Waterfox
         [gen] Firefoksa
         [dat] Firefoksowi
         [acc] Firefoksa
         [ins] Firefoksem
         [loc] Firefoksie
+       *[nom] Waterfox
     }
 -vendor-short-name =
     { $case ->
-       *[nom] BrowserWorks
         [gen] Mozilli
         [dat] Mozilli
         [acc] Mozillę
         [ins] Mozillą
         [loc] Mozilli
+       *[nom] BrowserWorks
     }
 trademarkInfo = Waterfox oraz logotyp Waterfox to znaki towarowe BrowserWorks.

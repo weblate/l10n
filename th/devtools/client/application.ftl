@@ -1,12 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ### These strings are used inside the Application panel which is available
 ### by setting the preference `devtools-application-enabled` to true.
-
-
+###
 ### The correct localization of this file might be to keep it in English, or another
 ### language commonly spoken among web developers. You want to make that choice consistent
 ### across the developer tools. A good criteria is the language in which you'd find the
@@ -64,7 +63,7 @@ manifest-empty-intro-link = เรียนรู้วิธีเพิ่ม�
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = ข้อผิดพลาดและคำเตือน
 # Header for the Identity section of Manifest inspection displayed in the application panel.
-manifest-item-identity = ข้อมูลประจำตัว
+manifest-item-identity = ข้อมูลตัวตน
 # Header for the Presentation section of Manifest inspection displayed in the application panel.
 manifest-item-presentation = งานนำเสนอ
 # Header for the Icon section of Manifest inspection displayed in the application panel.
@@ -76,7 +75,7 @@ manifest-loaded-ok = โหลดไฟล์กำกับแล้ว
 # Text displayed as a caption when there has been an error while trying to
 # load the manifest
 manifest-loaded-error = มีข้อผิดพลาดขณะโหลดไฟล์กำกับ:
-# Text displayed as an error when there has been a Waterfox DevTools error while
+# Text displayed as an error when there has been a Firefox DevTools error while
 # trying to load the manifest
 manifest-loaded-devtools-error = ข้อผิดพลาด Waterfox DevTools
 # Text displayed when the page has no manifest available
@@ -111,6 +110,17 @@ sidebar-item-manifest = ไฟล์กำกับ
 sidebar-item-service-workers = Service Worker
     .alt = ไอคอน Service Worker
     .title = Service Worker
+# Sidebar navigation item for Session History sidebar item section
+sidebar-item-session-history = ประวัติเซสชัน
+    .alt = ไอคอน ประวัติเซสชัน
+    .title = ประวัติเซสชัน
+# Entry in the Session History diagram
+session-history-entry-info-button-title =
+    .title = แสดงข้อมูลประวัติเซสชัน
+# Header for the Session History page when session history diagrams are unavailable
+session-history-unavailable = แผนภาพประวัติเซสชันไม่พร้อมใช้งาน
+# Text displayed for when the target does not support showing session history diagrams
+session-history-target-unsupported = เป้าหมายไม่รองรับการแสดงแผนภาพประวัติเซสชัน
 # Text for the ALT and TITLE attributes of the warning icon
 icon-warning =
     .alt = ไอคอนคำเตือน

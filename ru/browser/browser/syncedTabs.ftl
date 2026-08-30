@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -54,8 +54,19 @@ synced-tabs-context-open-all-in-tabs =
 synced-tabs-context-manage-devices =
     .label = Управление устройствами…
     .accesskey = п
+synced-tabs-context-manage-this-device =
+    .label = Управление этим устройством
+    .accesskey = Е
+synced-tabs-context-connect-another-device =
+    .label = Подключить другое устройство
+    .accesskey = Ф
 synced-tabs-context-sync-now =
     .label = Синхронизировать
     .accesskey = х
 synced-tabs-fxa-sign-in = Войти в синхронизацию
 synced-tabs-turn-on-sync = Включить синхронизацию
+# Context for hovering over the close tab button that will
+# send a push to the device to close said tab
+# Variables
+# $deviceName - the name of the device the user is closing a tab for
+synced-tabs-context-close-tab = Закрыть вкладку на { $deviceName }

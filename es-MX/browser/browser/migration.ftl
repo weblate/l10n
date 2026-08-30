@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -62,7 +62,7 @@ import-from-opera-gx =
     .label = Opera GX
     .accesskey = G
 no-migration-sources = No se encontraron programas que contengan marcadores, historial o contraseñas.
-import-source-page-title = Importar configuraciones y datos
+import-source-page-title = Importar datos y configuraciones
 import-items-page-title = Elementos a importar
 import-items-description = Selecciona los elementos que se importarán:
 import-permissions-page-title = Por favor, dale permisos a { -brand-short-name }

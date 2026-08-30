@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -36,6 +36,8 @@ xpinstall-prompt-install =
 
 site-permission-install-first-prompt-midi-header = Diese Website fordert Zugriff auf Ihre MIDI-Geräte (Musical Instrument Digital Interface) an. Der Gerätezugriff kann durch die Installation eines Add-ons aktiviert werden.
 site-permission-install-first-prompt-midi-message = Dieser Zugrif ist nicht garantiert sicher. Fahren Sie nur fort, wenn Sie dieser Website vertrauen.
+site-permission-install-first-prompt-serial-header = Diese Website fordert Zugriff auf Ihre seriellen Geräte an. Der Gerätezugriff kann durch die Installation eines Add-ons aktiviert werden.
+site-permission-install-first-prompt-serial-message = Dieser Zugriff ist nicht garantiert sicher. Fahren Sie nur fort, wenn Sie dieser Website vertrauen.
 
 ##
 
@@ -67,7 +69,7 @@ webext-perms-sideload-menu-item = { $addonName } zu { -brand-short-name } hinzug
 #   $addonName (String): the localized name of the extension which has been updated.
 webext-perms-update-menu-item = { $addonName } benötigt neue Berechtigungen
 # This message is shown when one or more extensions have been imported from a
-# different browser into Waterfox, and the user needs to complete the import to
+# different browser into Firefox, and the user needs to complete the import to
 # start these extensions. This message is shown in the appmenu.
 webext-imported-addons = Abschluss der Installation von Erweiterungen, die in { -brand-short-name } importiert wurden
 
@@ -81,6 +83,8 @@ addon-removal-title = { $name } entfernen?
 addon-removal-message = { $name } aus { -brand-shorter-name } entfernen?
 addon-removal-button = Entfernen
 addon-removal-abuse-report-checkbox = Erweiterung an { -vendor-short-name } melden
+# "it" refers to the local AI model that is paired to the AI feature
+addon-mlmodel-removal-body = Wenn Sie die Funktionen oder Erweiterungen verwenden, die dieses Modell nutzen, wird es wieder hinzugefügt.
 # Variables:
 #   $addonCount (Number): the number of add-ons being downloaded
 addon-downloading-and-verifying =
@@ -123,14 +127,19 @@ addon-install-error-corrupt-file = Das von dieser Seite heruntergeladene Add-on 
 addon-install-error-file-access = { $addonName } konnte nicht installiert werden, da { -brand-short-name } die benötigte Datei nicht verändern kann.
 addon-install-error-not-signed = { -brand-short-name } hat diese Website am Installieren eines nicht verifizierten Add-ons gehindert.
 addon-install-error-invalid-domain = Das Add-on { $addonName } kann von diesem Speicherort nicht installiert werden.
+addon-install-error-no-addon-name-file-access = Das Add-on konnte nicht installiert werden, da { -brand-short-name } die benötigte Datei nicht verändern kann.
 addon-local-install-error-network-failure = Dieses Add-on konnte wegen eines Dateisystem-Fehlers nicht installiert werden.
 addon-local-install-error-incorrect-hash = Dieses Add-on konnte nicht installiert werden, da es nicht das von { -brand-short-name } erwartete Add-on ist.
 addon-local-install-error-corrupt-file = Dieses Add-on konnte nicht installiert werden, da es beschädigt zu sein scheint.
 addon-local-install-error-file-access = { $addonName } konnte nicht installiert werden, da { -brand-short-name } die benötigte Datei nicht verändern kann.
 addon-local-install-error-not-signed = Dieses Add-on konnte nicht installiert werden, da es nicht verifiziert wurde.
+addon-local-install-no-addon-name-error-file-access = Das Add-on konnte nicht installiert werden, da { -brand-short-name } die benötigte Datei nicht verändern kann.
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { $addonName } konnte nicht installiert werden, da es nicht mit { -brand-short-name } { $appVersion } kompatibel ist.
+addon-install-error-hard-blocked = { $addonName } verstößt gegen BrowserWorkss Richtlinien und kann nicht auf { -brand-short-name } installiert werden.
+addon-install-error-soft-blocked2 = { $addonName } ist eingeschränkt und kann nicht auf { -brand-short-name } installiert werden.
 addon-install-error-blocklisted = { $addonName } konnte nicht installiert werden, da es ein hohes Risiko bezüglich Stabilität und Sicherheit darstellt.
-# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Waterfox.
+addon-install-error-soft-blocked = { $addonName } verstößt gegen BrowserWorkss Richtlinien und kann nicht auf { -brand-short-name } installiert werden.
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
 addon-install-error-admin-install-only = Sie können { $addonName } nicht als Endbenutzer installieren, es kann nur von einer Organisation installiert werden, die Unternehmensrichtlinien verwendet.

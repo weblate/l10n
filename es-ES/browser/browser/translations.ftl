@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Waterfox Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = Traducir esta página
-# The button for "Waterfox Translations" in the url bar. Note that here "Beta" should
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
 # not be translated, as it is a reflection of the un-localized BETA icon that is in the
 # panel.
 urlbar-translations-button2 =
@@ -33,7 +33,7 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } BETA
 
-## Options in the Waterfox Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = Administrar idiomas
@@ -85,6 +85,14 @@ translations-panel-error-change-button =
     .label = Cambiar el idioma de origen
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from this language yet: { $language }
+#
+# Variables:
+#   $language (string) - The language of the document.
+translations-panel-error-unsupported-hint-known-2 = Lo sentimos, todavía no admitimos traducciones de { $language }.
+translations-panel-error-unsupported-hint-unknown-2 = Lo sentimos, todavía no admitimos traducciones de este idioma.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }
 #
 # Variables:
@@ -116,7 +124,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = Mostrar original
 
-## Waterfox Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = Traducciones
 translations-manage-settings-button =
@@ -126,13 +134,6 @@ translations-manage-description = Descargar idiomas para traducción sin conexi�
 translations-manage-all-language = Todos los idiomas
 translations-manage-download-button = Descargar
 translations-manage-delete-button = Eliminar
-translations-manage-intro = Establecer preferencias de idioma y traducción del sitio y administrar los idiomas instalados para traducción sin conexión.
-translations-manage-install-description = Instalar idiomas para traducción sin conexión
-translations-manage-language-install-button =
-    .label = Instalar
-translations-manage-language-install-all-button =
-    .label = Instalar todo
-    .accesskey = I
 translations-manage-intro-2 = Establecer preferencias de idioma y traducción del sitio y administrar los idiomas descargados para traducción sin conexión.
 translations-manage-download-description = Descargar idiomas para traducción sin conexión
 translations-manage-language-download-button =
@@ -145,7 +146,6 @@ translations-manage-language-remove-button =
 translations-manage-language-remove-all-button =
     .label = Eliminar todo
     .accesskey = E
-translations-manage-error-install = Ha habido un problema al instalar los archivos de idioma. Inténtelo de nuevo.
 translations-manage-error-download = Ha habido un problema al descargar los archivos de idioma. Por favor, vuelva a intentarlo.
 translations-manage-error-delete = Ha habido un error al eliminar los archivos de idioma. Por favor, vuelva a intentarlo.
 translations-manage-error-remove = Ha habido un error al eliminar los archivos de idioma. Por favor, vuelva a intentarlo.
@@ -236,6 +236,16 @@ select-translations-panel-init-failure-message =
 # Text displayed when the translation fails to complete.
 select-translations-panel-translation-failure-message =
     .message = Ha surgido un problema al traducir. Por favor inténtelo de nuevo.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from { $language } yet.
+#
+# Variables:
+#   $language (string) - The language of the document.
+select-translations-panel-unsupported-language-message-known-2 =
+    .message = Lo sentimos, todavía no admitimos traducciones de { $language }.
+select-translations-panel-unsupported-language-message-unknown-2 =
+    .message = Lo sentimos, todavía no admitimos traducciones de este idioma.
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }

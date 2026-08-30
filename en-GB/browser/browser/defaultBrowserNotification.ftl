@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -14,7 +14,9 @@ default-browser-notification-button =
 
 default-browser-prompt-title-pin = Make { -brand-short-name } your primary browser?
 default-browser-prompt-message-pin = Keep { -brand-short-name } at your fingertips — make it your default browser and pin it to your taskbar.
+default-browser-prompt-message-pin-msix = Keep { -brand-short-name } at your fingertips — make it your default browser and pin it to your taskbar and start menu.
 default-browser-prompt-message-pin-mac = Keep { -brand-short-name } at your fingertips — make it your default browser and keep it in your Dock.
+default-browser-prompt-button-primary-set = Set as primary browser
 default-browser-prompt-button-primary-pin = Make primary browser
 default-browser-prompt-title-alt = Make { -brand-short-name } your default browser?
 default-browser-prompt-message-alt = Get speed, safety and privacy every time you browse.
@@ -38,3 +40,6 @@ default-browser-guidance-notification-body-instruction-win11 =
     Step 2: Select “Set default” for { -brand-short-name }
 default-browser-guidance-notification-info-page = Show me
 default-browser-guidance-notification-dismiss = Done
+default-browser-guidance-notification-v2-title = Finish making { -brand-short-name } your default browser
+default-browser-guidance-notification-v2-body = In Settings, select “Set default” for { -brand-short-name }.
+default-browser-guidance-notification-v2-title-only = Finish making { -brand-short-name } your default browser in Settings

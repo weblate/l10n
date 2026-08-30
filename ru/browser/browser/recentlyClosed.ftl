@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -28,4 +28,15 @@ recently-closed-undo-close-window-label =
         [one] { $winTitle } (и { $tabCount } другая вкладка)
         [few] { $winTitle } (и { $tabCount } другие вкладки)
        *[many] { $winTitle } (и { $tabCount } других вкладок)
+    }
+# Variables:
+#   $tabCount (Number): Number of tabs that were open in the closed window
+#   $winTitle (String): Window title
+#   $closedAt (Number): Milliseconds since epoch when the window was closed
+recently-closed-window-panel-tooltip =
+    { $tabCount ->
+        [0] { $winTitle }
+        [one] { $winTitle } ({ $tabCount } вкладка, закрытая в { DATETIME($closedAt, dateStyle: "short", timeStyle: "short") })
+        [few] { $winTitle } ({ $tabCount } вкладки, закрытые в { DATETIME($closedAt, dateStyle: "short", timeStyle: "short") })
+       *[many] { $winTitle } ({ $tabCount } вкладок, закрытых в { DATETIME($closedAt, dateStyle: "short", timeStyle: "short") })
     }

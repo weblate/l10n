@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -28,3 +28,5 @@ profile-manager-work-offline =
 profile-manager-use-selected =
     .label = Utilizar o perfil selecionado na inicialização, sem questionar
     .accesskey = s
+profile-has-selectable-profiles-title = Não é possível eliminar um perfil que está associado a outros perfis
+profile-has-selectable-profiles-message = Para eliminar este perfil, abra-o e escolha “Gerir perfis” na secção de perfis do menu do { -brand-short-name }. Após remover quaisquer perfis adicionais que tenha criado aqui, pode regressar a about:profiles e eliminar este perfil.

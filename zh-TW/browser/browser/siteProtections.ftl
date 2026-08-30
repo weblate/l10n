@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -55,7 +55,7 @@ protections-blocking-cookies-unvisited =
 protections-blocking-tracking-content =
     .title = 封鎖追蹤用內容
 protections-blocking-social-media-trackers =
-    .title = 封鎖社交媒體追蹤器
+    .title = 封鎖社群網路追蹤器
 protections-not-blocking-fingerprinters =
     .title = 不封鎖數位指紋追蹤程式
 protections-not-blocking-cryptominers =
@@ -69,7 +69,7 @@ protections-not-blocking-cross-site-tracking-cookies =
 protections-not-blocking-tracking-content =
     .title = 不封鎖追蹤用內容
 protections-not-blocking-social-media-trackers =
-    .title = 不封鎖社交媒體追蹤器
+    .title = 不封鎖社群網路追蹤器
 
 ## Footer and Milestones sections in the Protections Panel
 ## Variables:
@@ -84,5 +84,5 @@ protections-footer-blocked-tracker-counter = 已封鎖 { $trackerCount } 個
 # It should be the same as protections-footer-blocked-tracker-counter;
 # this message is used to leave out the tooltip when the date is not available.
 protections-footer-blocked-tracker-counter-no-tooltip = 已封鎖 { $trackerCount } 個
-# In English this looks like "Waterfox blocked over 10,000 trackers since October 2019"
+# In English this looks like "Firefox blocked over 10,000 trackers since October 2019"
 protections-milestone = 自 { DATETIME($date, year: "numeric", month: "long") }起，{ -brand-short-name } 已封鎖超過 { $trackerCount } 組追蹤器

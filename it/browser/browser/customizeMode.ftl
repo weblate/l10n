@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -31,8 +31,11 @@ customize-mode-uidensity-menu-compact-unsupported =
     .tooltiptext = Compatta (non supportata)
 customize-mode-undo-cmd =
     .label = Annulla
+customize-mode-uidensity-link = Impostazioni densità finestra
+customize-mode-lwthemes-link-2 = Gestisci temi
 customize-mode-lwthemes-link = Gestisci temi
 customize-mode-touchbar-cmd =
     .label = Personalizza Touch Bar…
 customize-mode-downloads-button-autohide =
     .label = Nascondi pulsante quando vuoto
+

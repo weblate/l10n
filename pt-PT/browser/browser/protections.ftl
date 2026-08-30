@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -24,9 +24,9 @@ graph-private-window = O { -brand-short-name } continua a bloquear os rastreador
 graph-week-summary-private-window = Rastreadores que o { -brand-short-name } bloqueou esta semana
 protection-report-webpage-title = Painel das proteções
 protection-report-page-content-title = Painel das proteções
-# This message shows when all privacy protections are turned off, which is why we use the word "can", Waterfox is able to protect your privacy, but it is currently not.
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = O { -brand-short-name } pode proteger a sua privacidade nos bastidores, enquanto navega. Este é um resumo personalizado destas proteções, incluindo ferramentas para assumir o controle da sua segurança na Internet.
-# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Waterfox is actively protecting you.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
 protection-report-page-summary-default = O { -brand-short-name } protege a sua privacidade, nos bastidores, enquanto navega. Este é um resumo personalizado destas proteções, incluindo ferramentas para assumir a gestão da sua segurança na Internet.
 protection-report-settings-link = Gerir as suas definições de privacidade e segurança
 etp-card-title-always = Proteção melhorada contra a monitorização: Sempre ligada
@@ -42,7 +42,7 @@ graph-legend-description = Um gráfico contendo o número total de cada tipo de 
 social-tab-title = Rastreadores de redes sociais
 social-tab-contant = As redes sociais colocam rastreadores em outros sites para monitorizar o que faz, vê e assiste na Internet. Isto permite que estas empresas de redes sociais saibam mais sobre si, para além do que partilha no seu perfil nas redes sociais. <a data-l10n-name="learn-more-link">Saber mais</a>
 cookie-tab-title = Cookies de monitorização entre sites
-cookie-tab-content = Estas cookies seguem-no entre vários sites para recolher dados sobre o que faz na Internet. São definidas por terceiros, como anunciantes ou empresas de análise. O bloqueio de cookies de rastreamento entre sites reduz o número de anúncios que o seguem. <a data-l10n-name="learn-more-link">Saber mais</a>
+cookie-tab-content = Estes cookies seguem-no de site em site para recolher dados sobre o que faz na Internet. São definidos por terceiros, como anunciantes ou empresas de análise. O bloqueio de cookies cruzados de rastreamento reduz o número de anúncios que o seguem. <a data-l10n-name="learn-more-link">Saber mais</a>
 tracker-tab-title = Monitorização de conteúdo
 tracker-tab-description = Os sites podem carregar anúncios, vídeos e outros conteúdos externos com códigos de rastreamento. O bloqueio de conteúdos de rastreamento pode ajudar os sites a carregar mais rapidamente, mas alguns botões, formulários e campos de autenticação podem não funcionar. <a data-l10n-name="learn-more-link">Saber mais</a>
 fingerprinter-tab-title = Identificadores
@@ -56,7 +56,7 @@ mobile-app-title = Bloquear anúncios de monitorização em mais dispositivos
 mobile-app-card-content = Utilize o navegador móvel com proteção integrada contra anúncios de monitorização.
 mobile-app-links = O navegador { -brand-product-name } para <a data-l10n-name="android-mobile-inline-link">Android</a> e <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Nunca mais esqueça uma palavra-passe
-passwords-title-logged-in = Gira as suas palavras-passe
+passwords-title-logged-in = Gerir as suas palavras-passe
 passwords-header-content = O { -brand-product-name } guarda as suas palavras-passe em segurança no seu navegador.
 lockwise-header-content-logged-in = Guarde e sincronize em segurança as suas palavras-passe em todos os seus dispositivos.
 protection-report-passwords-save-passwords-button = Guardar palavras-passe
@@ -208,3 +208,44 @@ bar-tooltip-cryptominer =
             [one] { $count } cripto-minerador ({ $percentage }%)
            *[other] { $count } cripto-mineradores ({ $percentage }%)
         }
+# Privacy Metrics Card
+privacy-metrics-title = Proteções de privacidade
+# Variables:
+#   $count (Number) - Total number of trackers blocked this week
+privacy-metrics-blocked-this-week =
+    { $count ->
+        [one] { $count } bloqueado esta semana
+       *[other] { $count } bloqueados esta semana
+    }
+# Variables:
+#   $count (Number) - Number of trackers blocked
+privacy-metrics-trackers =
+    { $count ->
+        [one] { $count } rastreador
+       *[other] { $count } rastreadores
+    }
+# Variables:
+#   $count (Number) - Number of fingerprinters blocked
+privacy-metrics-fingerprinters =
+    { $count ->
+        [one] { $count } identificador digital
+       *[other] { $count } identificadores digitais
+    }
+# Variables:
+#   $count (Number) - Number of tracking cookies blocked
+privacy-metrics-cookies =
+    { $count ->
+        [one] { $count } cookie de monitorização
+       *[other] { $count } cookies de monitorização
+    }
+# Variables:
+#   $count (Number) - Number of social trackers blocked
+privacy-metrics-social =
+    { $count ->
+        [one] { $count } rastreador social
+       *[other] { $count } rastreadores sociais
+    }
+privacy-metrics-empty = Nenhum rastreador foi bloqueado esta semana. O { -brand-short-name } protege-o das seguintes ameaças enquanto navega.
+privacy-metrics-loading = A carregar as estatísticas de proteção…
+privacy-metrics-error = Não foi possível carregar as estatísticas de proteção.
+privacy-metrics-private-window = O { -brand-short-name } continua a bloquear os rastreadores em janelas privadas, mas não mantém um registo do que foi bloqueado.

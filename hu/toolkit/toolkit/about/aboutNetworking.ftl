@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -8,10 +8,17 @@ about-networking-http-clear-cache-button = HTTP-gyorsítótár törlése
 about-networking-sockets = Foglalatok
 about-networking-dns = DNS
 about-networking-dns-clear-cache-button = DNS-gyorsítótár törlése
-about-networking-dns-trr-url = DoH URL
+about-networking-dns-trr-url = DoH webcím
 about-networking-dns-trr-mode = DoH mód
 about-networking-dns-suffix = DNS utótag
 about-networking-websockets = WebSocketek
+about-networking-alt-svc = Alt-Svc
+about-networking-alt-svc-origin = Eredet
+about-networking-alt-svc-alternate = Alternatív
+about-networking-alt-svc-alpn = ALPN
+about-networking-alt-svc-validated = Ellenőrizve
+about-networking-alt-svc-ttl = TTL
+about-networking-alt-svc-origin-attributes-suffix = Izolációs kulcs
 about-networking-refresh = Frissítés
 about-networking-auto-refresh = Autofrissítés 3 másodpercenként
 about-networking-hostname = Gépnév
@@ -39,6 +46,7 @@ about-networking-dns-lookup = DNS kikeresés
 about-networking-dns-lookup-button = Feloldás
 about-networking-dns-domain = Tartomány:
 about-networking-dns-lookup-table-column = IP-k
+about-networking-dns-https-rrs-lookup-table-column = HTTPS RR-ek
 about-networking-dns-https-rr-lookup-table-column = HTTP RR-ek
 about-networking-rcwn = RCWN statisztikák
 about-networking-rcwn-status = RCWN állapot
@@ -64,6 +72,3 @@ about-networking-moved-about-logging = Ez az oldal átkerült az <a data-l10n-na
 
 about-networking-networkid-is-up = A kapcsolat él
 about-networking-networkid-status-known = A kapcsolat állapota ismert
-
-##
-

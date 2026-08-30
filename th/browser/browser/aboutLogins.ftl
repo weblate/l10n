@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
@@ -34,7 +34,7 @@ about-logins-menu-menuitem-remove-all-logins2 = ลบรหัสผ่าน�
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] ตัวเลือก
-       *[other] การกำหนดลักษณะ
+       *[other] ค่าปรับแต่ง
     }
 about-logins-menu-menuitem-help = ช่วยเหลือ
 
@@ -96,7 +96,7 @@ about-logins-list-section-week = 7 วันที่ผ่านมา
 
 about-logins-login-intro-heading-logged-out2 = กำลังมองหาการเข้าสู่ระบบที่คุณบันทึกไว้ใช่หรือไม่? เปิดการซิงค์หรือนำเข้า
 about-logins-login-intro-heading-logged-in = ไม่พบการเข้าสู่ระบบที่ซิงค์
-login-intro-description = ถ้าคุณบันทึกการเข้าสู่ระบบของคุณไว้ที่ { -brand-product-name } บนอุปกรณ์อื่นๆ คุณสามารถนำมาใช้ในอุปกรณ์นี้ได้ด้วยวิธีนี้:
+login-intro-description = ถ้าคุณบันทึกการเข้าสู่ระบบของคุณไว้ที่ { -brand-product-name } บนอุปกรณ์อื่น คุณสามารถนำมาใช้ในอุปกรณ์นี้ได้ด้วยวิธีนี้:
 login-intro-instructions-fxa = สร้างหรือลงชื่อเข้า { -fxaccount-brand-name } ของคุณบนอุปกรณ์ที่บันทึกการเข้าสู่ระบบของคุณ
 about-logins-login-intro-heading-message = บันทึกรหัสผ่านของคุณไว้ในที่ปลอดภัย
 login-intro-description2 = รหัสผ่านทั้งหมดที่คุณบันทึกใน { -brand-product-name } จะถูกเข้ารหัส นอกจากนั้น เราจะคอยเฝ้าระวังการรั่วไหลและแจ้งเตือนคุณถ้าคุณได้รับผลกระทบ <a data-l10n-name="breach-alert-link">เรียนรู้เพิ่มเติม</a>
@@ -131,6 +131,8 @@ login-item-copied-username-button-text = คัดลอกแล้ว!
 login-item-password-label = รหัสผ่าน
 login-item-password-reveal-checkbox =
     .aria-label = แสดงรหัสผ่าน
+login-item-password-conceal-checkbox =
+    .aria-label = ซ่อนรหัสผ่าน
 login-item-copy-password-button-text = คัดลอก
 login-item-copied-password-button-text = คัดลอกแล้ว!
 login-item-save-changes-button = บันทึกการเปลี่ยนแปลง
@@ -146,23 +148,23 @@ login-item-cancel-button = ยกเลิก
 #   $datetime (date) - Event date
 login-item-timeline-point-date = { DATETIME($datetime, day: "numeric", month: "short", year: "numeric") }
 login-item-timeline-action-created = สร้างเมื่อ
-login-item-timeline-action-updated = ปรับปรุงเมื่อ
+login-item-timeline-action-updated = อัปเดตเมื่อ
 login-item-timeline-action-used = ใช้เมื่อ
 
 ## OS Authentication dialog
 
 about-logins-os-auth-dialog-caption = { -brand-full-name }
 
-## The macOS strings are preceded by the operating system with "Waterfox is trying to "
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
 # This message can be seen when attempting to edit a login in about:logins on Windows.
-about-logins-edit-login-os-auth-dialog-message-win = ถ้าต้องการแก้ไขการเข้าสู่ระบบของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีต่างๆ ของคุณ
+about-logins-edit-login-os-auth-dialog-message-win = ถ้าต้องการแก้ไขการเข้าสู่ระบบของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีของคุณ
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = แก้ไขการเข้าสู่ระบบที่บันทึกไว้
-# The macOS strings are preceded by the operating system with "Waterfox is trying to ".
+# The macOS strings are preceded by the operating system with "Firefox is trying to ".
 # This message can be seen when attempting to disable osauth in about:preferences.
 about-logins-os-auth-dialog-message =
     { PLATFORM() ->
@@ -170,27 +172,27 @@ about-logins-os-auth-dialog-message =
        *[other] { -brand-short-name } กำลังพยายามที่จะเปลี่ยนการตั้งค่าเกี่ยวกับรหัสผ่าน ให้ใช้อุปกรณ์ของคุณลงชื่อเข้าเพื่ออนุญาตการกระทำนี้
     }
 # This message can be seen when attempting to edit a login in about:logins on Windows.
-about-logins-edit-login-os-auth-dialog-message2-win = ถ้าต้องการแก้ไขรหัสผ่านของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีต่างๆ ของคุณ
+about-logins-edit-login-os-auth-dialog-message2-win = ถ้าต้องการแก้ไขรหัสผ่านของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีของคุณ
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message2-macosx = แก้ไขรหัสผ่านที่บันทึกไว้
 # This message can be seen when attempting to reveal a password in about:logins on Windows.
-about-logins-reveal-password-os-auth-dialog-message-win = ถ้าต้องการดูรหัสผ่านของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีต่างๆ ของคุณ
+about-logins-reveal-password-os-auth-dialog-message-win = ถ้าต้องการดูรหัสผ่านของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีของคุณ
 # This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = เผยรหัสผ่านที่บันทึกไว้
 # This message can be seen when attempting to copy a password in about:logins on Windows.
-about-logins-copy-password-os-auth-dialog-message-win = ถ้าต้องการคัดลอกรหัสผ่านของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีต่างๆ ของคุณ
+about-logins-copy-password-os-auth-dialog-message-win = ถ้าต้องการคัดลอกรหัสผ่านของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีของคุณ
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = คัดลอกรหัสผ่านที่บันทึกไว้
 # This message can be seen when attempting to export a password in about:logins on Windows.
-about-logins-export-password-os-auth-dialog-message-win = ถ้าต้องการส่งออกการเข้าสู่ระบบของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีต่างๆ ของคุณ
+about-logins-export-password-os-auth-dialog-message-win = ถ้าต้องการส่งออกการเข้าสู่ระบบของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีของคุณ
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = ส่งออกการเข้าสู่ระบบและรหัสผ่านที่บันทึกไว้
 # This message can be seen when attempting to export a password in about:logins on Windows.
-about-logins-export-password-os-auth-dialog-message2-win = ถ้าต้องการส่งออกรหัสผ่านของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีต่างๆ ของคุณ
+about-logins-export-password-os-auth-dialog-message2-win = ถ้าต้องการส่งออกรหัสผ่านของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีของคุณ
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message2-macosx = ส่งออกรหัสผ่านที่บันทึกไว้
@@ -424,7 +426,7 @@ about-logins-import-report-row-description-added = เพิ่มการเ�
 about-logins-import-report-row-description-no-change2 = ซ้ำกัน: ตรงกันทุกประการกับรายการที่มีอยู่
 about-logins-import-report-row-description-modified2 = อัปเดตรายการที่มีอยู่แล้ว
 about-logins-import-report-row-description-added2 = เพิ่มรหัสผ่านใหม่แล้ว
-about-logins-import-report-row-description-error = ข้อผิดพลาด: ฟิลด์หายไป
+about-logins-import-report-row-description-error = ข้อผิดพลาด: ช่องข้อมูลหายไป
 
 ##
 ## Variables:

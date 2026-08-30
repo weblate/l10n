@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -41,6 +41,10 @@ clear-time-duration-value-last-2-hours =
     .label = Utolsó két óra
 clear-time-duration-value-last-4-hours =
     .label = Utolsó négy óra
+# Variables:
+#   $midnightTime (String) - Time of midnight (00:00 hours) - to inform the user that history will be cleared after midnight
+clear-time-duration-value-since-midnight =
+    .label = { $midnightTime } óta
 clear-time-duration-value-today =
     .label = Ma
 clear-time-duration-value-everything =
@@ -55,10 +59,7 @@ history-section-label = Előzmények
 item-history-and-downloads =
     .label = Böngészési és letöltési előzmények
     .accesskey = B
-item-history-form-data-downloads =
-    .label = Előzmények
-    .accesskey = E
-item-history-form-data-downloads-description = Törli az oldalak és letöltések előzményeit, a mentett űrlap-információkat és a kereséseket
+item-history-and-downloads-description2 = Törli az oldalak és a letöltések előzményeit
 item-cookies =
     .label = Sütik
     .accesskey = t
@@ -94,6 +95,10 @@ item-form-search-history =
 item-site-prefs =
     .label = Oldalbeállítások
     .accesskey = O
+item-formdata-prefs =
+    .label = Mentett űrlap-információk
+    .accesskey = o
+item-formdata-description = Törli a neveket, e-mail-címeket és az űrlapokon beírt egyéb elemeket
 item-site-prefs-description = Visszaállítja az engedélyeket és a webhely beállításait az eredeti beállításokra
 data-section-label = Adatok
 item-site-settings =
@@ -123,3 +128,6 @@ sanitize-everything-warning = Minden előzmény törölve lesz.
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = Minden kijelölt elem törölve lesz.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = Számítás…

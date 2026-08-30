@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Waterfox Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = Oldal lefordítása
-# The button for "Waterfox Translations" in the url bar. Note that here "Beta" should
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
 # not be translated, as it is a reflection of the un-localized BETA icon that is in the
 # panel.
 urlbar-translations-button2 =
@@ -33,7 +33,7 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } BÉTA
 
-## Options in the Waterfox Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = Nyelvek kezelése
@@ -77,12 +77,20 @@ translations-panel-error-translating = Hiba történt a fordítás során. Prób
 translations-panel-error-load-languages = A nyelvek betöltése sikertelen
 translations-panel-error-load-languages-hint = Ellenőrizze az internetkapcsolatát, és próbálja újra.
 translations-panel-error-load-languages-hint-button =
-    .label = Próbálja újra
+    .label = Újrapróbálkozás
 translations-panel-error-unsupported = Ehhez az oldalhoz nem érhető el fordítás
 translations-panel-error-dismiss-button =
     .label = Megértettem!
 translations-panel-error-change-button =
     .label = Forrásnyelv módosítása
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from this language yet: { $language }
+#
+# Variables:
+#   $language (string) - The language of the document.
+translations-panel-error-unsupported-hint-known-2 = Sajnos még nem támogatjuk az erről a nyelvről történő fordítást: { $language }.
+translations-panel-error-unsupported-hint-unknown-2 = Sajnos még nem támogatjuk az erről a nyelvről történő fordítást.
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }
@@ -116,7 +124,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = Eredeti megjelenítése
 
-## Waterfox Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = Fordítások
 translations-manage-settings-button =
@@ -126,13 +134,6 @@ translations-manage-description = Nyelvek letöltése a kapcsolat nélküli ford
 translations-manage-all-language = Összes nyelv
 translations-manage-download-button = Letöltés
 translations-manage-delete-button = Törlés
-translations-manage-intro = Adja meg a nyelvi és webhelyfordítási beállításokat, és kezelje az offline fordításhoz használt nyelveket.
-translations-manage-install-description = Nyelvek telepítése a kapcsolat nélküli fordításhoz
-translations-manage-language-install-button =
-    .label = Telepítés
-translations-manage-language-install-all-button =
-    .label = Összes telepítése
-    .accesskey = t
 translations-manage-intro-2 = Adja meg a nyelvi és webhelyfordítási beállításokat, és kezelje az offline fordításhoz letöltött nyelveket.
 translations-manage-download-description = Nyelvek letöltése az offline fordításhoz
 translations-manage-language-download-button =
@@ -145,7 +146,6 @@ translations-manage-language-remove-button =
 translations-manage-language-remove-all-button =
     .label = Összes eltávolítása
     .accesskey = e
-translations-manage-error-install = Hiba történt a nyelvi fájlok telepítése során. Próbálja meg újra.
 translations-manage-error-download = Hiba történt a nyelvi fájlok letöltése során. Próbálja meg újra.
 translations-manage-error-delete = Hiba történt a nyelvi fájlok törlése során. Próbálja meg újra.
 translations-manage-error-remove = Hiba történt a nyelvi fájlok eltávolítása során. Próbálja meg újra.
@@ -226,7 +226,7 @@ select-translations-panel-translate-full-page-button =
 select-translations-panel-translate-button =
     .label = Fordítás
 select-translations-panel-try-again-button =
-    .label = Próbálja újra
+    .label = Újrapróbálkozás
 # Text displayed as a placeholder when the panel is idle.
 select-translations-panel-idle-placeholder-text = A lefordított szöveg itt fog megjelenni.
 # Text displayed as a placeholder when the panel is actively translating.
@@ -236,6 +236,16 @@ select-translations-panel-init-failure-message =
 # Text displayed when the translation fails to complete.
 select-translations-panel-translation-failure-message =
     .message = Hiba történt a fordítás során. Próbálja meg újra.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from { $language } yet.
+#
+# Variables:
+#   $language (string) - The language of the document.
+select-translations-panel-unsupported-language-message-known-2 =
+    .message = Sajnos még nem támogatjuk az erről a nyelvről történő fordítást: { $language }.
+select-translations-panel-unsupported-language-message-unknown-2 =
+    .message = Sajnos még nem támogatjuk az erről a nyelvről történő fordítást.
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }

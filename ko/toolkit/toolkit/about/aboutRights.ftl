@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -9,7 +9,7 @@ rights-intro-point-2 = BrowserWorks는 BrowserWorks와 Waterfox 상표 및 로�
 rights-intro-point-3 = { -brand-short-name }의 충돌 보고서 같은 기능은 { -vendor-short-name }에 사용자 의견을 제공하는 옵션이 있습니다. 의견 보내기를 선택하면, 사용자는 { -vendor-short-name }가 이 의견을 사용하여 제품을 개선하고, 의견을 웹 사이트에 게시하고 배포할 수 있도록 권한을 부여하게 됩니다.
 rights-intro-point-4 = 저희가 { -vendor-short-name }부터 { -brand-short-name }에 제출된 사용자의 개인 정보 및 의견을 사용하는 방법은 <a data-l10n-name="mozilla-privacy-policy-link">{ -brand-short-name }개인정보처리방침</a>을 참고하세요.
 rights-intro-point-4-unbranded = 모든 적용 가능한 개인정보처리방침은 아래에 기술되어 있습니다.
-rights-intro-point-5 = { -brand-short-name }는 몇 가지 웹 사이트 서비스를 제공합니다. 하지만 이 서비스는 정확성 및 무결성을 보장하지 않습니다. 더 자세한 것은 서비스 약관을 참고하세요.<a data-l10n-name="mozilla-service-terms-link">서비스 약관</a>.
+rights-intro-point-5 = { -brand-short-name }는 몇 가지 웹 사이트 서비스를 제공합니다. 하지만 이 서비스는 정확성 및 무결성을 보장하지 않습니다. 더 자세한 것은 서비스 약관을 참고하세요.<a data-l10n-name="mozilla-service-terms-link">이용 약관</a>.
 rights-intro-point-5-unbranded = 이 제품이 웹 서비스를 지원하지 않으면 당 서비스의 서비스 조건은 링크에서 찾을 수 있습니다.<a data-l10n-name="mozilla-website-services-link">자세히</a> 보기
 rights-intro-point-6 = 특정 유형의 동영상 콘텐츠를 재생하기 위해 { -brand-short-name }는 제3자로부터 특정 콘텐츠 복호화 모듈을 다운로드합니다.
 rights-webservices-header = { -brand-full-name } 웹 기반 정보 서비스
@@ -33,4 +33,10 @@ rights-webservices-term-3 = { -brand-short-name }와 함께 제공한 서비스�
 rights-webservices-term-4 = <strong>본 서비스는 { -vendor-short-name }와 개발 공헌자, 라이선스 제공자 등에 "as-is."를 제공하며 특별한 목적을 위해 제공하거나 판매 가능한 서비스의 보장에 대한 제한 없이 표현 여부에 상관 없이 모든 보장 기간에 대한 청구권 포기합니다. 여러분은 서비스를 선택하는 데 있어 목적에 적합한 서비스를 선택하거나 특별한 목족에 맞게 판매가능하게 제공될 경우 전적인 책임을 져야 합니다. 법적 고려 사항은 예외나 제한을 인정하지 않으며 이 때 권한 포가는 여러분에게 적용되지 않습니다.</strong>
 rights-webservices-term-5 = <strong>법적 요구사항을 제외하고 { -vendor-short-name }와 개발 공헌자, 라이선스 제공자, 배포자는 { -brand-short-name }와 서비스 사용에 대해 직접적이지 않고 특별하고 고의의 가혹한 징계 및 손해에 책임질 필요가 없습니다. 조건 내 책임 보상 범위도 500달러 이상을 초가하지 않습니다. 몇 가지 사법 사항은 특정 손해에 대한 제한을 허용하지 않으며 이런 예와와 제한은 여러분에게 적용하지 않습니다.</strong>
 rights-webservices-term-6 = { -vendor-short-name }는 조건들을 시기에 따라 갱신할 수 잇습니다. 하지만 { -vendor-short-name }의 서면 동의 없이 취소되거나 변경되지 않습니다.
-rights-webservices-term-7 = 아래 조건은 법 조항 충돌을 제외하고 미국 캘리포니아 주법에 따릅니다. 조건 중 일부분이 유효하지 않거나 강제성이 없다고 하더라도 다른 조항들은 여전히 유효합니다. 조건들을 다른 언어로 번역하였을 경우 영문판과 번역판의 충돌이 있는 경우 영문판을 우선합니다.
+rights-webservices-term-7 =
+    본 약관은 미국 캘리포니아주 법률에 따라 규율되며, 
+    해당 주의 법적 충돌 규정은 적용되지 않습니다. 
+    본 약관의 일부 조항이 무효 또는 집행 불가능하다고 판단될 경우, 
+    나머지 조항은 완전한 효력을 유지합니다. 
+    본 약관의 번역본과 영어 원본 간에 상충이 발생할 경우, 
+    영어 원본이 우선 적용됩니다.

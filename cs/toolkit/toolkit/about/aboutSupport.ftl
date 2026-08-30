@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -17,7 +17,7 @@ page-subtitle =
 crashes-title = Hlášení pádů
 crashes-id = ID hlášení
 crashes-send-date = Odeslaná
-crashes-all-reports = Všechna hlášení o pádech
+crashes-all-reports = Všechna hlášení o pádu
 crashes-no-config = Tato aplikace nebyla pro zobrazení hlášení o pádech nastavena.
 support-addons-title = Doplňky
 support-addons-name = Název
@@ -25,6 +25,10 @@ support-addons-type = Typ
 support-addons-enabled = Povoleno
 support-addons-version = Verze
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = Umístění
 legacy-user-stylesheets-title = Starší uživatelské kaskádové styly
 legacy-user-stylesheets-enabled = Aktivní
 legacy-user-stylesheets-stylesheet-types = Kaskádové styly
@@ -138,6 +142,10 @@ place-database-stats-efficiency-perc = Efektivita (%)
 place-database-stats-sequentiality-perc = Sekvence (%)
 place-database-integrity = Integrita
 place-database-verify-integrity = Zkontrolovat integritu
+place-database-last-idle-maintenance-data = Datum poslední údržby v době nečinnosti
+# Vacuum refers to a type of database maintenance process
+place-database-last-vacuum-date = Datum poslední údržby
+place-database-last-integrity-corruption-date = Datum posledního porušení integrity
 a11y-title = Přístupnost
 a11y-activated = Aktivována
 a11y-force-disabled = Zakázána
@@ -164,7 +172,7 @@ startup-cache-dialog-title2 =
         [with-cases] Chcete restartovat { -brand-short-name(case: "acc") } a vymazat mezipaměť spouštění?
        *[no-cases] Chcete restartovat aplikaci { -brand-short-name } a vymazat mezipaměť spouštění?
     }
-startup-cache-dialog-body2 = Vaše nastavení i nainstalována rozšíření nebudou nijak ovlivněna.
+startup-cache-dialog-body2 = Vaše nastavení i nainstalovaná rozšíření nebudou nijak ovlivněna.
 restart-button-label = Restartovat
 
 ## Media titles
@@ -194,9 +202,11 @@ media-capabilities-enumerate = Vypsat databázi
 
 media-codec-support-sw-decoding = Softwarové dekódování
 media-codec-support-hw-decoding = Hardwarové dekódování
+media-codec-support-sw-encoding = Softwarové kódování
+media-codec-support-hw-encoding = Hardwarové kódování
 media-codec-support-codec-name = Název kodeku
 media-codec-support-supported = Podporované
-media-codec-support-unsupported = Nepodporováné
+media-codec-support-unsupported = Nepodporované
 media-codec-support-error = Informace o podpoře kodeků není k dispozici. Zkuste to znovu po přehrání mediálního souboru.
 media-codec-support-lack-of-extension = Nainstalovat rozšíření
 
@@ -231,7 +241,7 @@ intl-regional-prefs = Předvolby regionu
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.
@@ -347,7 +357,7 @@ unknown-failure = Zablokováno; chybový kód { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX Video dekodér
-reset-on-next-restart = Obnovit po při příštím restartu
+reset-on-next-restart = Obnovit při příštím restartu
 gpu-process-kill-button = Ukončit GPU proces
 gpu-device-reset = Obnova zařízení
 gpu-device-reset-button = Spustit obnovu zařízení
@@ -362,6 +372,13 @@ has-seccomp-bpf = Seccomp-BPF (filtrování systémových volání)
 has-seccomp-tsync = Synchronizace vláken Seccomp
 has-user-namespaces = Uživatelské jmenné prostory
 has-privileged-user-namespaces = Uživatelské jmenné prostory pro privilegované procesy
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable =
+    { -brand-short-name.case-status ->
+        [with-cases] { $status } — Tato funkce není v systému povolena. To může omezit bezpečnostní funkce { -brand-short-name(case: "gen") }.
+       *[no-cases] { $status } — Tato funkce není v systému povolena. To může omezit bezpečnostní funkce aplikace { -brand-short-name }.
+    }
 can-sandbox-content = Sandbox procesů pro obsah
 can-sandbox-media = Sandbox zásuvných modulů médií
 content-sandbox-level = Úroveň sandboxu procesů pro obsah

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,6 +15,10 @@ support-addons-type = Typ
 support-addons-enabled = Aktiverad
 support-addons-version = Version
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = Plats
 legacy-user-stylesheets-title = Äldre stilmallar för användare
 legacy-user-stylesheets-enabled = Aktiv
 legacy-user-stylesheets-stylesheet-types = Stilmallar
@@ -129,6 +133,10 @@ place-database-stats-efficiency-perc = Effektivitet (%)
 place-database-stats-sequentiality-perc = Sekvensitet (%)
 place-database-integrity = Integritet
 place-database-verify-integrity = Verifiera integritet
+place-database-last-idle-maintenance-data = Datum för senaste inaktivitet för underhåll
+# Vacuum refers to a type of database maintenance process
+place-database-last-vacuum-date = Datum för senaste Vacuum
+place-database-last-integrity-corruption-date = Datum för senaste integritetskorruption
 a11y-title = Tillgänglighet
 a11y-activated = Aktiverad
 a11y-force-disabled = Förhindra tillgänglighet
@@ -181,6 +189,8 @@ media-capabilities-enumerate = Räkna upp databasen
 
 media-codec-support-sw-decoding = Programvaruavkodning
 media-codec-support-hw-decoding = Hårdvaruavkodning
+media-codec-support-sw-encoding = Programvarukodning
+media-codec-support-hw-encoding = Hårdvarukodning
 media-codec-support-codec-name = Namn på codec
 media-codec-support-supported = Stöds
 media-codec-support-unsupported = Stöds inte
@@ -218,7 +228,7 @@ intl-regional-prefs = Regionala inställningar
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.

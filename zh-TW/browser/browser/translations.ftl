@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Waterfox Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = 翻譯此頁面
-# The button for "Waterfox Translations" in the url bar. Note that here "Beta" should
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
 # not be translated, as it is a reflection of the un-localized BETA icon that is in the
 # panel.
 urlbar-translations-button2 =
@@ -33,7 +33,7 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } BETA
 
-## Options in the Waterfox Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = 管理語言
@@ -85,6 +85,14 @@ translations-panel-error-change-button =
     .label = 更改原始語言
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from this language yet: { $language }
+#
+# Variables:
+#   $language (string) - The language of the document.
+translations-panel-error-unsupported-hint-known-2 = 抱歉，我們尚未支援翻譯{ $language }。
+translations-panel-error-unsupported-hint-unknown-2 = 抱歉，我們尚未支援翻譯這種語言。
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }
 #
 # Variables:
@@ -116,7 +124,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = 顯示原始內容
 
-## Waterfox Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = 翻譯
 translations-manage-settings-button =
@@ -126,13 +134,6 @@ translations-manage-description = 下載語言檔案，進行離線翻譯。
 translations-manage-all-language = 所有語言
 translations-manage-download-button = 下載
 translations-manage-delete-button = 刪除
-translations-manage-intro = 設定您的語言與網站翻譯偏好設定，或管理已安裝的離線翻譯語言檔。
-translations-manage-install-description = 安裝離線翻譯用的語言檔案
-translations-manage-language-install-button =
-    .label = 安裝
-translations-manage-language-install-all-button =
-    .label = 安裝全部
-    .accesskey = I
 translations-manage-intro-2 = 設定您的語言與網站翻譯偏好設定，或管理已下載的離線翻譯語言檔。
 translations-manage-download-description = 下載語言檔案進行離線翻譯
 translations-manage-language-download-button =
@@ -145,7 +146,6 @@ translations-manage-language-remove-button =
 translations-manage-language-remove-all-button =
     .label = 移除全部
     .accesskey = e
-translations-manage-error-install = 安裝語言檔案時發生問題，請再試一次。
 translations-manage-error-download = 下載語言檔案時發生問題，請再試一次。
 translations-manage-error-delete = 刪除語言檔案時發生錯誤，請再試一次。
 translations-manage-error-remove = 移除語言檔案時發生錯誤，請再試一次。
@@ -218,7 +218,7 @@ select-translations-panel-copy-button =
     .label = 複製
 # Text displayed on the copy button after it is clicked.
 select-translations-panel-copy-button-copied =
-    .label = 已複製！
+    .label = 已複製
 select-translations-panel-done-button =
     .label = 完成
 select-translations-panel-translate-full-page-button =
@@ -236,6 +236,16 @@ select-translations-panel-init-failure-message =
 # Text displayed when the translation fails to complete.
 select-translations-panel-translation-failure-message =
     .message = 翻譯時發生問題，請再試一次。
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from { $language } yet.
+#
+# Variables:
+#   $language (string) - The language of the document.
+select-translations-panel-unsupported-language-message-known-2 =
+    .message = 抱歉，我們尚未支援翻譯{ $language }。
+select-translations-panel-unsupported-language-message-unknown-2 =
+    .message = 抱歉，我們尚未支援翻譯這種語言。
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }

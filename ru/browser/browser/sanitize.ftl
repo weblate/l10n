@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,7 +30,7 @@ sanitize-on-shutdown-description = Автоматически удалять в�
 ## Time range to clear: (Last Hour, Today, etc.)
 
 clear-time-duration-prefix =
-    .value = Удалить:
+    .value = Диапазон времени для очистки:{ " " }
     .accesskey = т
 clear-time-duration-prefix2 =
     .value = Период:
@@ -41,6 +41,10 @@ clear-time-duration-value-last-2-hours =
     .label = За последние два часа
 clear-time-duration-value-last-4-hours =
     .label = За последние четыре часа
+# Variables:
+#   $midnightTime (String) - Time of midnight (00:00 hours) - to inform the user that history will be cleared after midnight
+clear-time-duration-value-since-midnight =
+    .label = С { $midnightTime }
 clear-time-duration-value-today =
     .label = За сегодня
 clear-time-duration-value-everything =
@@ -55,10 +59,7 @@ history-section-label = Историю
 item-history-and-downloads =
     .label = Журнал посещений и загрузок
     .accesskey = п
-item-history-form-data-downloads =
-    .label = Журнал
-    .accesskey = Р
-item-history-form-data-downloads-description = Удаляет историю сайтов и загрузок, информацию сохранённых форм и поисковые запросы
+item-history-and-downloads-description2 = Очищает историю страниц и загрузок
 item-cookies =
     .label = Куки
     .accesskey = у
@@ -87,13 +88,17 @@ item-cached-content-with-size =
 item-cached-content =
     .label = Временные кешированные файлы и страницы
     .accesskey = а
-item-cached-content-description = Удаляет элементы, что помогает сайтам загружаться быстрее
+item-cached-content-description = Удаляет элементы, которые помогают сайтам загружаться быстрее
 item-form-search-history =
     .label = Журнал форм и поиска
     .accesskey = ф
 item-site-prefs =
     .label = Настройки сайтов
     .accesskey = ш
+item-formdata-prefs =
+    .label = Информация о сохранённой форме
+    .accesskey = щ
+item-formdata-description = Удаляет имена, адреса электронной почты и другие данные, вводимые вами в формах
 item-site-prefs-description = Сбрасывает ваши разрешения и настройки сайтов на исходные настройки
 data-section-label = Данные
 item-site-settings =
@@ -123,3 +128,6 @@ sanitize-everything-warning = Вся история будет удалена.
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = Данные всех выделенных пунктов будут удалены.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = Вычисление…

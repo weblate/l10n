@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -104,7 +104,7 @@ region-name-gy = Guyana
 region-name-hk = Hong Kong
 region-name-hm = Heard- og McDonaldøyane
 region-name-hn = Honduras
-region-name-hr = Croatia
+region-name-hr = Kroatia
 region-name-ht = Haiti
 region-name-hu = Ungarn
 region-name-id = Indonesia

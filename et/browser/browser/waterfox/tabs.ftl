@@ -1,0 +1,54 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+restart-prompt-question = Kas oled kindel, et soovid { -brand-short-name } veebibrauseri uuesti käivitada?
+restart-prompt-title = Käivita { -brand-short-name } uuesti
+appmenuitem-restart-browser =
+    .label = Käivita uuesti
+copy-all-urls =
+    .label = Kopeeri kõik vahekaartide lingid
+copy-tab-link =
+    .label = Kopeeri vahekaardi link
+tab-position-header = Vahekaartide riba asukoht
+tab-bar-bottom-above =
+    .label = All ääres olekuriba kohal
+tab-bar-bottom-below =
+    .label = All ääres olekuriba all
+tab-bar-top-above =
+    .label = Ülal ääres aadressiriba kohal
+tab-bar-top-below =
+    .label = Ülal ääres aadressiriba all
+waterfox-tabs-position-heading =
+    .label = Tööriistariba asukohad
+waterfox-tabs-tab-bar-position-select =
+    .label = Vahekaartide riba asukoht
+waterfox-tabs-tab-bar-option-top-above =
+    .label = Aadressiriba kohal
+waterfox-tabs-tab-bar-option-top-below =
+    .label = Aadressiriba all
+waterfox-tabs-tab-bar-option-bottom-above =
+    .label = All ääres olekuriba kohal
+waterfox-tabs-tab-bar-option-bottom-below =
+    .label = All ääres olekuriba all
+waterfox-tabs-bookmarks-bar-position-select =
+    .label = Järjehoidjate riba asukoht
+waterfox-tabs-bookmarks-bar-option-top =
+    .label = Ülal
+waterfox-tabs-bookmarks-bar-option-bottom =
+    .label = All
+waterfox-tabs-menu-heading =
+    .label = Vahekaartide kontekstimenüü
+waterfox-tabs-duplicate-menu-toggle =
+    .label = Näita topeltkaardi tegemise kirjet
+waterfox-tabs-copy-url-menu-toggle =
+    .label = Näita vahekaardi võrguaadressi kopeerimise kirjet
+waterfox-copy-url-notification = Võrguaadress on kopeeritud
+waterfox-tabs-auto-group-placement-option-first =
+    .label = Grupi alguses
+waterfox-tabs-auto-group-placement-option-last =
+    .label = Grupi lõpus
+waterfox-tabs-auto-group-placement-option-after =
+    .label = Peale seda vahekaarti, kust tavati
+waterfox-tabs-auto-group-placement-select =
+    .label = Kus uued vahekaardid liituvad grupiga

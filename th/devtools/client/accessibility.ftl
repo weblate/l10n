@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -38,8 +38,8 @@ accessibility-text-label-issue-dialog = กล่องโต้ตอบคว�
 accessibility-text-label-issue-document-title = เอกสารต้องมี <code>title</code> <a>เรียนรู้เพิ่มเติม</a>
 accessibility-text-label-issue-embed = เนื้อหาที่ฝังต้องมีป้ายชื่อ <a>เรียนรู้เพิ่มเติม</a>
 accessibility-text-label-issue-figure = รูปภาพที่มีคำอธิบายภาพเพิ่มเติมควรมีป้ายกำกับ <a>เรียนรู้เพิ่มเติม</a>
-accessibility-text-label-issue-fieldset = อิลิเมนต์ <code>fieldset</code> ต้องมีป้ายกำกับ <a>เรียนรู้เพิ่มเติม</a>
-accessibility-text-label-issue-fieldset-legend2 = ใช้อิลิเมนต์ <code>legend</code> เพื่อกำหนดป้ายกำกับให้กับ <span>fieldset</span> <a>เรียนรู้เพิ่มเติม</a>
+accessibility-text-label-issue-fieldset = องค์ประกอบ <code>fieldset</code> ต้องมีป้ายกำกับ <a>เรียนรู้เพิ่มเติม</a>
+accessibility-text-label-issue-fieldset-legend2 = ใช้องค์ประกอบ <code>legend</code> เพื่อกำหนดป้ายกำกับให้กับ <span>fieldset</span> <a>เรียนรู้เพิ่มเติม</a>
 accessibility-text-label-issue-form = อิลิเมนต์แบบฟอร์มต้องมีป้ายชื่อ <a>เรียนรู้เพิ่มเติม</a>
 accessibility-text-label-issue-form-visible = อิลิเมนต์แบบฟอร์มต้องมีป้ายกำกับข้อความที่สามารถมองเห็นได้ <a>เรียนรู้เพิ่มเติม</a>
 accessibility-text-label-issue-frame = อิลิเมนต์ <code>frame</code> ต้องมีป้ายกำกับ <a>เรียนรู้เพิ่มเติม</a>

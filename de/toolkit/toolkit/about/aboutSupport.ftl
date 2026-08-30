@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -18,6 +18,10 @@ support-addons-type = Typ
 support-addons-enabled = Aktiviert
 support-addons-version = Version
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = Ort
 legacy-user-stylesheets-title = Ältere Benutzer-Stylesheets
 legacy-user-stylesheets-enabled = Aktiv
 legacy-user-stylesheets-stylesheet-types = Stylesheets
@@ -132,6 +136,10 @@ place-database-stats-efficiency-perc = Effizienz (%)
 place-database-stats-sequentiality-perc = Sequenzialität (%)
 place-database-integrity = Integrität
 place-database-verify-integrity = Integrität überprüfen
+place-database-last-idle-maintenance-data = Datum der letzten Leerlauf-Wartung
+# Vacuum refers to a type of database maintenance process
+place-database-last-vacuum-date = Datum der letzten Bereinigung
+place-database-last-integrity-corruption-date = Datum der letzten Integritätsverletzung
 a11y-title = Barrierefreiheit
 a11y-activated = Aktiviert
 a11y-force-disabled = Barrierefreiheit verhindern
@@ -184,6 +192,8 @@ media-capabilities-enumerate = Datenbankeinträge auflisten
 
 media-codec-support-sw-decoding = Software-Dekodierung
 media-codec-support-hw-decoding = Hardware-Dekodierung
+media-codec-support-sw-encoding = Software-Kodierung
+media-codec-support-hw-encoding = Hardware-Kodierung
 media-codec-support-codec-name = Codec-Name
 media-codec-support-supported = Unterstützt
 media-codec-support-unsupported = Nicht unterstützt
@@ -221,7 +231,7 @@ intl-regional-prefs = Region-Einstellungen
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.
@@ -331,7 +341,7 @@ support-blocklisted-bug = Aufgrund bekannter Probleme blockiert: <a data-l10n-na
 unknown-failure = Blockiert; Fehlercode { $failureCode }
 d3d11layers-crash-guard = D3D11-Compositor
 glcontext-crash-guard = OpenGL
-wmfvpxvideo-crash-guard = WMF-VPX-Videodekoder
+wmfvpxvideo-crash-guard = WMF-VPX-Videodecoder
 reset-on-next-restart = Bei nächstem Neustart zurücksetzen
 gpu-process-kill-button = GPU-Prozess beenden
 gpu-device-reset = Gerät zurücksetzen
@@ -347,6 +357,9 @@ has-seccomp-bpf = Seccomp-BPF (Filtern von Systemaufrufen)
 has-seccomp-tsync = Seccomp-Thread-Synchronisierung
 has-user-namespaces = User-Namespaces
 has-privileged-user-namespaces = User-Namespaces für privilegierte Prozesse
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } – Diese Funktion wird von Ihrem System nicht erlaubt. Dies kann die Sicherheitsfunktionen von { -brand-short-name } einschränken.
 can-sandbox-content = Inhaltsprozesse in isolierter Umgebung
 can-sandbox-media = Medienplugins in isolierter Umgebung
 content-sandbox-level = Ebene der isolierten Umgebung des Inhaltsprozesses
@@ -356,7 +369,7 @@ support-sandbox-gpu-level = Ebene der isolierten Umgebung des GPU-Prozesses
 sandbox-proc-type-content = Inhalt
 sandbox-proc-type-file = Dateiinhalt
 sandbox-proc-type-media-plugin = Medienplugin
-sandbox-proc-type-data-decoder = Datendekoder
+sandbox-proc-type-data-decoder = Datendecoder
 startup-cache-title = Start-Cache
 startup-cache-disk-cache-path = Festplatten-Cache-Ordner
 startup-cache-ignore-disk-cache = Festplatten-Cache ignorieren
@@ -397,7 +410,7 @@ zooming-enabled = sanftes Zoomen durch Antippen aktiviert
 ## Variables
 ## $preferenceKey (string) - String ID of preference
 
-wheel-warning = Asynchone Mausrad-Eingabe deaktiviert auf Grund nicht unterstützter Einstellung: { $preferenceKey }
+wheel-warning = Asynchrone Mausrad-Eingabe deaktiviert auf Grund nicht unterstützter Einstellung: { $preferenceKey }
 touch-warning = Asynchrone Berührungs-Eingabe deaktiviert auf Grund nicht unterstützter Einstellung: { $preferenceKey }
 
 ## Strings representing the status of the Enterprise Policies engine.

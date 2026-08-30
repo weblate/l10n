@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -42,6 +42,8 @@ xpinstall-prompt-install =
 
 site-permission-install-first-prompt-midi-header = Tato stránka požaduje přístup k vašim MIDI (Musical Instrument Digital Interface) zařízením. Přístup k zařízení lze povolit instalací doplňku.
 site-permission-install-first-prompt-midi-message = Tento přístup nemusí být vždy bezpečný. Pokračujte jen pokud tomuto serveru důvěřujete.
+site-permission-install-first-prompt-serial-header = Tato stránka žádá o přístup k vašim sériovým zařízením. Přístup k zařízením lze povolit instalací doplňku.
+site-permission-install-first-prompt-serial-message = Tento přístup nemusí být vždy bezpečný. Pokračujte jen pokud tomuto serveru důvěřujete.
 
 ##
 
@@ -77,7 +79,7 @@ webext-perms-sideload-menu-item =
 #   $addonName (String): the localized name of the extension which has been updated.
 webext-perms-update-menu-item = Doplněk { $addonName } vyžaduje nová oprávnění
 # This message is shown when one or more extensions have been imported from a
-# different browser into Waterfox, and the user needs to complete the import to
+# different browser into Firefox, and the user needs to complete the import to
 # start these extensions. This message is shown in the appmenu.
 webext-imported-addons =
     { -brand-short-name.case-status ->
@@ -103,6 +105,8 @@ addon-removal-abuse-report-checkbox =
         [with-cases] Nahlásit toto rozšíření { -vendor-short-name(case: "dat") }
        *[no-cases] Nahlásit toto rozšíření organizaci { -vendor-short-name }
     }
+# "it" refers to the local AI model that is paired to the AI feature
+addon-mlmodel-removal-body = Pokud používáte funkce nebo rozšíření, která používají tento model, budou znovu přidány.
 # Variables:
 #   $addonCount (Number): the number of add-ons being downloaded
 addon-downloading-and-verifying =
@@ -195,11 +199,21 @@ addon-install-error-not-signed =
        *[other] Aplikace { -brand-short-name } zabránila tomuto serveru v instalaci neověřeného doplňku.
     }
 addon-install-error-invalid-domain = Doplněk { $addonName } nelze z této adresy nainstalovat.
+addon-install-error-no-addon-name-file-access =
+    { -brand-short-name.case-status ->
+        [with-cases] Doplněk nemohl být nainstalován, protože { -brand-short-name } nemůže upravit potřebný soubor.
+       *[no-cases] Doplněk nemohl být nainstalován, protože aplikace { -brand-short-name } nemůže upravit potřebný soubor.
+    }
 addon-local-install-error-network-failure = Tento doplněk nemohl být nainstalován z důvodu chyby souborového systému.
 addon-local-install-error-incorrect-hash = Tento doplněk nemohl být nainstalován, protože neodpovídá doplňku, který { -brand-short-name } očekává.
 addon-local-install-error-corrupt-file = Tento doplněk nemohl být nainstalován, protože je poškozený.
 addon-local-install-error-file-access = Doplněk { $addonName } nemohl být nainstalován, protože { -brand-short-name } nemůže upravit potřebný soubor.
 addon-local-install-error-not-signed = Tento doplněk nemohl být nainstalován, protože nebyl ověřen.
+addon-local-install-no-addon-name-error-file-access =
+    { -brand-short-name.case-status ->
+        [with-cases] Doplněk nemohl být nainstalován, protože { -brand-short-name } nemůže upravit potřebný soubor.
+       *[no-cases] Doplněk nemohl být nainstalován, protože aplikace { -brand-short-name } nemůže upravit potřebný soubor.
+    }
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible =
@@ -207,6 +221,21 @@ addon-install-error-incompatible =
         [with-cases] Doplněk { $addonName } nemohl být nainstalován, protože není kompatibilní s { -brand-short-name(case: "ins") } { $appVersion }.
        *[no-cases] Doplněk { $addonName } nemohl být nainstalován, protože není kompatibilní s aplikací { -brand-short-name } { $appVersion }.
     }
+addon-install-error-hard-blocked =
+    { -brand-short-name.case-status ->
+        [with-cases] Doplněk { $addonName } porušuje zásady Mozilly a nelze jej proto do { -brand-short-name(case: "gen") } nainstalovat.
+       *[no-cases] Doplněk { $addonName } porušuje zásady Mozilly a nelze jej proto do aplikace { -brand-short-name } nainstalovat.
+    }
+addon-install-error-soft-blocked2 =
+    { -brand-short-name.case-status ->
+        [with-cases] Doplněk { $addonName } je omezený a nemůže být do { -brand-short-name(case: "gen") } nainstalován.
+       *[no-cases] Doplněk { $addonName } je omezený a nemůže být do aplikace { -brand-short-name } nainstalován.
+    }
 addon-install-error-blocklisted = Doplněk { $addonName } nemohl být nainstalován, protože přináší vysoké riziko nestability nebo bezpečnostních problémů.
-# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Waterfox.
+addon-install-error-soft-blocked =
+    { -brand-short-name.case-status ->
+        [with-cases] Doplněk { $addonName } porušuje zásady Mozilly a nelze jej proto do { -brand-short-name(case: "gen") } nainstalovat.
+       *[no-cases] Doplněk { $addonName } porušuje zásady Mozilly a nelze jej proto do aplikace { -brand-short-name } nainstalovat.
+    }
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
 addon-install-error-admin-install-only = Doplněk { $addonName } nelze nainstalovat jako koncový uživatel, může jej nainstalovat pouze organizace pomocí zásad podniku.

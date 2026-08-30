@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -33,3 +33,11 @@ searchbar-icon =
 removed-search-engine-message = <strong>Jūsų numatytoji ieškyklė buvo pakeista.</strong> „{ $oldEngine }“ daugiau nebesiūloma kaip numatytoji „{ -brand-short-name }“ ieškyklė. Jūsų numatytąja ieškykle tapo „{ $newEngine }“. Norėdami pakeisti numatytąją naršyklę, eikite į nustatymus. <label data-l10n-name="remove-search-engine-article">Sužinoti daugiau</label>
 removed-search-engine-message2 = <strong>Jūsų numatytoji ieškyklė buvo pakeista.</strong> „{ $oldEngine }“ daugiau nebesiūloma kaip numatytoji „{ -brand-short-name }“ ieškyklė. Jūsų numatytąja ieškykle tapo „{ $newEngine }“. Norėdami pakeisti numatytąją naršyklę, eikite į nustatymus.
 remove-search-engine-button = Gerai
+
+## The following strings are used as input labels.
+
+add-engine-window =
+    .title = Pridėti ieškyklę
+    .style = min-width: 32em;
+add-engine-button = Pridėti tinkintą ieškyklę
+add-engine-name = Ieškyklės pavadinimas

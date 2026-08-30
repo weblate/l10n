@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -21,7 +21,7 @@ toolbox-meatball-menu-settings-label = Nastavení
 toolbox-meatball-menu-documentation-label = Dokumentace…
 toolbox-meatball-menu-community-label = Komunita…
 # This menu item is only available in the browser toolbox. It forces the popups/panels
-# to stay visible on blur, which is primarily useful for addon developers and Waterfox
+# to stay visible on blur, which is primarily useful for addon developers and Firefox
 # contributors.
 toolbox-meatball-menu-noautohide-label = Zakázat automatické skrývání vyskakovacích oken
 toolbox-meatball-menu-pseudo-locale-accented = Zapnout jazyk s diakritikou
@@ -43,3 +43,14 @@ toolbox-always-on-top-enabled2 = Zakázat vždy navrchu
     .title = Způsobí restart Nástrojů pro vývojáře
 toolbox-always-on-top-disabled2 = Povolit vždy navrchu
     .title = Způsobí restart Nástrojů pro vývojáře
+
+## These two labels are shown when navigating to a file:// URL while having DevTools opened,
+## in order to suggest enabling the Local Mode and load them from https instead.
+
+# Variables:
+#   $url (String): The local mode URL
+toolbox-local-mode-notice = Tento dokument lze také načíst z adresy „{ $url }“ pomocí „lokálního režimu“ v Nástrojích pro vývojáře, který lze aktivovat v panelu nastavení.
+toolbox-local-mode-notice-add-to-settings-button = Přidat do nastavení
+toolbox-local-mode-notice-try-it-button = Vyzkoušejte ho
+toolbox-local-mode-notice-navigate-to-existing-mapping = Přejít na existující mapování
+toolbox-local-mode-notice-always-hide = Příště už nezobrazovat

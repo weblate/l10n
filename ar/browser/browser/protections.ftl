@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -32,9 +32,9 @@ graph-private-window = يحجب { -brand-short-name } المتعقّبات في 
 graph-week-summary-private-window = المُتعقّبات التي حجبها { -brand-short-name } هذا الأسبوع
 protection-report-webpage-title = لوحة معلومات الحماية
 protection-report-page-content-title = لوحة معلومات الحماية
-# This message shows when all privacy protections are turned off, which is why we use the word "can", Waterfox is able to protect your privacy, but it is currently not.
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = يمكنه { -brand-short-name } حماية خصوصيتك وأنت تتصفّح خفيةً. إليك ملخّصًا عن معلومات الحماية أُعدّ لك خصيصًا. يشمل الملخص ما يلزم لتتحكّم بأمنك على الشبكة.
-# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Waterfox is actively protecting you.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
 protection-report-page-summary-default = يحمي { -brand-short-name } خصوصيتك وأنت تتصفّح خفيةً. إليك ملخّصًا عن معلومات الحماية أُعدّ لك خصيصًا. يشمل الملخص ما يلزم لتتحكّم بأمنك على الشبكة.
 protection-report-settings-link = أدِر إعدادات خصوصيتك وأمنك
 etp-card-title-always = الحماية الموسّعة من التعقب: تعمل دومًا
@@ -65,7 +65,7 @@ mobile-app-card-content = استعمل متصفح المحمول ذا الحما
 mobile-app-links = متصفّح { -brand-product-name } لنظامي <a data-l10n-name="android-mobile-inline-link">أندرويد</a> و<a data-l10n-name="ios-mobile-inline-link">آي‌أوإس</a>
 lockwise-title = بعد الآن، ”نسيت كلمة السر“ فعل ماض
 passwords-title-logged-in = أدِر كلمات السر
-passwords-header-content = يخزّن { -brand-product-name } كلمات السرّ لديك في متصفّحك بأمان تام.
+passwords-header-content = يخزّن { -brand-product-name } كلمات السر لديك في متصفّحك بأمان تام.
 lockwise-header-content-logged-in = خزّن كلمات السر وزامنها على مختلف الأجهزة لديك.
 protection-report-passwords-save-passwords-button = احفظ كلمات السر
     .title = احفظ كلمات السر
@@ -203,3 +203,8 @@ bar-tooltip-cryptominer =
             [many] { $count } معدّنًا معمّى ({ $percentage }٪)
            *[other] { $count } معدّنًا معمّى ({ $percentage }٪)
         }
+# Privacy Metrics Card
+privacy-metrics-title = تقرير حماية الخصوصية
+privacy-metrics-loading = يحمل إحصائيات الحماية…
+privacy-metrics-error = تعذّر تحميل إحصائيات الحماية.
+privacy-metrics-private-window = { -brand-short-name } يستمر في حظر أدوات التتبع في النوافذ الخاصة، ولكنه لا يحتفظ بسجل ما حُظر.

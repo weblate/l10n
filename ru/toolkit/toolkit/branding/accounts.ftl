@@ -1,15 +1,16 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# “Account” can be localized, “Waterfox” must be treated as a brand,
+# “Account” can be localized, “Firefox” must be treated as a brand,
 # and kept in English.
 -fxaccount-brand-name =
     { $case ->
-       *[nominative] Аккаунт Waterfox
-        [genitive] Аккаунта Waterfox
-        [dative] Аккаунту Waterfox
-        [accusative] Аккаунт Waterfox
-        [instrumental] Аккаунтом Waterfox
-        [prepositional] Аккаунте Waterfox
+        [nominative_uppercase] Аккаунт Waterfox
+        [genitive] аккаунта Waterfox
+        [dative] аккаунту Waterfox
+        [accusative] аккаунт Waterfox
+        [instrumental] аккаунтом Waterfox
+        [prepositional] аккаунте Waterfox
+       *[nominative] аккаунт Waterfox
     }

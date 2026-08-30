@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -10,6 +10,3 @@ protocolhandler-mailto-os-handler-no-button = ไม่ใช่ตอนนี�
 
 protocolhandler-mailto-handler-set = ใช้ <strong>{ -brand-short-name } เปิด { $url }</strong> ทุกครั้งที่คุณคลิกลิงก์ที่เปิดอีเมลของคุณหรือไม่?
 protocolhandler-mailto-handler-confirm = <strong>{ -brand-short-name } จะเปิด { $url }</strong> ทุกครั้งที่คุณคลิกลิงก์สำหรับส่งอีเมล
-
-##
-

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -24,9 +24,9 @@ graph-private-window = A { -brand-short-name } továbbra is blokkolja a nyomköv
 graph-week-summary-private-window = Követők, melyet a { -brand-short-name } blokkolt a héten
 protection-report-webpage-title = Védelmi vezérlőpult
 protection-report-page-content-title = Védelmi vezérlőpult
-# This message shows when all privacy protections are turned off, which is why we use the word "can", Waterfox is able to protect your privacy, but it is currently not.
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = Amíg Ön böngészik, a { -brand-short-name } a színfalak mögött gondoskodik az adatvédelméről. Ez ezen védelmek személyre szabott összefoglalója, olyan eszközökkel, melyekkel átveheti az irányítást az online biztonsága felett.
-# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Waterfox is actively protecting you.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
 protection-report-page-summary-default = Amíg Ön böngészik, a { -brand-short-name } a színfalak mögött gondoskodik az adatvédelméről. Ez ezen védelmek személyre szabott összefoglalója, olyan eszközökkel, melyekkel átveheti az irányítást az online biztonsága felett.
 protection-report-settings-link = Kezelje az adatvédelmi és biztonsági beállításait
 etp-card-title-always = Fokozott követés elleni védelem: Mindig bekapcsolva
@@ -54,7 +54,7 @@ protections-close-button2 =
     .title = Bezárás
 mobile-app-title = Blokkolja a hirdetéskövetőket több eszközön
 mobile-app-card-content = Használja a beépített hirdetéskövetés elleni védelemmel ellátott mobilböngészőt.
-mobile-app-links = { -brand-product-name } Böngésző <a data-l10n-name="android-mobile-inline-link">Androidra</a> és <a data-l10n-name="ios-mobile-inline-link">iOS-re</a>
+mobile-app-links = { -brand-product-name } böngésző <a data-l10n-name="android-mobile-inline-link">Androidra</a> és <a data-l10n-name="ios-mobile-inline-link">iOS-re</a>
 lockwise-title = Ne felejtsen el egyetlen jelszót sem
 passwords-title-logged-in = Jelszavak kezelése
 passwords-header-content = A { -brand-product-name } biztonságosan tárolja a jelszavait a böngészőjében.
@@ -202,3 +202,61 @@ bar-tooltip-cryptominer =
             [one] { $count } kriptobányász ({ $percentage }%)
            *[other] { $count } kriptobányász ({ $percentage }%)
         }
+# Privacy Metrics Card
+privacy-metrics-title = Adatvédelem
+# Variables:
+#   $count (Number) - Total number of trackers blocked this week
+privacy-metrics-blocked-this-week =
+    { $count ->
+        [one] { $count } blokkolva a héten
+       *[other] { $count } blokkolva a héten
+    }
+# Variables:
+#   $count (Number) - Number of trackers blocked
+privacy-metrics-trackers =
+    { $count ->
+        [one] { $count } követő
+       *[other] { $count } követő
+    }
+# Variables:
+#   $count (Number) - Number of fingerprinters blocked
+privacy-metrics-fingerprinters =
+    { $count ->
+        [one] { $count } ujjlenyomat-készítő
+       *[other] { $count } ujjlenyomat-készítő
+    }
+# Variables:
+#   $count (Number) - Number of tracking cookies blocked
+privacy-metrics-cookies =
+    { $count ->
+        [one] { $count } nyomkövető süti
+       *[other] { $count } nyomkövető süti
+    }
+# Variables:
+#   $count (Number) - Number of social trackers blocked
+privacy-metrics-social =
+    { $count ->
+        [one] { $count } közösségi követő
+       *[other] { $count } közösségi követő
+    }
+privacy-metrics-empty = A héten egy követő sem volt blokkolva. A { -brand-short-name } megvédi a következő fenyegetésektől böngészés közben.
+privacy-metrics-loading = Védelmi statisztikák betöltése…
+privacy-metrics-error = Nem sikerült betölteni a védelmi statisztikákat.
+privacy-metrics-private-window = A { -brand-short-name } a privát ablakokban is blokkolja a követőket, de nem tárolja, hogy mik kerültek blokkolásra.
+
+## VPN promo card and banner
+
+protections-vpn-title = Kapjon további adatvédelmet a böngészőn túl
+protections-vpn-header-content = Védje meg az egész eszközét a { -mozilla-vpn-brand-name } segítségével. Egy koppintás titkosítja az összes forgalmat, és elrejti a tartózkodási helyét.
+protections-get-vpn-link = A { -mozilla-vpn-brand-name } beszerzése
+protections-vpn-title-subscribed = VPN: Előfizetve
+# Variables
+#   $count (number): Number of devices
+protections-vpn-header-content-subscribed =
+    { $count ->
+        [one] A { -mozilla-vpn-brand-name } titkosítja az összes forgalmát és elrejti tartózkodási helyét – akár { $count } eszközön. Hozza ki a legtöbbet az előfizetéséből – adja hozzá a <a data-l10n-name="playstore-link">Google Play Áruházból</a> vagy az <a data-l10n-name="appstore-link">Apple App Store-ból </a>.
+       *[other] A { -mozilla-vpn-brand-name } titkosítja az összes forgalmát és elrejti tartózkodási helyét – akár { $count } eszközön. Hozza ki a legtöbbet az előfizetéséből – adja hozzá a <a data-l10n-name="playstore-link">Google Play Áruházból</a> vagy az <a data-l10n-name="appstore-link">Apple App Store-ból </a>.
+    }
+protections-vpn-banner-header = Védelem, mely túlmutat a böngészőn
+protections-vpn-banner-content = Próbálja ki a { -mozilla-vpn-brand-name }-t kockázatmentesen, és tudja meg, miért mondja ezt a TechRadar: „gyorsasága, egyszerűsége és alacsony havidíja miatt megéri megnézni”.
+protections-vpn-banner-link = A { -mozilla-vpn-brand-name } beszerzése

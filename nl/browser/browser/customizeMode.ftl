@@ -1,9 +1,9 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 customize-mode-restore-defaults =
-    .label = Standaardinstellingen herstellen
+    .label = Standaardwaarden herstellen
 customize-mode-menu-and-toolbars-header = Sleep uw favoriete items naar de werkbalk of het overloopmenu.
 customize-mode-overflow-list-title = Overloopmenu
 customize-mode-uidensity =
@@ -31,6 +31,8 @@ customize-mode-uidensity-menu-compact-unsupported =
     .tooltiptext = Compact (niet ondersteund)
 customize-mode-undo-cmd =
     .label = Ongedaan maken
+customize-mode-uidensity-link = Instellingen voor vensterdichtheid
+customize-mode-lwthemes-link-2 = Thema’s beheren
 customize-mode-lwthemes-link = Thema’s beheren
 customize-mode-touchbar-cmd =
     .label = Aanraakbalk aanpassen…

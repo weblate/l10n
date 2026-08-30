@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,6 +12,13 @@ about-networking-dns-trr-url = URL serveru DoH
 about-networking-dns-trr-mode = Režim DoH
 about-networking-dns-suffix = Přípona DNS
 about-networking-websockets = WebSockets
+about-networking-alt-svc = Alt-Svc
+about-networking-alt-svc-origin = Původ
+about-networking-alt-svc-alternate = Alternativní
+about-networking-alt-svc-alpn = ALPN
+about-networking-alt-svc-validated = Ověřený
+about-networking-alt-svc-ttl = TTL
+about-networking-alt-svc-origin-attributes-suffix = Izolační klíč
 about-networking-refresh = Obnovit
 about-networking-auto-refresh = Automatické obnovení každé 3 sekundy
 about-networking-hostname = Adresa serveru
@@ -39,6 +46,7 @@ about-networking-dns-lookup = Vyhledávání v DNS
 about-networking-dns-lookup-button = Přeložit
 about-networking-dns-domain = Doména:
 about-networking-dns-lookup-table-column = IP adresy
+about-networking-dns-https-rrs-lookup-table-column = HTTPS RR
 about-networking-dns-https-rr-lookup-table-column = RR HTTP
 about-networking-rcwn = Statistiky RCWN
 about-networking-rcwn-status = Stav RCWN
@@ -64,6 +72,3 @@ about-networking-moved-about-logging = Tato stránka byla přesunuta do <a data-
 
 about-networking-networkid-is-up = Spojení je aktivní
 about-networking-networkid-status-known = Stav spojení je známý
-
-##
-

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -20,6 +20,17 @@ permission-dialog-description-file-app = Cho phép tập tin này mở liên k�
 permission-dialog-description-extension-app = Cho phép tiện ích mở rộng { $extension } mở liên kết { $scheme } với { $appName }?
 permission-dialog-description-system-app = Mở liên kết { $scheme } với { $appName }?
 permission-dialog-description-system-noapp = Mở liên kết { $scheme }?
+# Header on a permission prompt, asking the user if they should allow the website to continue.
+wallet-custom-scheme-warning-heading =
+    .heading = Cho phép trang web này mở ví kỹ thuật số của bạn?
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-host-app = Việc mở liên kết <strong>{ $scheme }</strong> cho phép <strong>{ $host }</strong> yêu cầu danh tính thực của bạn với <strong>{ $appName }</strong>. Chỉ tiếp tục nếu bạn tin tưởng trang web này.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-app = Việc mở liên kết <strong>{ $scheme }</strong> cho phép trang web này yêu cầu danh tính thực của bạn với <strong>{ $appName }</strong>. Chỉ tiếp tục nếu bạn tin tưởng trang web này.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-host = Việc mở liên kết <strong>{ $scheme }</strong> cho phép <strong>{ $host }</strong> yêu cầu danh tính thực của bạn từ ví kỹ thuật số. Chỉ tiếp tục nếu bạn tin tưởng trang web này.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning = Việc mở liên kết <strong>{ $scheme }</strong> cho phép trang web này yêu cầu danh tính thực của bạn từ ví kỹ thuật số. Chỉ tiếp tục nếu bạn tin tưởng trang web này.
 
 ## Please keep the emphasis around the hostname and scheme (ie the
 ## `<strong>` HTML tags). Please also keep the hostname as close to the start

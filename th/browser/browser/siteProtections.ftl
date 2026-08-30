@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -53,9 +53,9 @@ protections-blocking-cookies-all =
 protections-blocking-cookies-unvisited =
     .title = คุกกี้จากไซต์ที่ไม่ได้เยี่ยมชมถูกปิดกั้น
 protections-blocking-tracking-content =
-    .title = ตัวติดตามเนื้อหาถูกปิดกั้น
+    .title = เนื้อหาติดตามถูกปิดกั้น
 protections-blocking-social-media-trackers =
-    .title = ตัวติดตามสังคมออนไลน์ถูกปิดกั้น
+    .title = ตัวติดตามสื่อสังคมออนไลน์ถูกปิดกั้น
 protections-not-blocking-fingerprinters =
     .title = ไม่ปิดกั้นลายนิ้วมือดิจิทัล
 protections-not-blocking-cryptominers =
@@ -84,5 +84,5 @@ protections-footer-blocked-tracker-counter = { $trackerCount } ถูกปิ�
 # It should be the same as protections-footer-blocked-tracker-counter;
 # this message is used to leave out the tooltip when the date is not available.
 protections-footer-blocked-tracker-counter-no-tooltip = { $trackerCount } ถูกปิดกั้น
-# In English this looks like "Waterfox blocked over 10,000 trackers since October 2019"
+# In English this looks like "Firefox blocked over 10,000 trackers since October 2019"
 protections-milestone = { -brand-short-name } ปิดกั้นตัวติดตาม { $trackerCount } ตัวตั้งแต่ { DATETIME($date, year: "numeric", month: "long") }

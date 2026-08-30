@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -14,7 +14,9 @@ default-browser-notification-button =
 
 default-browser-prompt-title-pin = Gør { -brand-short-name } til din foretrukne browser?
 default-browser-prompt-message-pin = Hav { -brand-short-name } inden for rækkevidde - gør den til din standard-browser og fastgør den til proceslinjen.
+default-browser-prompt-message-pin-msix = Hav { -brand-short-name } inden for rækkevidde - gør den til din standard-browser og fastgør den til proceslinjen og din startmenu.
 default-browser-prompt-message-pin-mac = Hav { -brand-short-name } inden for rækkevidde - gør den til din standard-browser og behold den i din Dock.
+default-browser-prompt-button-primary-set = Angiv som foretrukken browser
 default-browser-prompt-button-primary-pin = Angiv som foretrukken browser
 default-browser-prompt-title-alt = Gør { -brand-short-name } til din standard-browser?
 default-browser-prompt-message-alt = Altid høj hastighed, sikkerhed og beskyttelse af dit privatliv.
@@ -38,3 +40,6 @@ default-browser-guidance-notification-body-instruction-win11 =
     Trin 2: Vælg "Indstil som standard" for { -brand-short-name }
 default-browser-guidance-notification-info-page = Vis mig hvordan
 default-browser-guidance-notification-dismiss = Færdig
+default-browser-guidance-notification-v2-title = Færdiggør opsætningen af { -brand-short-name } som din standard-browser
+default-browser-guidance-notification-v2-body = Vælg "Indstil som standard" for { -brand-short-name } i Indstillinger.
+default-browser-guidance-notification-v2-title-only = Afslut opsætning af { -brand-short-name } som din standard-browser i Indstillinger

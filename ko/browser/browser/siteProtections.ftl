@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -25,7 +25,7 @@ content-blocking-cookies-view-remove-button =
 tracking-protection-icon-active = 소셜 미디어 추적기, 교차 사이트 추적 쿠키 및 디지털 지문을 차단합니다.
 tracking-protection-icon-active-container =
     .aria-label = { tracking-protection-icon-active }
-tracking-protection-icon-disabled = 이 사이트에 향상된 추적 방지가 꺼져 있습니다.
+tracking-protection-icon-disabled = 이 사이트에 향상된 추적 방지 기능이 꺼져 있습니다.
 tracking-protection-icon-disabled-container =
     .aria-label = { tracking-protection-icon-disabled }
 tracking-protection-icon-no-trackers-detected = 이 페이지에서 { -brand-short-name }에 알려진 추적기가 감지되지 않았습니다.
@@ -84,5 +84,5 @@ protections-footer-blocked-tracker-counter = { $trackerCount }개 차단됨
 # It should be the same as protections-footer-blocked-tracker-counter;
 # this message is used to leave out the tooltip when the date is not available.
 protections-footer-blocked-tracker-counter-no-tooltip = { $trackerCount }개 차단됨
-# In English this looks like "Waterfox blocked over 10,000 trackers since October 2019"
+# In English this looks like "Firefox blocked over 10,000 trackers since October 2019"
 protections-milestone = { -brand-short-name }가 { DATETIME($date, year: "numeric", month: "long") } 이후 추적기 { $trackerCount }개 차단

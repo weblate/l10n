@@ -1,24 +1,17 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
 
 
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = 偏好设置
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = 设置…
+menu-application-set-as-default =
+    .label = 将 { -brand-shorter-name } 设为默认浏览器
 menu-application-services =
     .label = 服务
 menu-application-hide-this =
@@ -70,7 +63,7 @@ menu-file-new-private-window =
     .accesskey = W
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Waterfox is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = 打开地址…
 menu-file-open-file =
@@ -97,6 +90,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = 共享
     .accesskey = h
+menu-file-share-qrcode =
+    .label = 生成二维码…
+    .accesskey = Q
+menu-file-share-qrcode2 =
+    .label = 生成二维码
+    .accesskey = Q
 menu-file-print-setup =
     .label = 页面设置…
     .accesskey = u
@@ -145,8 +144,6 @@ menu-view-history-button =
     .label = 历史
 menu-view-synced-tabs-sidebar =
     .label = 同步的标签页
-menu-view-megalist-sidebar =
-    .label = 密码
 menu-view-full-zoom =
     .label = 缩放
     .accesskey = Z
@@ -239,20 +236,36 @@ menu-bookmarks-menu =
 menu-bookmarks-manage =
     .label = 管理书签
 menu-bookmark-tab =
-    .label = 将当前标签页加入书签…
+    .label = 为当前标签页添加书签…
 menu-edit-bookmark =
     .label = 编辑此书签…
 # "Search" is a verb, as in "Search in bookmarks"
 menu-bookmarks-search =
     .label = 搜索书签
 menu-bookmarks-all-tabs =
-    .label = 将所有标签页加入书签…
+    .label = 为所有标签页添加书签…
 menu-bookmarks-toolbar =
     .label = 书签工具栏
 menu-bookmarks-other =
     .label = 其他书签
 menu-bookmarks-mobile =
     .label = 移动设备上的书签
+
+## Profiles Menu
+
+menu-profiles =
+    .label = 配置文件
+menu-profiles-manage-profiles =
+    .label = 管理配置文件
+menu-profiles-new-profile =
+    .label = 新建配置文件
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName }（当前）
+menu-profiles-menu =
+    .label = 配置文件
+    .accesskey = P
 
 ## Tools Menu
 
@@ -262,6 +275,9 @@ menu-tools =
 menu-tools-downloads =
     .label = 下载
     .accesskey = D
+menu-tools-extensions-and-themes =
+    .label = 扩展和主题
+    .accesskey = E
 menu-tools-addons-and-themes =
     .label = 扩展和主题
     .accesskey = A
@@ -289,6 +305,9 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = 页面信息
     .accesskey = I
+menu-tools-edit-pdf =
+    .label = 编辑 PDF…
+    .accesskey = P
 menu-settings =
     .label = 设置
     .accesskey =

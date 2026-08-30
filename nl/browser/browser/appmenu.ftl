@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,6 +15,12 @@ appmenuitem-banner-update-unsupported =
     .label = Kan niet bijwerken – systeem niet compatibel
 appmenuitem-banner-update-restart =
     .label = Update beschikbaar – nu herstarten
+appmenu-nova-update-title = Herstarten om { -brand-short-name } bij te werken
+appmenu-nova-update-description = Uw tabbladen worden opnieuw geopend.
+appmenu-nova-fxa-sign-in = Aanmelden
+appmenu-nova-switch-device-promo =
+    .message = Krijgt u binnenkort een nieuw apparaat? Neem { -brand-short-name } met u mee!
+appmenu-nova-switch-device-link = Uw gegevens migreren
 appmenuitem-new-tab =
     .label = Nieuw tabblad
 appmenuitem-new-window =
@@ -23,10 +29,16 @@ appmenuitem-new-private-window =
     .label = Nieuw privévenster
 appmenuitem-history =
     .label = Geschiedenis
+appmenuitem-tab-groups =
+    .label = Tabbladgroepen
 appmenuitem-downloads =
     .label = Downloads
 appmenuitem-passwords =
     .label = Wachtwoorden
+appmenuitem-extensions-and-themes =
+    .label = Extensies en thema’s
+appmenuitem-extensions =
+    .label = Extensies
 appmenuitem-addons-and-themes =
     .label = Add-ons en thema’s
 appmenuitem-print =
@@ -67,7 +79,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Volledig scherm
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Aanmelden om te synchroniseren…
@@ -88,7 +100,7 @@ appmenu-remote-tabs-tabsnotsyncing = Zet tabbladsynchronisatie aan om een lijst 
 appmenu-remote-tabs-opensettings =
     .label = Instellingen
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Wilt u hier uw tabbladen van andere apparaten zien?
 appmenu-remote-tabs-connectdevice =
     .label = Een ander apparaat verbinden
@@ -108,8 +120,11 @@ appmenu-fxa-sync-and-save-data2 = Synchroniseren en gegevens opslaan
 appmenu-fxa-signed-in-label = Aanmelden
 appmenu-fxa-setup-sync =
     .label = Synchronisatie inschakelen…
+appmenu-fxa-setup-sync-new = Inschakelen
 appmenuitem-save-page =
     .label = Pagina opslaan als…
+appmenuitem-fxa-sync-off-title = Synchronisatie is uitgeschakeld
+appmenuitem-fxa-sync-off-description = Bescherm en benader uw bladwijzers, wachtwoorden en meer, waar u ook bent.
 
 ## What's New panel in App menu.
 
@@ -120,7 +135,7 @@ whatsnew-panel-footer-checkbox =
     .label = Berichten over nieuwe functies
     .accesskey = f
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -163,6 +178,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+profiler-button-dropmarker =
+    .label = Profilerpaneel openen
+    .tooltiptext = Profilerpaneel openen
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -189,9 +207,15 @@ profiler-popup-presets-graphics-label =
 profiler-popup-presets-media-description2 = Voorinstelling voor het onderzoeken van audio- en videobugs in { -brand-shorter-name }.
 profiler-popup-presets-media-label =
     .label = Media
+profiler-popup-presets-ml-description = Voorinstelling voor het onderzoeken van machinevertalingsbugs in { -brand-shorter-name }.
+profiler-popup-presets-ml-label =
+    .label = Machinaal leren
 profiler-popup-presets-networking-description = Voorinstelling voor het onderzoeken van netwerkbugs in { -brand-shorter-name }.
 profiler-popup-presets-networking-label =
     .label = Netwerk
+profiler-popup-presets-networking-with-logs-description = Voorinstelling voor het onderzoeken van netwerkbugs in { -brand-shorter-name }, inclusief netwerklogboeken. Deze logboeken kunnen gevoelige informatie bevatten, zoals de URL’s die u bezoekt.
+profiler-popup-presets-networking-with-logs-label =
+    .label = Netwerken met logboeken
 profiler-popup-presets-power-description = Voorinstelling voor het onderzoeken van stroomverbruikbugs in { -brand-shorter-name }, met lage overhead.
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
@@ -199,6 +223,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = Voorinstelling voor debugging in { -brand-shorter-name }. Hoge overhead, niet gebruiken voor prestatiewerk, maar om te focussen op het begrijpen van browsergedrag.
 profiler-popup-presets-debug-label =
     .label = Debuggen
+profiler-popup-presets-web-compat-description = Aanbevolen voorinstelling voor het opsporen van webcompatibiliteitsproblemen in websites, in plaats van prestaties te volgen.
+profiler-popup-presets-web-compat-label =
+    .label = Webcompatibiliteit
 profiler-popup-presets-custom-label =
     .label = Aangepast
 
@@ -264,6 +291,10 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = Werkbalk aanpassen…
+appmenu-abouttranslations =
+    .label = Vertalen…
+appmenu-edit-pdf =
+    .label = PDF bewerken…
 appmenu-developer-tools-subheader = Browserhulpmiddelen
 appmenu-developer-tools-extensions =
     .label = Extensies voor ontwikkelaars
@@ -273,9 +304,41 @@ appmenuitem-report-broken-site =
 ## Panel for privacy and security products
 
 appmenuitem-sign-in-account = Aanmelden bij uw account
+appmenuitem-monitor-title2 = Blijf identiteitsdiefstal voor
+appmenuitem-monitor-description2 = Ontvang meldingen over datalekken
 appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Ontvang waarschuwingen over datalekken
 appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-title2 = Houd uw e-mailadres privé
+appmenuitem-relay-description2 = Helpt spam in uw Postvak IN te voorkomen
 appmenuitem-relay-description = Maskeer uw echte e-mailadres en telefoonnummer
+appmenuitem-services-relay-description = Dashboard voor e-mailmaskers starten
+appmenuitem-vpn-title2 = Verberg uw locatie met { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description3 = Maak uw navigatie moeilijker te volgen
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = Bescherming van uw volledige apparaat ontvangen
 appmenuitem-vpn-description = Bescherm uw online activiteit
+appmenu-services-header = Mijn services
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = Privacyhulpmiddelen
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = Probeer andere beschermingshulpmiddelen van BrowserWorks:
+appmenu-other-protection-header = Probeer andere beschermingshulpmiddelen van { -vendor-short-name }:
+
+## Profiles panel
+
+appmenu-other-profiles = Andere profielen
+appmenu-manage-profiles =
+    .label = Profielen beheren
+appmenu-copy-profile =
+    .label = Dit profiel kopiëren
+appmenu-create-profile =
+    .label = Nieuw profiel
+appmenu-edit-profile =
+    .aria-label = Profiel bewerken
+appmenu-profiles-2 =
+    .label = Profielen

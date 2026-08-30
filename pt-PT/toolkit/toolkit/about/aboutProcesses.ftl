@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,6 +12,8 @@ about-processes-column-action =
 
 about-processes-shutdown-process =
     .title = Remover os separadores da memória e matar o processo
+about-processes-kill-process =
+    .title = Matar processo
 about-processes-shutdown-tab =
     .title = Fechar separador
 # Profiler icons
@@ -51,11 +53,26 @@ about-processes-remote-sandbox-broker-process = Agente de isolamento remoto ({ $
 about-processes-fork-server-process = Fork do servidor ({ $pid })
 about-processes-preallocated-process = Pré-alocado ({ $pid })
 about-processes-utility-process = Utilitário ({ $pid })
+about-processes-inference-process = Inferência ({ $pid })
 # Unknown process names
 # Variables:
 #    $pid (String) The process id of this process, assigned by the OS.
 #    $type (String) The raw type for this process.
 about-processes-unknown-process = Outro: { $type } ({ $pid })
+
+## Properties of isolated web processes
+
+about-processes-web-isolated-property-private = privada
+about-processes-web-isolated-property-serviceworker = serviceworker
+about-processes-web-isolated-property-jit-disabled = JIT desativada
+about-processes-web-isolated-property-with-coop-coep = isolamento entre origens
+
+## Isolated process names
+## Variables:
+##    $origin (String) The domain name for this process.
+##    $properties (String) A formatted list of properties from the above strings.
+
+about-processes-web-isolated-process2 = { $origin } ({ $properties })
 
 ## Isolated process names
 ## Variables:
@@ -124,10 +141,11 @@ about-processes-utility-actor-audio-decoder-generic = Descodificador de áudio g
 about-processes-utility-actor-audio-decoder-applemedia = Descodificador áudio da Apple
 about-processes-utility-actor-audio-decoder-wmf = Descodificador áudio do Windows Media Framework
 about-processes-utility-actor-mf-media-engine = Motor CDM de media do Windows Media Foundation
-# "Oracle" refers to an internal Waterfox process and should be kept in English
+# "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = Oracle JavaScript
 about-processes-utility-actor-windows-utils = Utilitários do Windows
 about-processes-utility-actor-windows-file-dialog = Janela de ficheiros do Windows
+about-processes-utility-actor-pkcs11-module = Assistente do módulo de segurança
 
 ## Displaying CPU (percentage and total)
 ## Variables:

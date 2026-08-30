@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,12 +12,16 @@ crashes-id = ID do relatório
 crashes-send-date = Enviado
 crashes-all-reports = Todos os relatórios de falha
 crashes-no-config = Esta aplicação não está configurada para mostrar os relatórios de falha.
-support-addons-title = Extras
+support-addons-title = Complementos
 support-addons-name = Nome
 support-addons-type = Tipo
 support-addons-enabled = Ativado
 support-addons-version = Versão
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = Localização
 legacy-user-stylesheets-title = Folhas de estilo de utilizador legadas
 legacy-user-stylesheets-enabled = Ativo
 legacy-user-stylesheets-stylesheet-types = Folhas de estilo
@@ -132,6 +136,10 @@ place-database-stats-efficiency-perc = Eficiência (%)
 place-database-stats-sequentiality-perc = Sequencialidade (%)
 place-database-integrity = Integridade
 place-database-verify-integrity = Verificar integridade
+place-database-last-idle-maintenance-data = Data da última manutenção em modo inativo
+# Vacuum refers to a type of database maintenance process
+place-database-last-vacuum-date = Data do último vacuum
+place-database-last-integrity-corruption-date = Data da última corrupção de integridade
 a11y-title = Acessibilidade
 a11y-activated = Ativa
 a11y-force-disabled = Impedir acessibilidade
@@ -184,6 +192,8 @@ media-capabilities-enumerate = Enumeração de base de dados
 
 media-codec-support-sw-decoding = Descodificação por Software
 media-codec-support-hw-decoding = Descodificação por Hardware
+media-codec-support-sw-encoding = Codificação por software
+media-codec-support-hw-encoding = Codificação por hardware
 media-codec-support-codec-name = Nome do Codec
 media-codec-support-supported = Suportado
 media-codec-support-unsupported = Não suportado
@@ -221,7 +231,7 @@ intl-regional-prefs = Preferências regionais
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.
@@ -347,6 +357,9 @@ has-seccomp-bpf = Seccomp-BPF (Filtro de chamada do sistema)
 has-seccomp-tsync = Sincronização de threads Seccomp
 has-user-namespaces = Espaço de nomes do utilizador
 has-privileged-user-namespaces = Espaço de nomes do utilizador para processos privilegiados
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } — Esta funcionalidade não é permitida pelo seu sistema. Isto pode restringir as funcionalidades de segurança do { -brand-short-name }.
 can-sandbox-content = Sandboxing do processo de conteúdo
 can-sandbox-media = Sandboxing do plugin multimédia
 content-sandbox-level = Nível da sandbox do processo de conteúdo

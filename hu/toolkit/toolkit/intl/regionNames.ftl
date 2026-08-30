@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -250,7 +250,7 @@ region-name-vc = Saint Vincent és Grenadine-szigetek
 region-name-ve = Venezuela
 region-name-vg = Virgin-szigetek (brit)
 region-name-vi = Virgin-szigetek (USA)
-region-name-vn = Vietnam
+region-name-vn = Vietnám
 region-name-vu = Vanuatu
 region-name-wf = Wallis és Futuna
 region-name-ws = Szamoa

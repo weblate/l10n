@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -16,6 +16,12 @@ colors-page-override-option-auto =
 colors-page-override-option-never =
     .label = أبدًا
 colors-text-and-background = النّصّ و الخلفيّة
+colors-text =
+    .label = النّص
+    .accesskey = ن
+colors-text-background =
+    .label = الخلفية
+    .accesskey = خ
 colors-text-header = النّص
     .accesskey = ن
 colors-background = الخلفية
@@ -27,6 +33,12 @@ colors-underline-links =
     .label = سطّر الروابط
     .accesskey = ط
 colors-links-header = ألوان الروابط
+colors-links-unvisited =
+    .label = الروابط غير المزارة
+    .accesskey = غ
+colors-links-visited =
+    .label = الروابط المزارة
+    .accesskey = م
 colors-unvisited-links = الروابط غير المزارة
     .accesskey = غ
 colors-visited-links = الروابط المزارة

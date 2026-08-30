@@ -1,12 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ### These strings are used inside the Application panel which is available
 ### by setting the preference `devtools-application-enabled` to true.
-
-
+###
 ### The correct localization of this file might be to keep it in English, or another
 ### language commonly spoken among web developers. You want to make that choice consistent
 ### across the developer tools. A good criteria is the language in which you'd find the
@@ -76,7 +75,7 @@ manifest-loaded-ok = Đã tải manifest.
 # Text displayed as a caption when there has been an error while trying to
 # load the manifest
 manifest-loaded-error = Có lỗi trong khi tải manifest:
-# Text displayed as an error when there has been a Waterfox DevTools error while
+# Text displayed as an error when there has been a Firefox DevTools error while
 # trying to load the manifest
 manifest-loaded-devtools-error = Lỗi Waterfox DevTools
 # Text displayed when the page has no manifest available
@@ -111,6 +110,13 @@ sidebar-item-manifest = Manifest
 sidebar-item-service-workers = Service Workers
     .alt = Biểu tượng Service Workers
     .title = Service Workers
+# Sidebar navigation item for Session History sidebar item section
+sidebar-item-session-history = Lịch sử phiên
+    .alt = Biểu tượng lịch sử phiên
+    .title = Lịch sử phiên
+# Entry in the Session History diagram
+session-history-entry-info-button-title =
+    .title = Hiển thị dữ liệu lịch sử phiên
 # Text for the ALT and TITLE attributes of the warning icon
 icon-warning =
     .alt = Biểu tượng cảnh báo

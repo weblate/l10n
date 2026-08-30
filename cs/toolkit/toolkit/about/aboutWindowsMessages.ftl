@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -11,5 +11,5 @@
 
 # Windows refers to the operating system
 windows-messages-page-title = Informace o zprávách systému Windows
-windows-messages-intro = Tato stránka zobrazuje poslední zprávy odeslané systémem Windows oknům prohlížeče { -brand-short-name }. Tučně vyznačené záznamy odpovídají tomuto oknu. Pamatujte, že tato stránky zobrazuje zprávy v okamžiku jejího otevření. Pro aktualizaci seznamu stránku načtěte znovu.
+windows-messages-intro = Tato stránka zobrazuje poslední zprávy odeslané systémem Windows oknům prohlížeče { -brand-short-name }. Tučně vyznačené záznamy odpovídají tomuto oknu. Pamatujte, že tato stránka zobrazuje zprávy v okamžiku jejího otevření. Pro aktualizaci seznamu stránku načtěte znovu.
 windows-messages-copy-to-clipboard = Zkopírovat do schránky

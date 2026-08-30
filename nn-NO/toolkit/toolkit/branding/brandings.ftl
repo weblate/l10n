@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -31,21 +31,42 @@
 -relay-brand-name = Waterfox Relay
 -relay-brand-short-name = Relay
 -fakespot-brand-name = Fakespot
+-solo-ai-brand-name = Solo
+-thunderbird-brand-name = BrowserWorks Thunderbird
+-thunderbird-brand-short-name = Thunderbird
+-mdn-brand-name = MDN Web Docs
+-yelp-brand-name = Yelp
+
+##
+
 # Note the name of the website is capitalized.
 -fakespot-website-name = Fakespot.com
-# The particle "by" can be localized, "Fakespot" and "BrowserWorks" should not be localized or transliterated.
+# The particle "by" can be localized, "Fakespot" and "Mozilla" should not be localized or transliterated.
 -fakespot-brand-full-name = Fakespot frå BrowserWorks
-# “Suggest” can be localized, “Waterfox” must be treated as a brand
+# “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefox-suggest-brand-name = Waterfox-forslag
-# ”Home" can be localized, “Waterfox” must be treated as a brand
+# ”Home" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefox-home-brand-name = Waterfox startside
-# View" can be localized, “Waterfox” must be treated as a brand
+# View" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefoxview-brand-name = Waterfox oversyn
-# Waterfox Labs is the name for a page in Settings to allow users to learn about
+# Firefox Labs is the name for a page in Settings to allow users to learn about
 # experimental and in-development features, and turn those features on and off.
-# The "Labs" portion can be localized, “Waterfox” must be treated as a brand
+# The "Labs" portion can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefoxlabs-brand-name = Waterfox Labs
+-smart-window-brand-name =
+    { $plural-form ->
+        [false]
+            { $capitalization ->
+                [uppercase] Smart vindauge
+               *[lowercase] smart vindauge
+            }
+       *[true]
+            { $capitalization ->
+                [uppercase] Smarte vindauge
+               *[lowercase] smarte vindauge
+            }
+    }

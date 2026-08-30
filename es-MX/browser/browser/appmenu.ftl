@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,6 +15,10 @@ appmenuitem-banner-update-unsupported =
     .label = No se puede actualizar — sistema incompatible
 appmenuitem-banner-update-restart =
     .label = Actualización disponible — reiniciar ahora
+appmenu-nova-fxa-sign-in = Iniciar sesión
+appmenu-nova-switch-device-promo =
+    .message = ¿Vas a cambiar de dispositivo? ¡Sigue usando { -brand-short-name }!
+appmenu-nova-switch-device-link = Cómo migrar tus datos
 appmenuitem-new-tab =
     .label = Nueva pestaña
 appmenuitem-new-window =
@@ -23,10 +27,16 @@ appmenuitem-new-private-window =
     .label = Nueva ventana privada
 appmenuitem-history =
     .label = Historial
+appmenuitem-tab-groups =
+    .label = Grupos de pestañas
 appmenuitem-downloads =
     .label = Descargas
 appmenuitem-passwords =
     .label = Contraseñas
+appmenuitem-extensions-and-themes =
+    .label = Extensiones y temas
+appmenuitem-extensions =
+    .label = Extensiones
 appmenuitem-addons-and-themes =
     .label = Complementos y temas
 appmenuitem-print =
@@ -67,7 +77,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Pantalla completa
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Iniciar sesión en Sync…
@@ -88,7 +98,7 @@ appmenu-remote-tabs-tabsnotsyncing = Activa la sincronización de pestañas para
 appmenu-remote-tabs-opensettings =
     .label = Ajustes
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = ¿Quieres ver las pestañas de tus otros dispositivos aquí?
 appmenu-remote-tabs-connectdevice =
     .label = Conectar otro dispositivo
@@ -108,8 +118,11 @@ appmenu-fxa-sync-and-save-data2 = Sincronizar y guardar datos
 appmenu-fxa-signed-in-label = Iniciar sesión
 appmenu-fxa-setup-sync =
     .label = Activar la sincronización…
+appmenu-fxa-setup-sync-new = Activar
 appmenuitem-save-page =
     .label = Guardar como…
+appmenuitem-fxa-sync-off-title = La sincronización está desactivada
+appmenuitem-fxa-sync-off-description = Protege y accede a tus marcadores, contraseñas y más desde cualquier lugar.
 
 ## What's New panel in App menu.
 
@@ -120,7 +133,7 @@ whatsnew-panel-footer-checkbox =
     .label = Notificar sobre nuevas funciones
     .accesskey = f
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -163,6 +176,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Mayús+2
     }
+profiler-button-dropmarker =
+    .label = Abre el panel del perfilador
+    .tooltiptext = Abre el panel del perfilador
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -189,9 +205,15 @@ profiler-popup-presets-graphics-label =
 profiler-popup-presets-media-description2 = Preestablecido para investigar errores de audio y video en { -brand-shorter-name }.
 profiler-popup-presets-media-label =
     .label = Multimedia
+profiler-popup-presets-ml-description = Preconfiguración para investigar errores de aprendizaje automático en { -brand-shorter-name }.
+profiler-popup-presets-ml-label =
+    .label = Machine Learning
 profiler-popup-presets-networking-description = Preestablecido para investigar errores de red en { -brand-shorter-name }.
 profiler-popup-presets-networking-label =
     .label = Redes
+profiler-popup-presets-networking-with-logs-description = Preestablecido para investigar errores de red en { -brand-shorter-name }, incluyendo registros de tráfico. Los registros pueden incluir información sensible (por ejemplo, las URLs que has visitado).
+profiler-popup-presets-networking-with-logs-label =
+    .label = Redes con registros
 profiler-popup-presets-power-description = Preestablecido para investigar errores de uso de energía en { -brand-shorter-name }, con poca sobrecarga.
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
@@ -199,6 +221,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = Depuración preestablecida en { -brand-shorter-name }. Sobrecarga, no lo use para trabajo de rendimiento, úselo para centrarse en entender el comportamiento del navegador.
 profiler-popup-presets-debug-label =
     .label = Depurar
+profiler-popup-presets-web-compat-description = Ajuste preestablecido recomendado para depurar problemas de compatibilidad web en sitios web, en lugar de rastrear el rendimiento.
+profiler-popup-presets-web-compat-label =
+    .label = Compatibilidad web
 profiler-popup-presets-custom-label =
     .label = Personalizado
 
@@ -264,6 +289,10 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = Personalizar barra de herramientas…
+appmenu-abouttranslations =
+    .label = Traducir…
+appmenu-edit-pdf =
+    .label = Editar PDF…
 appmenu-developer-tools-subheader = Herramientas del navegador
 appmenu-developer-tools-extensions =
     .label = Extensiones para desarrolladores
@@ -273,9 +302,41 @@ appmenuitem-report-broken-site =
 ## Panel for privacy and security products
 
 appmenuitem-sign-in-account = Inicie sesión en tu cuenta
+appmenuitem-monitor-title2 = Protégete del robo de identidad
+appmenuitem-monitor-description2 = Recibir alertas sobre filtraciones de datos
 appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Reciba alertas de filtración de datos
 appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-title2 = Mantén tu correo electrónico privado
+appmenuitem-relay-description2 = Ayuda a prevenir el spam en tu bandeja de entrada
 appmenuitem-relay-description = Enmascare su correo electrónico y teléfono reales
+appmenuitem-services-relay-description = Iniciar el panel de máscaras de correo electrónico
+appmenuitem-vpn-title2 = Oculta tu ubicación con { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description3 = Evita el rastreo de tu navegación.
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = Obtén protección para todo el dispositivo
 appmenuitem-vpn-description = Protege tu actividad en línea
+appmenu-services-header = Mis servicios
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = Herramientas de privacidad
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = Prueba otras herramientas de protección de BrowserWorks:
+appmenu-other-protection-header = Prueba otras herramientas de protección de { -vendor-short-name }:
+
+## Profiles panel
+
+appmenu-other-profiles = Otros perfiles
+appmenu-manage-profiles =
+    .label = Administrar perfiles
+appmenu-copy-profile =
+    .label = Copiar este perfil
+appmenu-create-profile =
+    .label = Nuevo perfil
+appmenu-edit-profile =
+    .aria-label = Editar perfil
+appmenu-profiles-2 =
+    .label = Perfiles

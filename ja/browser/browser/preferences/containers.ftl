@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,6 +12,13 @@ containers-window-update-settings2 =
     .style = min-width: 45em
 containers-window-close =
     .key = w
+containers-name-label2 =
+    .label = 名前
+    .placeholder = コンテナー名を入力してください
+containers-icon-label2 =
+    .label = アイコン
+containers-color-label2 =
+    .label = 色
 # This is a term to store style to be applied
 # on the three labels in the containers add/edit dialog:
 #   - name
@@ -43,7 +50,7 @@ containers-color-turquoise =
 containers-color-green =
     .label = 緑
 containers-color-yellow =
-    .label = 黄色
+    .label = 黄
 containers-color-orange =
     .label = オレンジ
 containers-color-red =
@@ -82,3 +89,19 @@ containers-icon-tree =
     .label = 樹木
 containers-icon-chill =
     .label = クール
+containers-window-new3 =
+    .title = 新しいコンテナーを追加
+    .style = min-width: 32em
+# Variables
+#   $name (String) - Name of the container
+containers-window-update-settings3 =
+    .title = { $name } コンテナーの設定
+    .style = min-width: 32em
+
+## Container creation panel, anchored to the URL bar.
+
+containers-panel-title = 新しいコンテナーを追加
+containers-panel-create-button =
+    .label = 完了
+containers-panel-cancel-button =
+    .label = キャンセル

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -41,6 +41,10 @@ clear-time-duration-value-last-2-hours =
     .label = Hai tiếng gần đây
 clear-time-duration-value-last-4-hours =
     .label = Bốn tiếng gần đây
+# Variables:
+#   $midnightTime (String) - Time of midnight (00:00 hours) - to inform the user that history will be cleared after midnight
+clear-time-duration-value-since-midnight =
+    .label = Kể từ { $midnightTime }
 clear-time-duration-value-today =
     .label = Hôm nay
 clear-time-duration-value-everything =
@@ -55,10 +59,7 @@ history-section-label = Lịch sử
 item-history-and-downloads =
     .label = Lịch sử duyệt web & tải xuống
     .accesskey = d
-item-history-form-data-downloads =
-    .label = Lịch sử
-    .accesskey = H
-item-history-form-data-downloads-description = Xóa trang web và lịch sử tải xuống, thông tin biểu mẫu đã lưu và tìm kiếm
+item-history-and-downloads-description2 = Xóa lịch sử trang web và tải xuống
 item-cookies =
     .label = Cookie
     .accesskey = C
@@ -94,6 +95,10 @@ item-form-search-history =
 item-site-prefs =
     .label = Cài đặt trang
     .accesskey = i
+item-formdata-prefs =
+    .label = Thông tin biểu mẫu đã lưu
+    .accesskey = o
+item-formdata-description = Xóa những thứ như tên, email và các mục khác bạn nhập trong biểu mẫu
 item-site-prefs-description = Đặt lại quyền hạn và tùy chọn trang web của bạn về cài đặt gốc
 data-section-label = Dữ liệu
 item-site-settings =
@@ -123,3 +128,6 @@ sanitize-everything-warning = Toàn bộ lịch sử sẽ bị xóa.
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = Tất cả các mục đã chọn sẽ bị xóa.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = Đang tính…

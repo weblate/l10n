@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,6 +15,10 @@ appmenuitem-banner-update-unsupported =
     .label = Nem lehet frissíteni – a rendszer nem kompatibilis
 appmenuitem-banner-update-restart =
     .label = Frissítés érhető el – újraindítás most
+appmenu-nova-fxa-sign-in = Bejelentkezés
+appmenu-nova-switch-device-promo =
+    .message = Hamarosan új eszközt kap? Vigye magával a { -brand-short-name } böngészőt!
+appmenu-nova-switch-device-link = Hogyan költöztesse át az adatait
 appmenuitem-new-tab =
     .label = Új lap
 appmenuitem-new-window =
@@ -23,10 +27,16 @@ appmenuitem-new-private-window =
     .label = Új privát ablak
 appmenuitem-history =
     .label = Előzmények
+appmenuitem-tab-groups =
+    .label = Lapcsoportok
 appmenuitem-downloads =
     .label = Letöltések
 appmenuitem-passwords =
     .label = Jelszavak
+appmenuitem-extensions-and-themes =
+    .label = Kiegészítők és témák
+appmenuitem-extensions =
+    .label = Kiegészítők
 appmenuitem-addons-and-themes =
     .label = Kiegészítők és témák
 appmenuitem-print =
@@ -67,7 +77,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Teljes képernyő
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Jelentkezzen be a Syncbe…
@@ -88,7 +98,7 @@ appmenu-remote-tabs-tabsnotsyncing = Kapcsolja be a lapszinkronizálást a más 
 appmenu-remote-tabs-opensettings =
     .label = Beállítások
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Szeretné a más eszközein megnyitott lapjait itt látni?
 appmenu-remote-tabs-connectdevice =
     .label = Másik eszköz csatlakoztatása
@@ -108,8 +118,11 @@ appmenu-fxa-sync-and-save-data2 = Adatok szinkronizálása és mentése
 appmenu-fxa-signed-in-label = Bejelentkezés
 appmenu-fxa-setup-sync =
     .label = Szinkronizálás bekapcsolása…
+appmenu-fxa-setup-sync-new = Bekapcsolás
 appmenuitem-save-page =
     .label = Oldal mentése…
+appmenuitem-fxa-sync-off-title = A Sync ki van kapcsolva
+appmenuitem-fxa-sync-off-description = Védje és érje el bárhol könyvjelzőit, jelszavait és egyebeit.
 
 ## What's New panel in App menu.
 
@@ -120,7 +133,7 @@ whatsnew-panel-footer-checkbox =
     .label = Értesítés az új funkciókról
     .accesskey = f
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -163,6 +176,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+profiler-button-dropmarker =
+    .label = A profilozó panel megnyitása
+    .tooltiptext = A profilozó panel megnyitása
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -189,6 +205,9 @@ profiler-popup-presets-graphics-label =
 profiler-popup-presets-media-description2 = Előbeállítás a { -brand-shorter-name } hang- és videóhibáinak kivizsgálásához.
 profiler-popup-presets-media-label =
     .label = Média
+profiler-popup-presets-ml-description = Előbeállítás a { -brand-shorter-name } gépi tanulási hibáinak kivizsgálásához.
+profiler-popup-presets-ml-label =
+    .label = Gépi tanulás
 profiler-popup-presets-networking-description = Előbeállítás a { -brand-shorter-name } hálózati hibák kivizsgálásához.
 profiler-popup-presets-networking-label =
     .label = Hálózat
@@ -199,6 +218,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = Előbeállítás a { -brand-shorter-name }ban való hibakereséshez. Magas többletterhelés, ne teljesítménykritikus munkához használja, hanem a böngésző viselkedésének megértéséhez.
 profiler-popup-presets-debug-label =
     .label = Hibakeresés
+profiler-popup-presets-web-compat-description = Ajánlott előbeállítás a weboldalak webes kompatibilitási problémáinak kereséséhez, nem pedig a teljesítmény követéséhez.
+profiler-popup-presets-web-compat-label =
+    .label = Webkompatibilitás
 profiler-popup-presets-custom-label =
     .label = Egyéni
 
@@ -264,6 +286,10 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = Eszköztár testreszabása…
+appmenu-abouttranslations =
+    .label = Fordítás…
+appmenu-edit-pdf =
+    .label = PDF szerkesztése…
 appmenu-developer-tools-subheader = Böngészőeszközök
 appmenu-developer-tools-extensions =
     .label = Kiegészítők fejlesztőknek
@@ -277,5 +303,31 @@ appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Kapjon figyelmeztetést az adatvédelmi incidensekről
 appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = Maszkolja a valódi e-mail-címét és telefonszámát
+appmenuitem-services-relay-description = E-mail-maszkok irányítópultjának elindítása
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = Kapjon teljes eszközvédelmet
 appmenuitem-vpn-description = Védje meg az online tevékenységét
+appmenu-services-header = Saját szolgáltatások
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = Adatvédelmi eszközök
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = Próbálja ki a BrowserWorks más védelmi eszközeit:
+appmenu-other-protection-header = Próbálja ki a { -vendor-short-name } egyéb védelmi eszközeit:
+
+## Profiles panel
+
+appmenu-other-profiles = Egyéb profilok
+appmenu-manage-profiles =
+    .label = Profilok kezelése
+appmenu-copy-profile =
+    .label = Profil másolása
+appmenu-create-profile =
+    .label = Új profil
+appmenu-edit-profile =
+    .aria-label = Profil szerkesztése
+appmenu-profiles-2 =
+    .label = Profilok

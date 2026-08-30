@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,30 +15,42 @@ appmenuitem-banner-update-unsupported =
     .label = Unable to update — system incompatible
 appmenuitem-banner-update-restart =
     .label = Update available — restart now
+appmenu-nova-update-title = Restart to update { -brand-short-name }
+appmenu-nova-update-description = Your tabs will reopen.
+appmenu-nova-fxa-sign-in = Sign in
+appmenu-nova-switch-device-promo =
+    .message = Getting a new device soon? Take { -brand-short-name } with you!
+appmenu-nova-switch-device-link = How to migrate your data
 appmenuitem-new-tab =
-    .label = New tab
+    .label = New Tab
 appmenuitem-new-window =
-    .label = New window
+    .label = New Window
 appmenuitem-new-private-window =
-    .label = New private window
+    .label = New Private Window
 appmenuitem-history =
     .label = History
+appmenuitem-tab-groups =
+    .label = Tab groups
 appmenuitem-downloads =
     .label = Downloads
 appmenuitem-passwords =
     .label = Passwords
+appmenuitem-extensions-and-themes =
+    .label = Extensions and Themes
+appmenuitem-extensions =
+    .label = Extensions
 appmenuitem-addons-and-themes =
     .label = Add-ons and themes
 appmenuitem-print =
     .label = Print…
 appmenuitem-find-in-page =
-    .label = Find in page…
+    .label = Find in Page…
 appmenuitem-translate =
-    .label = Translate page…
+    .label = Translate Page…
 appmenuitem-zoom =
     .value = Zoom
 appmenuitem-more-tools =
-    .label = More tools
+    .label = More Tools
 appmenuitem-help =
     .label = Help
 appmenuitem-exit2 =
@@ -61,13 +73,13 @@ appmenuitem-settings =
 ## Zoom and Fullscreen Controls
 
 appmenuitem-zoom-enlarge =
-    .label = Zoom in
+    .label = Zoom In
 appmenuitem-zoom-reduce =
-    .label = Zoom out
+    .label = Zoom Out
 appmenuitem-fullscreen =
-    .label = Full screen
+    .label = Full Screen
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Sign in to sync…
@@ -88,7 +100,7 @@ appmenu-remote-tabs-tabsnotsyncing = Turn on tab synchronising to view a list of
 appmenu-remote-tabs-opensettings =
     .label = Settings
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Want to see your tabs from other devices here?
 appmenu-remote-tabs-connectdevice =
     .label = Connect Another Device
@@ -108,8 +120,11 @@ appmenu-fxa-sync-and-save-data2 = Sync and save data
 appmenu-fxa-signed-in-label = Sign In
 appmenu-fxa-setup-sync =
     .label = Turn On Synchronisation…
+appmenu-fxa-setup-sync-new = Turn On
 appmenuitem-save-page =
-    .label = Save page as…
+    .label = Save Page As…
+appmenuitem-fxa-sync-off-title = Sync is off
+appmenuitem-fxa-sync-off-description = Protect and access your bookmarks, passwords, and more anywhere.
 
 ## What's New panel in App menu.
 
@@ -120,7 +135,7 @@ whatsnew-panel-footer-checkbox =
     .label = Notify about new features
     .accesskey = f
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -163,6 +178,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+profiler-button-dropmarker =
+    .label = Open the profiler panel
+    .tooltiptext = Open the profiler panel
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -189,9 +207,15 @@ profiler-popup-presets-graphics-label =
 profiler-popup-presets-media-description2 = Preset for investigating audio and video bugs in { -brand-shorter-name }.
 profiler-popup-presets-media-label =
     .label = Media
+profiler-popup-presets-ml-description = Preset for investigating machine learning bugs in { -brand-shorter-name }.
+profiler-popup-presets-ml-label =
+    .label = Machine Learning
 profiler-popup-presets-networking-description = Preset for investigating networking bugs in { -brand-shorter-name }.
 profiler-popup-presets-networking-label =
     .label = Networking
+profiler-popup-presets-networking-with-logs-description = Preset for investigating networking bugs in { -brand-shorter-name }, including networking logs. These logs may contain sensitive information such as the URLs you visit.
+profiler-popup-presets-networking-with-logs-label =
+    .label = Networking with Logs
 profiler-popup-presets-power-description = Preset for investigating power use bugs in { -brand-shorter-name }, with low overhead.
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
@@ -199,6 +223,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = Preset for debugging in { -brand-shorter-name }. High overhead, do not use for performance work but use for focusing on understanding browser behaviour.
 profiler-popup-presets-debug-label =
     .label = Debug
+profiler-popup-presets-web-compat-description = Recommended preset for debugging web compatibility issues in web sites, rather than tracking performance.
+profiler-popup-presets-web-compat-label =
+    .label = Web Compat
 profiler-popup-presets-custom-label =
     .label = Custom
 
@@ -264,18 +291,54 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = Customise toolbar…
+appmenu-abouttranslations =
+    .label = Translate…
+appmenu-edit-pdf =
+    .label = Edit PDF…
 appmenu-developer-tools-subheader = Browser tools
 appmenu-developer-tools-extensions =
     .label = Extensions for developers
 appmenuitem-report-broken-site =
-    .label = Report broken site
+    .label = Report Broken Site
 
 ## Panel for privacy and security products
 
 appmenuitem-sign-in-account = Sign in to your account
+appmenuitem-monitor-title2 = Stay Ahead of Identity Theft
+appmenuitem-monitor-description2 = Get alerts about data breaches
 appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Get data breach alerts
 appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-title2 = Keep Your Email Private
+appmenuitem-relay-description2 = Helps prevent spam in your inbox
 appmenuitem-relay-description = Mask your real email and phone
+appmenuitem-services-relay-description = Launch email masks dashboard
+appmenuitem-vpn-title2 = Hide Your Location with { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description3 = Make your browsing harder to trace
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = Get whole-device protection
 appmenuitem-vpn-description = Protect your online activity
+appmenu-services-header = My services
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = Privacy tools
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = Try other protection tools from BrowserWorks:
+appmenu-other-protection-header = Try other protection tools from { -vendor-short-name }:
+
+## Profiles panel
+
+appmenu-other-profiles = Other profiles
+appmenu-manage-profiles =
+    .label = Manage profiles
+appmenu-copy-profile =
+    .label = Copy this profile
+appmenu-create-profile =
+    .label = New profile
+appmenu-edit-profile =
+    .aria-label = Edit profile
+appmenu-profiles-2 =
+    .label = Profiles

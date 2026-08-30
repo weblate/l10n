@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -9,14 +9,14 @@ screenshot-shortcut =
     .key = S
 screenshots-instructions = 드래그하거나 클릭해서 영역을 선택하세요. ESC 키를 누르면 취소됩니다.
 screenshots-cancel-button = 취소
-screenshots-save-visible-button = 보이는 내용 저장
-screenshots-save-page-button = 전체 페이지 저장
-screenshots-download-button = 다운로드
-screenshots-download-button-tooltip = 스크린샷 다운로드
+screenshots-save-visible-button = 보이는 영역 선택
+screenshots-save-page-button = 전체 페이지 선택
+screenshots-download-button = 저장
+screenshots-download-button-tooltip = 스크린샷 저장
 screenshots-copy-button = 복사
 screenshots-copy-button-tooltip = 클립보드에 스크린샷 복사
 screenshots-download-button-title =
-    .title = 스크린샷 다운로드
+    .title = 스크린샷 저장
 screenshots-copy-button-title =
     .title = 클립보드에 스크린샷 복사
 screenshots-cancel-button-title =
@@ -58,26 +58,19 @@ screenshots-component-cancel-button =
     .aria-label = 취소
 # Variables
 #   $shortcut (String) - A keyboard shortcut for copying the screenshot.
-screenshots-component-copy-button =
-    .title = 복사 ({ $shortcut })
-    .aria-label = 복사
-screenshots-component-copy-button-label = 복사
-# Variables
-#   $shortcut (String) - A keyboard shortcut for saving/downloading the screenshot.
-screenshots-component-download-button =
-    .title = 다운로드 ({ $shortcut })
-    .aria-label = 다운로드
-screenshots-component-download-button-label = 다운로드
-# Variables
-#   $shortcut (String) - A keyboard shortcut for copying the screenshot.
 screenshots-component-copy-button-2 = 복사
     .title = 복사 ({ $shortcut })
     .aria-label = 복사
 # Variables
 #   $shortcut (String) - A keyboard shortcut for saving/downloading the screenshot.
-screenshots-component-download-button-2 = 다운로드
-    .title = 다운로드 ({ $shortcut })
-    .aria-label = 다운로드
+screenshots-component-download-button-2 = 저장
+    .title = 저장 ({ $shortcut })
+    .aria-label = 저장
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the screenshot command.
+screenshot-toolbar-button =
+    .label = 스크린샷
+    .tooltiptext = 스크린샷 찍기 ({ $shortcut })
 
 ## The below strings are used to capture keydown events so the strings should
 ## not be changed unless the keyboard layout in the locale requires it.
@@ -88,14 +81,10 @@ screenshots-component-copy-key = C
 ##
 
 # This string represents the selection size area
-# "x" here represents "by" (i.e 123 by 456)
-# Variables:
-#   $width (Number) - The width of the selection region in pixels
-#   $height (Number) - The height of the selection region in pixels
-screenshots-overlay-selection-region-size-2 = { $width } x { $height }
-# This string represents the selection size area
 # "×" here represents "by" (i.e 123 by 456)
 # Variables:
 #   $width (Number) - The width of the selection region in pixels
 #   $height (Number) - The height of the selection region in pixels
 screenshots-overlay-selection-region-size-3 = { $width } × { $height }
+screenshots-overlay-preview-face-label =
+    .aria-label = 이 영역 선택

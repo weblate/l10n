@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -21,7 +21,7 @@ toolbox-meatball-menu-settings-label = 設定
 toolbox-meatball-menu-documentation-label = ドキュメント...
 toolbox-meatball-menu-community-label = コミュニティ...
 # This menu item is only available in the browser toolbox. It forces the popups/panels
-# to stay visible on blur, which is primarily useful for addon developers and Waterfox
+# to stay visible on blur, which is primarily useful for addon developers and Firefox
 # contributors.
 toolbox-meatball-menu-noautohide-label = ポップアップを自動で隠さない
 toolbox-meatball-menu-pseudo-locale-accented = “accented” ロケールを有効化
@@ -43,3 +43,14 @@ toolbox-always-on-top-enabled2 = 常に最前面に表示を無効化
     .title = 開発ツールが再起動されます
 toolbox-always-on-top-disabled2 = 常に最前面に表示を有効化
     .title = 開発ツールが再起動されます
+
+## These two labels are shown when navigating to a file:// URL while having DevTools opened,
+## in order to suggest enabling the Local Mode and load them from https instead.
+
+# Variables:
+#   $url (String): The local mode URL
+toolbox-local-mode-notice = このドキュメントは開発ツールの “ローカルモード” を利用して “{ $url }” から読み込むこともできます。これは設定パネルで有効にしてください。
+toolbox-local-mode-notice-add-to-settings-button = 設定に追加
+toolbox-local-mode-notice-try-it-button = 試してみる
+toolbox-local-mode-notice-navigate-to-existing-mapping = 既存のマッピングへ移動
+toolbox-local-mode-notice-always-hide = 今後は表示しない

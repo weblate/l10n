@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -20,6 +20,17 @@ permission-dialog-description-file-app = Разрешить этому файл�
 permission-dialog-description-extension-app = Разрешить расширению { $extension } открыть ссылку { $scheme } используя { $appName }?
 permission-dialog-description-system-app = Открыть ссылку { $scheme } с помощью { $appName }?
 permission-dialog-description-system-noapp = Открыть ссылку { $scheme }?
+# Header on a permission prompt, asking the user if they should allow the website to continue.
+wallet-custom-scheme-warning-heading =
+    .heading = Разрешить этому сайту открыть ваш цифровой кошелёк?
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-host-app = Открытие ссылки <strong>{ $scheme }</strong> позволяет <strong>{ $host }</strong> запросить вашу настоящую личность с <strong>{ $appName }</strong>. Продолжайте, только если вы доверяете этому сайту.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-app = Открытие ссылки <strong>{ $scheme }</strong> позволяет этому сайту запросить вашу настоящую личность с <strong>{ $appName }</strong>. Продолжайте, только если вы доверяете этому сайту.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-host = Открытие ссылки <strong>{ $scheme }</strong> позволяет <strong>{ $host }</strong> запросить вашу настоящую личность из вашего цифрового кошелька. Продолжайте, только если вы доверяете этому сайту.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning = Открытие ссылки <strong>{ $scheme }</strong> позволяет этому сайту запросить вашу настоящую личность из вашего цифрового кошелька. Продолжайте, только если вы доверяете этому сайту.
 
 ## Please keep the emphasis around the hostname and scheme (ie the
 ## `<strong>` HTML tags). Please also keep the hostname as close to the start

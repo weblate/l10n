@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -21,7 +21,7 @@ toolbox-meatball-menu-settings-label = Ρυθμίσεις
 toolbox-meatball-menu-documentation-label = Τεκμηρίωση…
 toolbox-meatball-menu-community-label = Κοινότητα…
 # This menu item is only available in the browser toolbox. It forces the popups/panels
-# to stay visible on blur, which is primarily useful for addon developers and Waterfox
+# to stay visible on blur, which is primarily useful for addon developers and Firefox
 # contributors.
 toolbox-meatball-menu-noautohide-label = Απενεργοποίηση αυτόματης απόκρυψης αναδυόμενων παραθύρων
 toolbox-meatball-menu-pseudo-locale-accented = Ενεργοποίηση γλώσσας «accented»
@@ -43,3 +43,14 @@ toolbox-always-on-top-enabled2 = Απενεργοποίηση προβολής �
     .title = Θα γίνει επανεκκίνηση των εργαλείων ανάπτυξης
 toolbox-always-on-top-disabled2 = Ενεργοποίηση προβολής «Πάντα στην κορυφή»
     .title = Θα γίνει επανεκκίνηση των εργαλείων ανάπτυξης
+
+## These two labels are shown when navigating to a file:// URL while having DevTools opened,
+## in order to suggest enabling the Local Mode and load them from https instead.
+
+# Variables:
+#   $url (String): The local mode URL
+toolbox-local-mode-notice = Μπορείτε επίσης να φορτώσετε αυτό το έγγραφο από το «{ $url }» μέσω της «Τοπικής λειτουργίας» των εργαλείων ανάπτυξης, η οποία μπορεί να ενεργοποιηθεί στον πίνακα ρυθμίσεων.
+toolbox-local-mode-notice-add-to-settings-button = Προσθήκη στις ρυθμίσεις
+toolbox-local-mode-notice-try-it-button = Δοκιμή
+toolbox-local-mode-notice-navigate-to-existing-mapping = Πλοήγηση σε υπάρχουσα αντιστοίχιση
+toolbox-local-mode-notice-always-hide = Να μην εμφανιστεί ξανά
