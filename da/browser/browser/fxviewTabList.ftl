@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -53,6 +53,10 @@ fxviewtabrow-move-tab-end = Flyt længst til højre
     .accesskey = h
 fxviewtabrow-move-tab-window = Flyt til et nyt vindue
     .accesskey = n
+fxviewtabrow-send-to-device = Send til enhed
+    .accesskey = e
+fxviewtabrow-send-to-mobile = Send til mobil
+    .accesskey = e
 fxviewtabrow-send-tab = Send faneblad til enhed
     .accesskey = e
 fxviewtabrow-pin-tab = Fastgør faneblad
@@ -67,18 +71,18 @@ fxviewtabrow-unmute-tab = Slå lyden til i faneblad
 #   $tabTitle (string) - Title of the tab to which the context menu is associated
 fxviewtabrow-options-menu-button =
     .title = Valgmuligheder for { $tabTitle }
-# Variables:
-#   $tabTitle (string) - Title of tab being muted
-fxviewtabrow-mute-tab-button =
-    .title = Slå lyden fra i { $tabTitle }
-# Variables:
-#   $tabTitle (string) - Title of tab being unmuted
-fxviewtabrow-unmute-tab-button =
-    .title = Slå lyden til i { $tabTitle }
 
-## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 fxviewtabrow-mute-tab-button-no-context =
     .title = Slå lyden fra i faneblad
 fxviewtabrow-unmute-tab-button-no-context =
     .title = Slå lyden til i faneblad
+fxviewtabrow-send-to-mobile-device-missing2 = Kan du ikke se din enhed?
+fxviewtabrow-send-to-mobile-not-verified = Kontoen er ikke bekræftet
+fxviewtabrow-send-to-mobile-verify-account = Bekræft din konto
+
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
+
+fxviewtabrow-send-to-mobile-sign-in = Log ind for at sende faneblade
+fxviewtabrow-send-to-mobile-turn-on-sync = Slå synkronisering til for at sende faneblade

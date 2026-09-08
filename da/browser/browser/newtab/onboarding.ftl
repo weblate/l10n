@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -25,6 +25,8 @@ return-to-amo-subtitle = Perfekt, du har installeret { -brand-short-name }
 return-to-amo-addon-title = Lad os nu hente <img data-l10n-name="icon"/><b>{ $addon-name }</b>.
 return-to-amo-add-extension-label = Tilføj udvidelsen
 return-to-amo-add-theme-label = Tilføj temaet
+return-to-amo-theme-install-complete-label = Tema installeret
+return-to-amo-extension-install-complete-label = Udvidelse installeret
 
 ##  Variables: $addon-name (String) - Name of the add-on to be installed
 
@@ -44,18 +46,15 @@ onboarding-welcome-steps-indicator-label =
     .aria-label = Status: Skridt { $current } af { $total }
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Slå animationer fra
-# String for the Waterfox Accounts button
+# String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = Log ind
-# The primary import button label will depend on whether we can detect which browser was used to download Waterfox.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Importer fra { $previous }
 mr1-onboarding-theme-header = Du bestemmer
 mr1-onboarding-theme-subtitle = Gør { -brand-short-name } mere personlig med et tema.
 mr1-onboarding-theme-secondary-button-label = Ikke nu
-newtab-wallpaper-onboarding-title = Tilføj lidt farve
-newtab-wallpaper-onboarding-subtitle = Vælg en baggrund for at give siden Nyt faneblad et nyt udseende.
-newtab-wallpaper-onboarding-primary-button-label = Indstil baggrund
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = Systemets tema
 mr1-onboarding-theme-label-light = Lyst
@@ -63,6 +62,15 @@ mr1-onboarding-theme-label-dark = Mørkt
 # "Alpenglow" here is the name of the theme, and should be kept in English.
 mr1-onboarding-theme-label-alpenglow = Alpenglow
 onboarding-theme-primary-button-label = Færdig
+
+## Accessible labels for the icon-only play/pause toggle that controls animated
+## illustrations on the onboarding screen. The button replaces the animation
+## with a static image when clicked.
+
+onboarding-animation-pause-button =
+    .aria-label = Sæt animation på pause
+onboarding-animation-play-button =
+    .aria-label = Afspil animation
 
 ## Please make sure to split the content of the title attribute into lines whose
 ## width corresponds to about 40 Latin characters, to ensure that the tooltip
@@ -138,7 +146,7 @@ mr2022-onboarding-live-language-continue-in = Fortsæt med { $appLanguage }
 onboarding-live-language-secondary-cancel-download = Annuller
 onboarding-live-language-skip-button-label = Spring over
 
-## Waterfox 100 Thank You screens
+## Firefox 100 Thank You screens
 
 # "Hero Text" displayed on left side of welcome screen. This text can be
 # formatted to span multiple lines as needed. The <span data-l10n-name="zap">
@@ -174,35 +182,37 @@ mr2022-onboarding-easy-setup-set-default-checkbox-label = Gør { -brand-short-na
 # Import action checkbox label used on new user onboarding first screen
 mr2022-onboarding-easy-setup-import-checkbox-label = Importer fra tidligere browser
 
-## MR2022 New User Pin Waterfox screen strings
+## MR2022 New User Pin Firefox screen strings
 
-# Title used on about:welcome for new users when Waterfox is not pinned.
+# Title used on about:welcome for new users when Firefox is not pinned.
 # In this context, open up is synonymous with "Discover".
-# The metaphor is that when they open their Waterfox browser, it helps them discover an amazing internet.
+# The metaphor is that when they open their Firefox browser, it helps them discover an amazing internet.
 # If this translation does not make sense in your language, feel free to use the word "discover."
 mr2022-onboarding-welcome-pin-header = Åbn op for et fantastisk internet
-# Subtitle is used on onboarding page for new users page when Waterfox is not pinned
+# Subtitle is used on onboarding page for new users page when Firefox is not pinned
 mr2022-onboarding-welcome-pin-subtitle = Start { -brand-short-name } hvor som helst med et enkelt klik. Hver gang du gør det, vælger du et mere åbent og uafhængigt internet.
-# Primary button string used on welcome page for when Waterfox is not pinned.
+# Primary button string used on welcome page for when Firefox is not pinned.
 mr2022-onboarding-pin-primary-button-label =
     { PLATFORM() ->
         [macos] Behold { -brand-short-name } i Dock
        *[other] Fastgør { -brand-short-name } til proceslinjen
     }
-# Subtitle will be used when user already has Waterfox pinned, but
+# Primary button string used on welcome page for when Firefox is not pinned on MSIX
+mr2022-onboarding-pin-primary-button-label-msix = Fastgør { -brand-short-name } til proceslinjen og startmenuen
+# Subtitle will be used when user already has Firefox pinned, but
 # has not set it as their default browser.
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
 mr2022-onboarding-set-default-only-subtitle = Start med en browser, der er støttet af en nonprofit-organisation. Vi forsvarer din ret til et privatliv, mens du bevæger dig rundt på nettet.
 
-## MR2022 Existing User Pin Waterfox Screen Strings
+## MR2022 Existing User Pin Firefox Screen Strings
 
-# Title used on multistage onboarding page for existing users when Waterfox is not pinned
+# Title used on multistage onboarding page for existing users when Firefox is not pinned
 mr2022-onboarding-existing-pin-header = Tak for at du støtter { -brand-product-name }
-# Subtitle is used on onboarding page for existing users when Waterfox is not pinned
+# Subtitle is used on onboarding page for existing users when Firefox is not pinned
 mr2022-onboarding-existing-pin-subtitle = Få adgang til et sundere internet med et enkelt klik. Vores seneste opdatering er fyldt med nyheder, vi tror du kommer til at elske.
 # Subtitle will be used on the welcome screen for existing users
-# when they already have Waterfox pinned but not set as default
+# when they already have Firefox pinned but not set as default
 mr2022-onboarding-existing-set-default-only-subtitle = Brug en browser, der forsvarer din ret til et privatliv, mens du bevæger dig rundt på nettet. Vores seneste opdatering er fyldt med nyheder, du kommer til at elske.
 mr2022-onboarding-existing-pin-checkbox-label = Tilføj også { -brand-short-name } privat browsing
 
@@ -217,14 +227,16 @@ mr2022-onboarding-set-default-subtitle = Brug en browser, der er støttet af en 
 
 ## MR2022 Get Started screen strings.
 ## These strings will be used on the welcome page
-## when Waterfox is already set to default and pinned.
+## when Firefox is already set to default and pinned.
 
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
 mr2022-onboarding-get-started-primary-subtitle = Vores seneste version er bygget for at opfylde dine behov og gøre det nemmere at bevæge dig rundt på nettet. Den er fyldt med funktioner, vi tror du kommer til at elske.
 mr2022-onboarding-get-started-primary-button-label = Hurtig opsætning
 
-## MR2022 Import Settings screen strings
+## MR2022 Get Started screen strings.
+## These strings will be used on the welcome page
+## when Firefox is already set to default and pinned.
 
 mr2022-onboarding-import-header = Lynhurtig opsætning
 mr2022-onboarding-import-subtitle = Opsæt { -brand-short-name } som du vil. Tilføj dine bogmærker, adgangskoder og mere fra din gamle browser.
@@ -276,7 +288,7 @@ mr2022-onboarding-mobile-download-cta-text = Skan QR-koden for at hente { -brand
 mr2022-onboarding-no-mobile-download-cta-text = Skan QR-koden for at hente { -brand-product-name } til din mobil.
 
 ## MR2022 Upgrade Dialog screens
-## Pin private window screen shown only for users who don't have Waterfox private pinned
+## Pin private window screen shown only for users who don't have Firefox private pinned
 
 mr2022-upgrade-onboarding-pin-private-window-header = Få privat browsing-frihed med et enkelt klik
 mr2022-upgrade-onboarding-pin-private-window-subtitle = Ingen gemte cookies eller historik, direkte fra dit skrivebord. Brug nettet uden tilskuere.
@@ -336,6 +348,14 @@ onboarding-device-migration-subtitle = Log ind på din { -fxaccount-brand-name }
 onboarding-device-migration-subtitle2 = Log ind på din konto for at få adgang til dine bogmærker, adgangskoder og historik på din nye enhed.
 onboarding-device-migration-primary-button-label = Log ind
 
+## Add-ons Picker screen
+
+amo-picker-title = Tilpas din { -brand-short-name }
+amo-picker-subtitle = Udvidelser er som apps til din browser. Du kan bruge dem til at beskytte dine adgangskoder, hente videoer, finde gode tilbud, blokere irriterende annoncer, ændre browserens udseende og meget mere.
+amo-picker-install-button-label = Føj til { -brand-short-name }
+amo-picker-install-complete-label = Installeret
+amo-picker-collection-link = Udforsk flere tilføjelser
+
 ## The following screens have been updated to use security and privacy focused strings:
 
 # Easy setup screen
@@ -347,6 +367,11 @@ onboarding-mobile-download-security-and-privacy-subtitle = Når du har aktiveret
 # Gratitude screen
 onboarding-gratitude-security-and-privacy-title = { -brand-short-name } passer på dig
 onboarding-gratitude-security-and-privacy-subtitle = Tak for at du bruger { -brand-short-name }, støttet af BrowserWorks. Med din hjælp arbejder vi på at gøre internettet sikrere og mere tilgængeligt for alle.
+# Sign up or Sign in screen
+onboarding-sign-up-title = Synkroniser dine data på tværs af enheder
+onboarding-sign-up-description = Opret en konto for at have adgang til alle dine vigtige oplysninger - adgangskoder, bogmærker mv. - på alle de enheder, du er logget ind på. Dine data gemmes på en sikker måde.
+onboarding-sign-up-button = Tilmeld dig eller log ind
+onboarding-sign-up-secondary-button = Afslut rundvisningen
 
 ## New user time and familiarity survey strings
 
@@ -366,3 +391,209 @@ onboarding-new-user-survey-familiarity-based-option-1 = Jeg er helt ny
 onboarding-new-user-survey-familiarity-based-option-2 = Jeg har brugt den en del
 onboarding-new-user-survey-familiarity-based-option-3 = Jeg er kender den meget godt
 onboarding-new-user-survey-familiarity-based-option-4 = Jeg har brugt den før, men det er et stykke tid siden
+
+## UI strings for the sidebar and vertical tabs
+
+# Setup screen for vertical tabs
+onboarding-new-tabs-title = Fortæl os, hvor du vil have dine faneblade
+# Setup screen for vertical tabs - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-new-tabs-subtitle = Du kan altid ændre det i indstillingerne for sidepanel.
+# Setup screen for vertical tabs - too many tabs variation
+onboarding-many-tabs-title = Faneblade på dine præmisser
+# Setup screen for vertical tabs - subtitle for too many tabs variation
+onboarding-many-tabs-subtitle = Har du mange åbne faneblade? Prøv at have faneblade i siden af browseren for at få et bedre overblik. Eller hav dem i toppen som sædvanligt. Skift når som helst.
+# Setup screen for vertical tabs - focused variation
+onboarding-focused-tabs-title = Vælg layout for faneblade
+# Setup screen for vertical tabs - subtitle for focused variation
+onboarding-focused-tabs-subtitle = Prøv at have faneblade i siden af browseren for at få et bedre overblik, der kan hjælpe dig med at fokusere. Eller hav faneblade i toppen som sædvanligt. Skift når som helst.
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-new-vertical-tabs-label = Faneblade til siden
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-new-horizontal-tabs-label = Faneblade i toppen
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title = Lodrette faneblade er her
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title2 = Nyt: Lodrette faneblade
+# Setup screen for vertical tabs for existing users - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-existing-tabs-subtitle = Prøv at have dine faneblade i siden af skærmen. Du kan altid ændre det igen i indstillinger for sidepaneler.
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-existing-vertical-tabs-label = Prøv lodrette faneblade
+onboarding-flair-text = Nyt!
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-existing-horizontal-tabs-label = Behold vandrette faneblade
+# Tooltip displayed on hover for vertical tabs image
+onboarding-vertical-tabs-tooltip =
+    .title = Et browservindue, hvor fanebladene vises langs siden af skærmen som en del af sidepanelet i { -brand-shorter-name }.
+# Description for vertical tabs image
+onboarding-vertical-tabs-description =
+    .aria-description = Et browservindue, hvor fanebladene vises langs siden af skærmen som en del af sidepanelet { -brand-shorter-name }.
+# Tooltip displayed on hover for horizontal tabs image
+onboarding-horizontal-tabs-tooltip =
+    .title = Et browservindue, hvor fanebladene vises langs toppen af skærmen.
+# Description for horizontal tabs image
+onboarding-horizontal-tabs-description =
+    .aria-description = Et browservindue, hvor fanebladene vises langs toppen af skærmen.
+# Additional setup card for setting up aichatbot in the sidebar
+onboarding-genai-sidebar-title = Prøv en AI-chatbot i sidepanelet
+# Setup card for setting up AI chatbot in the sidebar; "Providers" refers to AI chatbot providers (e.g. OpenAI, etc). "Switch anytime" refers to allowing the user to switch to a different chatbot.
+onboarding-genai-sidebar-subtitle = Sammenfat indhold på nettet, få nye ideer, skriv udkast - mens du browser. Vælg mellem forskellige udbydere. Skift når som helst. <a data-l10n-name="learn-more">Læs mere</a>
+onboarding-genai-sidebar-primary-button = Vælg en chatbot
+onboarding-genai-sidebar-secondary-button = Afslut rundvisningen
+
+## New user onboarding checklist
+
+onboarding-checklist-title = Færdiggør opsætning af { -brand-short-name }
+onboarding-checklist-subtitle = Udfør disse trin for at få det meste ud af din oplevelse på nettet.
+onboarding-checklist-set-default = Gør { -brand-short-name } til min standard-browser
+onboarding-checklist-pin = Fastgør { -brand-short-name } til proceslinjen
+onboarding-checklist-import = Importer fra tidligere browser
+onboarding-checklist-extension = Tilføj en udvidelse
+onboarding-checklist-sign-up = Tilmeld dig eller log ind på din konto
+
+## Tab Groups feature onboarding strings
+
+tab-groups-onboarding-feature-callout-title = Prøv fanebladsgrupper for at skabe mere orden og fokus
+tab-groups-onboarding-feature-callout-subtitle = Organiser dine faneblade ved at trække et faneblad hen oven på et andet for at skabe din første gruppe.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-create-group-title-3 = Find dine fanebladsgrupper i menuen List alle faneblade.
+tab-groups-onboarding-create-group-title-2 = Find dine fanebladsgrupper her
+tab-groups-onboarding-create-group-no-alltabs-button-title = Find dine grupper ved at søge efter dem i adressefeltet.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-saved-groups-title-3 = Når du lukker en fanebladsgruppe, kan du altid åbne den igen fra menuen List alle faneblade.
+tab-groups-onboarding-saved-groups-title-2 = Når du lukker en fanebladsgruppe, kan du når som helst genåbne den her.
+tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = Find dine lukkede grupper ved at søge efter dem i adressefeltet.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-session-restore-title-2 = Åbn dine fanebladsgrupper igen fra menuen List alle faneblade.
+tab-groups-onboarding-session-restore-title = Genåbn dine fanebladsgrupper her.
+tab-groups-onboarding-dismiss = OK
+
+## Multi Profiles feature onboarding messages
+
+multi-profile-spotlight-title = Sig hej til { -brand-product-name }-profiler
+multi-profile-spotlight-body = Skift nemt mellem at bruge browseren til dit arbejde og i din fritid. Profiler holder dine browsingdata som søgehistorik og adgangskoder helt adskilte, så du nemmere kan have være organiseret.
+multi-profile-spotlight-cta = Opret en profil
+multi-profile-callout-title = Opret forskellige profiler til arbejde og fritid
+multi-profile-callout-subtitle = Profiler holder dine browsingdata som søgehistorik og adgangskoder helt adskilte.
+multi-profile-callout-cta = Opret en profil
+
+## Desktop to Mobile Adoption feature callout strings
+
+# If translating the headline is challenging, consider using a simplified alternative as a reference: 'Sync your browsing with Firefox for mobile.'
+desktop-to-mobile-headline = Synkroniser med Waterfox til mobilen
+# The phrase, 'on the go', is used to describe when people are very busy and are traveling from place to place.
+desktop-to-mobile-subtitle = Skan QR-koden for at hente { -brand-product-name } til mobilen. Vælg "Synkroniser til mobilen" når installationen er færdig for at få adgang til dine adgangskoder, bogmærker og mere, når du er på farten.
+dismiss-button-label = Afvis
+sync-to-mobile-button-label = Synkroniser til mobilen
+desktop-to-mobile-qr-code-alt =
+    .aria-label = QR-kode til at hente { -brand-product-name } til mobilen
+
+## Fx Backup onboarding: Create Backup spotlight
+
+create-backup-screen-1-title =
+    Skal du opgradere til Windows 11?
+    Lad os sikkerhedskopiere dine { -brand-product-name }-data.
+create-backup-screen-1-subtitle = Beskyt automatisk dine adgangskoder, bogmærker og mere - det tager højst to minutter.
+create-backup-screen-1-flair = Anbefalet
+create-backup-learn-more-link = <a data-l10n-name="learn-more-label">Læs mere</a>
+create-backup-screen-1-sync-label = Synkroniser med { -brand-product-name }
+create-backup-screen-1-sync-body = Sikkerhedskopier alle indloggede enheder
+create-backup-screen-1-backup-label = Sikkerhedskopier til din computer
+create-backup-screen-1-backup-body = Gemmes på din enhed eller OneDrive
+create-backup-select-tile-button-label = Vælg
+create-backup-back-button-label = Tilbage
+create-backup-show-fewer =
+    .label = Vis færre beskeder som denne
+create-backup-screen-2-title = Vælg, hvilke { -brand-product-name }-data, som skal sikkerhedskopieres
+create-backup-screen-2-subtitle = Det tager bare et minut. Dine data bliver sikkerhedskopieret en gang i døgnet.
+# Label for the "Easy setup" backup option
+create-backup-screen-2-easy-label = Nem opsætning
+# Preceded by a green check mark indicating that these are included in "Easy setup" backup
+create-backup-screen-2-easy-list-1 = Bogmærker, historik, indstillinger med mere
+# Preceded by a red X indicating that these are not included in the "Easy setup" backup
+create-backup-screen-2-easy-list-2 = Inkluderer ikke adgangskoder og betalingsmetoder
+# Preceded by a red X indicating that "Easy setup" backups are not encrypted
+create-backup-screen-2-easy-list-3 = Ikke krypteret
+# Label for the "All data" backup option
+create-backup-screen-2-all-label = Alle data
+# Preceded by a green check mark indicating that these are included in the "All data" backup
+create-backup-screen-2-all-list-2 = Inkluderer adgangskoder og betalingsmetoder
+# Preceded by a green check mark and shield indicating "All data" backups are encrypted
+create-backup-screen-2-all-list-3 = Krypteret med en adgangskode
+# Title for a screen asking users to choose a file location
+create-backup-screen-3-location = Hvor vil du gemme din sikkerhedskopi?
+# Title for a screen asking users to create a password that will encrypt the backup
+create-backup-screen-3-title = Opret en adgangskode til din sikkerhedskopi
+create-backup-screen-3-subtitle = Kræves for at kryptere dine data. Gem den et sted, du kan huske.
+fx-backup-opt-in-header = Vælg filplacering
+fx-backup-opt-in-filepath-label = Vælg en placering, du planlægger at overføre til en ny enhed, som fx OneDrive.
+fx-backup-opt-in-create-password-label = Indtast adgangskode
+fx-backup-opt-in-confirm-btn-label = Fortsæt
+fx-backup-opt-in-cancel-btn-label = Tilbage
+
+## Fx Backup confirmation screen strings
+
+fx-backup-confirmation-screen-title = Din sikkerhedskopi er planlagt
+fx-backup-confirmation-screen-close-button = Luk
+
+## These strings appear as a confirmation of which items will or won't be included as part of the selected backup method.
+
+fx-backup-confirmation-screen-all-data-item-text-1 = Inkluderer alle browsing-data
+fx-backup-confirmation-screen-all-data-item-text-2 = Gemt på din enhed
+fx-backup-confirmation-screen-all-data-item-text-3 = Krypteret og beskyttet af en adgangskode
+fx-backup-confirmation-screen-easy-setup-item-text-1 = Bogmærker, historik, indstillinger med mere er inkluderet
+fx-backup-confirmation-screen-easy-setup-item-text-2 = Gemt på din enhed
+fx-backup-confirmation-screen-easy-setup-item-text-3 = Adgangskoder og betalingsmetoder er ikke inkluderet
+fx-backup-confirmation-screen-easy-setup-item-subtext-3 = Gå til <a data-l10n-name="settings">Indstillinger</a> for at inkludere følsomme data.
+fx-backup-confirmation-screen-item-subtext-1 = Sikkerhedskopieringen starter om et par minutter og kører en gang i døgnet. Du kan se status for processen under <a data-l10n-name="settings">Indstillinger</a>.
+fx-backup-confirmation-screen-item-subtext-2 = { -brand-short-name } vil lede efter din sikkerhedskopi, hvis du behøver at installere forfra.
+
+## Restore from Backup Flow about:welcome screens
+
+restore-from-backup-secondary-top-button = Gendan fra sikkerhedskopi
+restore-from-backup-title = Lad os få { -brand-short-name } til at se ud, som den plejer
+restore-from-backup-subtitle = Gendan din historik, dine bogmærker og andre data for at fortsætte, hvor du slap.
+restore-from-backup-secondary-button = Gendan ikke
+multiple-backups-info-tile = <strong>Flere sikkerhedskopier fundet.</strong> Den nyeste fil en valgt. Gendan andre profiler i <a data-l10n-name="settings-label">Indstillinger.</a>
+
+## Restored from Backup spotlight
+
+restored-from-backup-success-title = Så er vi tilbage! Dine { -brand-short-name }-data er blevet gendannet.
+restored-from-backup-success-with-checklist-subtitle = Vil du have din foretrukne, privatlivs-fokuserede browser et klik borte?
+restored-from-backup-success-no-checklist-subtitle = Du kan slå sikkerhedskopiering for denne enhed til i <a data-l10n-name="settings">Indstillinger</a>.
+restored-from-backup-success-with-checklist-primary-button = Gem og fortsæt
+restored-from-backup-success-with-checklist-secondary-button = Spring dette trin over
+restored-from-backup-success-no-checklist-primary-button = Fortsæt
+restored-from-backup-error-title = Hmm, der var et problem med din sikkerhedskopi.
+restored-from-backup-error-subtitle = Hvis du har en anden { -brand-short-name }-sikkerhedskopi, kan du prøve at gendanne fra den. <a data-l10n-name="restore-problems">Har du stadig problemer?</a>
+restored-from-backup-error-primary-button = Luk
+
+## Onboarding Personalization Screen
+## A screen shown to users during the onboarding process that asks them two qualifying questions about their use of the browser
+
+onboarding-personalization-title = Tilpas din { -brand-short-name }-oplevelse
+onboarding-personalization-subtitle = Svar på nogle få spørgsmål, så vi kan anbefale funktioner og udvidelser for at gøre din oplevelse med { -brand-short-name } bedre.
+onboarding-personalization-use-case-title = Hvad skal du bruge { -brand-short-name } til?
+onboarding-personalization-use-case-personal-option = Personlig brug
+onboarding-personalization-use-case-school-option = Uddannelse
+onboarding-personalization-use-case-work-option = Arbejde
+onboarding-personalization-motivation-title = Hvilke funktioner i { -brand-short-name } er vigtigst for dig?
+onboarding-personalization-motivation-privacy-option = Privatliv og sikkerhed
+onboarding-personalization-motivation-productivity-option = Produktivitet
+onboarding-personalization-motivation-other-option = Andet
+
+## Onboarding 2026 brand refresh
+
+onboarding-refresh-pin-set-default-subtitle = Vi beskytter dine data og blokerer - helt automatisk - virksomheder i at overvåge dig.
+# "safe paws" is a play on "safe hands", meaning you're being well taken care of or protected
+# If it doesn’t translate well, you can use the alternative: “You’re safe with Firefox.”
+onboarding-refresh-pin-set-default-title = Du er i sikre hænder
+onboarding-refresh-import-subtitle = Tag dine adgangskoder, bogmærker, historik med mere med dig.
+onboarding-refresh-import-title = Få { -brand-short-name } til at føles mere som hjemme
+onboarding-refresh-onboarding-addons-subtitle = Udvidelser er små apps, du kan bruge til at tilpasse { -brand-short-name } til dine behov. De kan sørge for, at dit privatliv er bedre beskyttet, gøre dig mere produktiv, ændre udseendet i { -brand-short-name } - og meget andet.
+# "Give your browsing a boost" means to enhance or improve the browsing experience
+onboarding-refresh-onboarding-addons-title = Giv din browsing et boost
+onboarding-refresh-sync-subtitle = Få adgang til bogmærker, adgangskoder og meget mere, overalt hvor du er logget ind på { -brand-short-name }. Desuden er dine data krypterede, så bare du kan se dem.
+onboarding-refresh-sync-title = Gå hvorhen du vil. Synkroniser overalt.
+onboarding-refresh-gratitude-subtitle = Tak for at du bruger { -brand-short-name }, den eneste store browser, der er støttet af en nonprofit-organisation. Med din hjælp gør vi internettet mere sikkert og tilgængeligt for alle.
+# "has your back" is an idiom suggesting support and protection
+onboarding-refresh-gratitude-title = { -brand-short-name } passer på dig

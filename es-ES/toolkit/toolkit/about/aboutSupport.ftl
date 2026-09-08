@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,6 +15,10 @@ support-addons-type = Tipo
 support-addons-enabled = Activado
 support-addons-version = Versión
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = Ubicación
 legacy-user-stylesheets-title = Hojas de estilo de usuario heredadas
 legacy-user-stylesheets-enabled = Activo
 legacy-user-stylesheets-stylesheet-types = Hojas de estilo
@@ -129,6 +133,10 @@ place-database-stats-efficiency-perc = Eficiencia (%)
 place-database-stats-sequentiality-perc = Secuencialidad (%)
 place-database-integrity = Integridad
 place-database-verify-integrity = Verificar integridad
+place-database-last-idle-maintenance-data = Fecha del último mantenimiento por inactividad
+# Vacuum refers to a type of database maintenance process
+place-database-last-vacuum-date = Fecha de la última limpieza
+place-database-last-integrity-corruption-date = Fecha de la última corrupción de integridad
 a11y-title = Accesibilidad
 a11y-activated = Activado
 a11y-force-disabled = Impedir accesibilidad
@@ -181,6 +189,8 @@ media-capabilities-enumerate = Enumerar base de datos
 
 media-codec-support-sw-decoding = Decodificación por software
 media-codec-support-hw-decoding = Decodificación por hardware
+media-codec-support-sw-encoding = Codificación por software
+media-codec-support-hw-encoding = Codificación por hardware
 media-codec-support-codec-name = Nombre del códec
 media-codec-support-supported = Admitido
 media-codec-support-unsupported = No admitido
@@ -218,7 +228,7 @@ intl-regional-prefs = Preferencias regionales
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.

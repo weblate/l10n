@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -18,6 +18,10 @@ support-addons-type = Type
 support-addons-enabled = Enabled
 support-addons-version = Version
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = Location
 legacy-user-stylesheets-title = Legacy User Stylesheets
 legacy-user-stylesheets-enabled = Active
 legacy-user-stylesheets-stylesheet-types = Stylesheets
@@ -132,6 +136,10 @@ place-database-stats-efficiency-perc = Efficiency (%)
 place-database-stats-sequentiality-perc = Sequentiality (%)
 place-database-integrity = Integrity
 place-database-verify-integrity = Verify Integrity
+place-database-last-idle-maintenance-data = Last Idle Maintenance Date
+# Vacuum refers to a type of database maintenance process
+place-database-last-vacuum-date = Last Vacuum Date
+place-database-last-integrity-corruption-date = Last Integrity Corruption Date
 a11y-title = Accessibility
 a11y-activated = Activated
 a11y-force-disabled = Prevent Accessibility
@@ -184,6 +192,8 @@ media-capabilities-enumerate = Enumerate database
 
 media-codec-support-sw-decoding = Software Decoding
 media-codec-support-hw-decoding = Hardware Decoding
+media-codec-support-sw-encoding = Software Encoding
+media-codec-support-hw-encoding = Hardware Encoding
 media-codec-support-codec-name = Codec Name
 media-codec-support-supported = Supported
 media-codec-support-unsupported = Unsupported
@@ -221,7 +231,7 @@ intl-regional-prefs = Regional Preferences
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.

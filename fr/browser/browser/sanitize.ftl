@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -41,6 +41,10 @@ clear-time-duration-value-last-2-hours =
     .label = les deux dernières heures
 clear-time-duration-value-last-4-hours =
     .label = les quatre dernières heures
+# Variables:
+#   $midnightTime (String) - Time of midnight (00:00 hours) - to inform the user that history will be cleared after midnight
+clear-time-duration-value-since-midnight =
+    .label = depuis { $midnightTime }
 clear-time-duration-value-today =
     .label = aujourd’hui
 clear-time-duration-value-everything =
@@ -55,10 +59,7 @@ history-section-label = Historique
 item-history-and-downloads =
     .label = Historique de navigation et des téléchargements
     .accesskey = H
-item-history-form-data-downloads =
-    .label = Historique
-    .accesskey = H
-item-history-form-data-downloads-description = Efface l’historique de navigation et des téléchargements, les informations enregistrées dans les formulaires et les recherches
+item-history-and-downloads-description2 = Efface l’historique des sites et des téléchargements
 item-cookies =
     .label = Cookies
     .accesskey = C
@@ -94,6 +95,10 @@ item-form-search-history =
 item-site-prefs =
     .label = Paramètres de site
     .accesskey = P
+item-formdata-prefs =
+    .label = Informations de formulaire enregistrées
+    .accesskey = n
+item-formdata-description = Efface des informations telles que les noms, les adresses e-mail et les autres informations que vous saisissez dans les formulaires
 item-site-prefs-description = Réinitialise vos permissions et préférences de site à leurs paramètres d’origine
 data-section-label = Données
 item-site-settings =
@@ -123,3 +128,6 @@ sanitize-everything-warning = Tout l’historique sera effacé.
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = Tous les éléments sélectionnés seront effacés.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = Calcul…

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -55,3 +55,7 @@ styleeditor-pretty-print-button =
 # Title for the pretty print button in the editor footer, when it's disabled
 styleeditor-pretty-print-button-disabled =
     .title = Dokáže naformátovat pouze soubory CSS
+# Title for the pretty print button in the editor footer, when it's disabled because
+# the stylesheet is read-only
+styleeditor-pretty-print-button-disabled-read-only =
+    .title = Kaskádový styl pouze pro čtení nelze naformátovat.

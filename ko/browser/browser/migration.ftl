@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -146,6 +146,6 @@ browser-data-session-checkbox =
 browser-data-session-label =
     .value = 창과 탭
 browser-data-payment-methods-checkbox =
-    .label = 결제 방법
+    .label = 결제 수단
 browser-data-payment-methods-label =
-    .value = 결제 방법
+    .value = 결제 수단

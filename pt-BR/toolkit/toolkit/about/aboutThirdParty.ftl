@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -31,8 +31,8 @@ third-party-icon-unsigned =
     .title = Este módulo não está assinado
     .alt = Este módulo não está assinado
 third-party-icon-warning =
-    .title = O { -brand-short-name } travou no código deste módulo
-    .alt = O { -brand-short-name } travou no código deste módulo
+    .title = O { -brand-short-name } falhou no código deste módulo
+    .alt = O { -brand-short-name } falhou no código deste módulo
 third-party-status-loaded = Carregado
 third-party-status-blocked = Bloqueado
 third-party-status-redirected = Redirecionado

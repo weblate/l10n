@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -28,3 +28,5 @@ profile-manager-work-offline =
 profile-manager-use-selected =
     .label = ใช้โปรไฟล์ที่เลือกโดยไม่ต้องถามเมื่อเริ่มการทำงาน
     .accesskey = ช
+profile-has-selectable-profiles-title = ไม่สามารถลบโปรไฟล์ที่เชื่อมโยงกับโปรไฟล์อื่นได้
+profile-has-selectable-profiles-message = หากต้องการลบโปรไฟล์นี้ ให้เปิดโปรไฟล์นี้แล้วเลือก “จัดการโปรไฟล์” จากส่วนโปรไฟล์ในเมนู { -brand-short-name } หลังจากลบโปรไฟล์เพิ่มเติมที่คุณสร้างไว้ที่นี่แล้ว คุณสามารถกลับไปที่ about:profiles แล้วลบโปรไฟล์นี้ได้

@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Waterfox Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = Traduire cette page
-# The button for "Waterfox Translations" in the url bar. Note that here "Beta" should
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
 # not be translated, as it is a reflection of the un-localized BETA icon that is in the
 # panel.
 urlbar-translations-button2 =
@@ -33,7 +33,7 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } BÊTA
 
-## Options in the Waterfox Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = Gérer les langues
@@ -85,6 +85,14 @@ translations-panel-error-change-button =
     .label = Changer la langue source
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from this language yet: { $language }
+#
+# Variables:
+#   $language (string) - The language of the document.
+translations-panel-error-unsupported-hint-known-2 = Désolé, nous ne prenons pas encore en charge les traductions depuis cette langue : { $language }.
+translations-panel-error-unsupported-hint-unknown-2 = Désolé, nous ne prenons pas encore en charge les traductions depuis cette langue.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }
 #
 # Variables:
@@ -116,7 +124,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = Afficher la page d’origine
 
-## Waterfox Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = Traductions
 translations-manage-settings-button =
@@ -126,13 +134,6 @@ translations-manage-description = Télécharger des langues pour traduction hors
 translations-manage-all-language = Toutes les langues
 translations-manage-download-button = Télécharger
 translations-manage-delete-button = Supprimer
-translations-manage-intro = Définissez vos préférences de langue et de traduction des sites, et gérez l’installation des langues pour la traduction hors connexion.
-translations-manage-install-description = Installer des langues pour traduction hors connexion
-translations-manage-language-install-button =
-    .label = Installer
-translations-manage-language-install-all-button =
-    .label = Tout installer
-    .accesskey = T
 translations-manage-intro-2 = Définissez vos préférences de langue et de traduction des sites, et gérez le téléchargement des langues pour la traduction hors connexion.
 translations-manage-download-description = Télécharger des langues pour traduction hors connexion
 translations-manage-language-download-button =
@@ -145,7 +146,6 @@ translations-manage-language-remove-button =
 translations-manage-language-remove-all-button =
     .label = Tout supprimer
     .accesskey = s
-translations-manage-error-install = Un problème est survenu lors de l’installation des fichiers de langue. Veuillez réessayer.
 translations-manage-error-download = Un problème est survenu lors du téléchargement des fichiers de langue. Veuillez réessayer.
 translations-manage-error-delete = Une erreur s’est produite lors de la suppression des fichiers de langue. Veuillez réessayer.
 translations-manage-error-remove = Une erreur s’est produite lors de la suppression des fichiers de langue. Veuillez réessayer.
@@ -236,6 +236,16 @@ select-translations-panel-init-failure-message =
 # Text displayed when the translation fails to complete.
 select-translations-panel-translation-failure-message =
     .message = Un problème s’est produit lors de la traduction. Veuillez réessayer.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from { $language } yet.
+#
+# Variables:
+#   $language (string) - The language of the document.
+select-translations-panel-unsupported-language-message-known-2 =
+    .message = Désolé, nous ne prenons pas encore en charge les traductions depuis cette langue : { $language }.
+select-translations-panel-unsupported-language-message-unknown-2 =
+    .message = Désolé, nous ne prenons pas encore en charge les traductions depuis cette langue.
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }

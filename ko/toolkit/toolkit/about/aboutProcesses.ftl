@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,6 +12,8 @@ about-processes-column-action =
 
 about-processes-shutdown-process =
     .title = 탭 언로드 및 프로세스 종료
+about-processes-kill-process =
+    .title = 프로세스 종료
 about-processes-shutdown-tab =
     .title = 탭 닫기
 # Profiler icons
@@ -56,6 +58,20 @@ about-processes-inference-process = 추론 ({ $pid })
 #    $pid (String) The process id of this process, assigned by the OS.
 #    $type (String) The raw type for this process.
 about-processes-unknown-process = 기타: { $type } ({ $pid })
+
+## Properties of isolated web processes
+
+about-processes-web-isolated-property-private = 비공개
+about-processes-web-isolated-property-serviceworker = serviceworker
+about-processes-web-isolated-property-jit-disabled = JIT 비활성화됨
+about-processes-web-isolated-property-with-coop-coep = 교차 출처 격리됨
+
+## Isolated process names
+## Variables:
+##    $origin (String) The domain name for this process.
+##    $properties (String) A formatted list of properties from the above strings.
+
+about-processes-web-isolated-process2 = { $origin } ({ $properties })
 
 ## Isolated process names
 ## Variables:
@@ -122,10 +138,11 @@ about-processes-utility-actor-audio-decoder-generic = 일반 오디오 디코더
 about-processes-utility-actor-audio-decoder-applemedia = 애플 미디어 오디오 디코더
 about-processes-utility-actor-audio-decoder-wmf = Windows Media Framework 오디오 디코더
 about-processes-utility-actor-mf-media-engine = Windows Media Foundation 미디어 엔진 CDM
-# "Oracle" refers to an internal Waterfox process and should be kept in English
+# "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = JavaScript Oracle
 about-processes-utility-actor-windows-utils = Windows 유틸리티
 about-processes-utility-actor-windows-file-dialog = Windows 파일 대화 상자
+about-processes-utility-actor-pkcs11-module = 보안 모듈 도우미
 
 ## Displaying CPU (percentage and total)
 ## Variables:

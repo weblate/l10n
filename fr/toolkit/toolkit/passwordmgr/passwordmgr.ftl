@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,10 +30,8 @@ password-manager-password-password-button-allow =
 password-manager-update-password-button-deny =
     .label = Ne pas mettre à jour
     .accesskey = N
+primary-password-prompt-message = Veuillez saisir votre mot de passe principal.
 # This is displayed in place of the username when it is missing.
 password-manager-no-username-placeholder = Aucun nom d’utilisateur
-password-manager-toggle-password =
-    .label = Afficher le mot de passe
-    .accesskey = A
 password-manager-confirm-password-change = Confirmer le changement de mot de passe
 password-manager-select-username = Sélectionnez l’identifiant à mettre à jour :

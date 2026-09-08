@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/. --
 
@@ -94,6 +94,9 @@ security-view-identity-validity =
     .value = Действителен по:
 security-view-privacy =
     .value = Приватность и история
+security-view-qwac =
+    .label = Просмотреть квалифицированный сертификат
+    .accesskey = Й
 security-view-privacy-history-value = Посещал ли я этот сайт до сегодняшнего дня?
 security-view-privacy-sitedata-value = Хранит ли этот сайт информацию на моём компьютере?
 security-view-privacy-clearsitedata =

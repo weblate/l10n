@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -28,7 +28,7 @@ styleeditor-no-stylesheet-tip = Szeretne <a data-l10n-name="append-new-styleshee
 styleeditor-open-link-new-tab =
     .label = Hivatkozás megnyitása új lapon
 styleeditor-copy-url =
-    .label = URL másolása
+    .label = Webcím másolása
 styleeditor-find =
     .label = Keresés
     .accesskey = e
@@ -50,7 +50,11 @@ styleeditor-stylesheet-rule-count =
     }
 # Title for the pretty print button in the editor footer.
 styleeditor-pretty-print-button =
-    .title = Formázott kiírás stíluslapja
+    .title = Stíluslap csinosítása
 # Title for the pretty print button in the editor footer, when it's disabled
 styleeditor-pretty-print-button-disabled =
-    .title = Csak a CSS-fájlok írhatók ki formázottan
+    .title = Csak a CSS-fájlok csinosíthatóak
+# Title for the pretty print button in the editor footer, when it's disabled because
+# the stylesheet is read-only
+styleeditor-pretty-print-button-disabled-read-only =
+    .title = Nem lehet csinosítani az írásvédett stíluslapot.

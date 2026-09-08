@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,9 +12,9 @@ about-unloads-intro =
     เพื่อไม่ให้แอปพลิเคชันขัดข้องเมื่อหน่วยความจำที่พร้อมใช้งานของระบบไม่เพียงพอ
     แอปพลิเคชันจะเลือกแท็บถัดไปที่จะเลิกโหลดตามแอตทริบิวต์หลายอย่าง
     หน้านี้แสดงวิธีที่ { -brand-short-name } จัดลำดับความสำคัญของแท็บต่าง ๆ
-    และแท็บที่จะเลิกโหลดเมื่อมีการทริกเกอร์การเลิกโหลดแท็บ คุณสามารถทริกเกอร์
+    และแท็บที่จะเลิกโหลดเมื่อมีการกระตุ้นการเลิกโหลดแท็บ คุณสามารถกระตุ้น
     การเลิกโหลดแท็บได้ด้วยตนเองโดยคลิกปุ่ม <em>เลิกโหลด</em> ด้านล่าง
-# The link points to a Waterfox documentation page, only available in English,
+# The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
 about-unloads-learn-more =
     ดูที่ <a data-l10n-name="doc-link">Tab Unloading</a> เพื่อเรียนรู้เพิ่มเติม

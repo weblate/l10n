@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -49,7 +49,7 @@ migration-imported-safari-reading-list = รายการอ่าน (จา�
 migration-imported-edge-reading-list = รายการอ่าน (จาก Edge)
 
 ## These strings are shown if the selected browser data directory is unreadable.
-## In practice, this tends to only occur on Linux when Waterfox
+## In practice, this tends to only occur on Linux when Firefox
 ## is installed as a Snap.
 
 migration-no-permissions-message = { -brand-short-name } ไม่มีสิทธิ์เข้าถึงโปรไฟล์ของเบราว์เซอร์อื่น ๆ ซึ่งติดตั้งบนอุปกรณ์นี้
@@ -122,8 +122,8 @@ migration-wizard-progress-success-new-passwords =
 #  $updatedEntries (Number): the number of updated passwords
 migration-wizard-progress-success-updated-passwords =
     { $updatedEntries ->
-        [one] ปรับปรุงแล้ว { $updatedEntries }
-       *[other] ปรับปรุงแล้ว { $updatedEntries }
+        [one] อัปเดตแล้ว { $updatedEntries }
+       *[other] อัปเดตแล้ว { $updatedEntries }
     }
 migration-bookmarks-from-file-picker-title = นำเข้าไฟล์ที่คั่นหน้า
 migration-bookmarks-from-file-progress-header = นำเข้าที่คั่นหน้า
@@ -192,6 +192,14 @@ migration-safari-password-import-step1 = ใน Safari ให้เปิดเ�
 migration-safari-password-import-step2 = เลือกปุ่ม <img data-l10n-name="safari-icon-3dots"/> แล้วเลือก “ส่งออกรหัสผ่านทั้งหมด”
 migration-safari-password-import-step3 = บันทึกไฟล์รหัสผ่าน
 migration-safari-password-import-step4 = ใช้ “เลือกไฟล์” ด้านล่างเพื่อเลือกไฟล์รหัสผ่านที่คุณได้บันทึกไว้
+migration-chrome-windows-password-import-header = วิธีนำเข้ารหัสผ่านจาก Chrome
+migration-chrome-windows-password-import-steps-header = ใน Chrome:
+migration-chrome-windows-password-import-step1 = เปิดเมนูหลัก <img data-l10n-name="chrome-icon-3dots"/> แล้วไปที่ รหัสผ่านและการป้อนข้อความอัตโนมัติ > เครื่องมือจัดการรหัสผ่านบน Google
+migration-chrome-windows-password-import-step2 = เลือก “การตั้งค่า” จากเมนู
+migration-chrome-windows-password-import-step3 = เลือก “ดาวน์โหลดไฟล์” แล้วบันทึกไฟล์นั้นลงในอุปกรณ์ของคุณ
+migration-chrome-windows-password-import-step4 = กลับมาที่นี่แล้ว “เลือกไฟล์” เพื่อนำเข้าให้เสร็จ
+migration-manual-password-import-skip-button = ข้าม
+migration-manual-password-import-select-button = เลือกไฟล์
 migration-safari-password-import-skip-button = ข้าม
 migration-safari-password-import-select-button = เลือกไฟล์
 # Shown in the migration wizard after importing bookmarks from another
@@ -219,7 +227,7 @@ migration-wizard-progress-success-favorites =
 
 ## The import process identifies extensions installed in other supported
 ## browsers and installs the corresponding (matching) extensions compatible
-## with Waterfox, if available.
+## with Firefox, if available.
 
 # Shown in the migration wizard after importing all matched extensions
 # from supported browsers.

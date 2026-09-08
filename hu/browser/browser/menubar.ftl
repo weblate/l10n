@@ -1,24 +1,17 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
 
 
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = Beállítások
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = Beállítások…
+menu-application-set-as-default =
+    .label = A { -brand-shorter-name } beállítása alapértelmezett böngészőként
 menu-application-services =
     .label = Szolgáltatások
 menu-application-hide-this =
@@ -70,7 +63,7 @@ menu-file-new-private-window =
     .accesskey = v
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Waterfox is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = Hely megnyitása…
 menu-file-open-file =
@@ -98,6 +91,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = Megosztás
     .accesskey = M
+menu-file-share-qrcode =
+    .label = QR-kód előállítása…
+    .accesskey = Q
+menu-file-share-qrcode2 =
+    .label = QR-kód előállítása
+    .accesskey = Q
 menu-file-print-setup =
     .label = Oldalbeállítás…
     .accesskey = O
@@ -146,8 +145,6 @@ menu-view-history-button =
     .label = Előzmények
 menu-view-synced-tabs-sidebar =
     .label = Szinkronizált lapok
-menu-view-megalist-sidebar =
-    .label = Jelszavak
 menu-view-full-zoom =
     .label = Nagyítás
     .accesskey = N
@@ -247,13 +244,29 @@ menu-edit-bookmark =
 menu-bookmarks-search =
     .label = Könyvjelzők keresése
 menu-bookmarks-all-tabs =
-    .label = Minden lap egy könyvjelzőbe…
+    .label = Összes lap egy könyvjelzőbe…
 menu-bookmarks-toolbar =
     .label = Könyvjelző eszköztár
 menu-bookmarks-other =
     .label = Más könyvjelzők
 menu-bookmarks-mobile =
-    .label = Mobil könyvjelzők
+    .label = Mobilos könyvjelzők
+
+## Profiles Menu
+
+menu-profiles =
+    .label = Profilok
+menu-profiles-manage-profiles =
+    .label = Profilok kezelése
+menu-profiles-new-profile =
+    .label = Új profil
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (jelenlegi)
+menu-profiles-menu =
+    .label = Profilok
+    .accesskey = P
 
 ## Tools Menu
 
@@ -263,6 +276,9 @@ menu-tools =
 menu-tools-downloads =
     .label = Letöltések
     .accesskey = L
+menu-tools-extensions-and-themes =
+    .label = Kiegészítők és témák
+    .accesskey = K
 menu-tools-addons-and-themes =
     .label = Kiegészítők és témák
     .accesskey = K
@@ -290,6 +306,9 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Oldal adatai
     .accesskey = O
+menu-tools-edit-pdf =
+    .label = PDF szerkesztése…
+    .accesskey = P
 menu-settings =
     .label = Beállítások
     .accesskey =

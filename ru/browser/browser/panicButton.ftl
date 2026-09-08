@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -26,6 +26,6 @@ panic-button-day =
 ## words "Cookies", "History", "Tabs" and "Windows". The translation should do the same.
 
 panic-button-action-desc = При этом будут:
-panic-button-delete-cookies = Удалены последние <strong>Куки</strong>
+panic-button-delete-cookies = Удалены последние <strong>куки</strong>
 panic-button-delete-history = Удалена недавняя <strong>история</strong>
-panic-button-delete-tabs-and-windows = Закрыты все <strong>Вкладки</strong> и <strong>Окна</strong>
+panic-button-delete-tabs-and-windows = Закрыты все <strong>вкладки</strong> и <strong>окна</strong>

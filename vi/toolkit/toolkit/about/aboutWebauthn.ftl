@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -110,12 +110,6 @@ about-webauthn-auth-info-true = Đúng
 # Shows when boolean value for an info field is False. False should not be translated.
 about-webauthn-auth-info-false = Sai
 about-webauthn-auth-info-null = Không hỗ trợ
-
-## Bio enrollment sample feedbacks
-
-
-## Scan (e.g. of fingerprint) was off-center (e.g. too high, too left, etc.).
-
 
 ##
 

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,10 +30,8 @@ password-manager-password-password-button-allow =
 password-manager-update-password-button-deny =
     .label = ไม่อัปเดต
     .accesskey = ม
+primary-password-prompt-message = โปรดป้อนรหัสผ่านหลักของคุณ
 # This is displayed in place of the username when it is missing.
 password-manager-no-username-placeholder = ไม่มีชื่อผู้ใช้
-password-manager-toggle-password =
-    .label = แสดงรหัสผ่าน
-    .accesskey = ส
 password-manager-confirm-password-change = ยืนยันการเปลี่ยนรหัสผ่าน
 password-manager-select-username = เลือกการเข้าสู่ระบบที่จะอัปเดต:

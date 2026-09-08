@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,6 +12,8 @@ about-processes-column-action =
 
 about-processes-shutdown-process =
     .title = Inaktiver faneblade og afslut proces
+about-processes-kill-process =
+    .title = Afslut proces
 about-processes-shutdown-tab =
     .title = Luk faneblad
 # Profiler icons
@@ -51,11 +53,26 @@ about-processes-remote-sandbox-broker-process = Remote Sandbox Broker ({ $pid })
 about-processes-fork-server-process = Fork-server ({ $pid })
 about-processes-preallocated-process = Forhånds-allokeret ({ $pid })
 about-processes-utility-process = Værktøj ({ $pid })
+about-processes-inference-process = Inference ({ $pid })
 # Unknown process names
 # Variables:
 #    $pid (String) The process id of this process, assigned by the OS.
 #    $type (String) The raw type for this process.
 about-processes-unknown-process = Andet: { $type } ({ $pid })
+
+## Properties of isolated web processes
+
+about-processes-web-isolated-property-private = privat
+about-processes-web-isolated-property-serviceworker = serviceworker
+about-processes-web-isolated-property-jit-disabled = JIT deaktiveret
+about-processes-web-isolated-property-with-coop-coep = cross-origin-isoleret
+
+## Isolated process names
+## Variables:
+##    $origin (String) The domain name for this process.
+##    $properties (String) A formatted list of properties from the above strings.
+
+about-processes-web-isolated-process2 = { $origin } ({ $properties })
 
 ## Isolated process names
 ## Variables:
@@ -124,10 +141,11 @@ about-processes-utility-actor-audio-decoder-generic = Generisk lyd-dekoder
 about-processes-utility-actor-audio-decoder-applemedia = Apple Media-lyd-dekoder
 about-processes-utility-actor-audio-decoder-wmf = Windows Media Framework-lyd-dekoder
 about-processes-utility-actor-mf-media-engine = Windows Media Foundation Media Engine CDM
-# "Oracle" refers to an internal Waterfox process and should be kept in English
+# "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = JavaScript Oracle
 about-processes-utility-actor-windows-utils = Windows Utils
 about-processes-utility-actor-windows-file-dialog = Fil-dialog i Windows
+about-processes-utility-actor-pkcs11-module = Hjælper til sikkerhedsmodul
 
 ## Displaying CPU (percentage and total)
 ## Variables:
@@ -163,7 +181,7 @@ about-processes-cpu-fully-idle = inaktiv
 ##                        of `memory-unit-*`.
 
 # Common case.
-about-processes-total-memory-size-changed = 	{ NUMBER($total, maximumFractionDigits: 0) }{ $totalUnit }
+about-processes-total-memory-size-changed = { NUMBER($total, maximumFractionDigits: 0) }{ $totalUnit }
     .title = Udvikling: { $deltaSign }{ NUMBER($delta, maximumFractionDigits: 0) }{ $deltaUnit }
 # Special case: no change.
 about-processes-total-memory-size-no-change = { NUMBER($total, maximumFractionDigits: 0) }{ $totalUnit }

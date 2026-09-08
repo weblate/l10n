@@ -1,45 +1,49 @@
 #!/bin/sh
 
 # Make sure to execute from the scripts directory
-cd $(dirname $0)
+cd "$(dirname "$0")"
 
-N=$(getconf _NPROCESSORS_ONLN 2>/dev/null || getconf NPROCESSORS_ONLN)
-
-for AB_CD in ar cs da de el en-GB es-ES es-MX fr hu id it ja ko lt nl nn-NO pl pt-BR pt-PT ru sv-SE th vi zh-CN zh-TW; do
-   rm -rf $AB_CD || true
-   (
-   curl -L -o $AB_CD.zip https://hg.mozilla.org/l10n-central/$AB_CD/archive/tip.zip
-   unzip $AB_CD.zip
-   rm $AB_CD.zip
-   for DIR in $AB_CD-*;
-   do
-       if [[ $AB_CD == *"-"* ]]; then
-         OUT=$(echo "$DIR" | cut -d '-' -f 1,2);
-       else
-         OUT=$(echo "$DIR" | cut -d '-' -f 1);
-       fi
-       mv "$DIR" "$OUT";
-       rm -rf "$DIR"
-       if [[ -d $OUT/waterfox/browser/branding ]]; then
-         mkdir -p "$OUT"/waterfox/browser/branding
-         mv "$OUT"/browser/branding/official/* "$OUT"/waterfox/browser/branding
-         rm -rf "$OUT"/browser/branding/official "$OUT"/waterfox/browser/branding/official
-       else
-         mkdir -p "$OUT"/waterfox/browser/branding
-         mv "$OUT"/browser/branding/official/* "$OUT"/waterfox/browser/branding
-         rm -rf "$OUT"/browser/branding/official
-       fi
-       grep -rl 'Mozilla Firefox' "$OUT" | LC_ALL=C xargs sed -i '' 's/Mozilla Firefox/Waterfox/g'
-       grep -rl 'Mozilla Foundation' "$OUT" | LC_ALL=C xargs sed -i '' 's/Mozilla Foundation/BrowserWorks/g'
-       grep -rl 'Firefox' "$OUT" | LC_ALL=C xargs sed -i '' 's/Firefox/Waterfox/g'
-       grep -rl 'Mozilla' "$OUT" | LC_ALL=C xargs sed -i '' 's/Mozilla/BrowserWorks/g'
-   done
-   ) &
-    if [[ $(jobs -r -p | wc -l) -ge $N ]]; then
-        wait -n
+# Check if uv is available
+if command -v uv &> /dev/null; then
+    echo "Using uv to run the Python updater..."
+    if [[ -f "update.py" ]]; then
+        uv run update.py "$@"
+        exit $?
+    else
+        echo "Error: update.py not found in current directory"
+        exit 1
     fi
-done
+fi
 
-wait
+# Fallback to regular Python if uv is not available
+echo "uv not found, falling back to Python..."
 
-echo "Finished"
+# Check if Python 3 is available
+if command -v python3 &> /dev/null; then
+    PYTHON_CMD="python3"
+elif command -v python &> /dev/null && python --version 2>&1 | grep -q "Python 3"; then
+    PYTHON_CMD="python"
+else
+    echo "Error: Python 3 is required but not found"
+    echo "Please install Python 3 or uv (recommended)"
+    echo ""
+    echo "To install uv:"
+    echo "  curl -LsSf https://astral.sh/uv/install.sh | sh"
+    echo ""
+    echo "To install Python 3:"
+    echo "  macOS: brew install python3"
+    echo "  Linux: sudo apt install python3 (or equivalent)"
+    exit 1
+fi
+
+# Check if the Python script exists
+if [[ ! -f "update.py" ]]; then
+    echo "Error: update.py not found in current directory"
+    exit 1
+fi
+
+# Run the Python updater
+echo "Starting locale update using Python..."
+$PYTHON_CMD update.py "$@"
+
+echo "Update completed"

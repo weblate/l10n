@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -268,3 +268,8 @@ places-search-downloads =
 ##
 
 places-locked-prompt = El sistema del historial y los marcadores no funcionará por que uno de los archivos de { -brand-short-name } está ocupado por otra aplicación. Algunos programas de seguridad pueden causar este problema.
+# Share is a verb here. Meaning to "Share" the bookmark "Folder"
+# .badge used to promote the sharing menu item; keep it as short as possible.
+places-share-folder2 =
+    .label = Compartir carpeta
+    .badge = Crear

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -98,7 +98,7 @@ places-delete-page =
            *[other] Excluir páginas
         }
     .accesskey = A
-# Managed bookmarks are created by an administrator and cannot be changed by the user.
+# Managed bookmarks are created by enterprise policy and cannot be changed by the user.
 managed-bookmarks =
     .label = Favoritos controlados
 # This label is used when a managed bookmarks folder doesn't have a name.
@@ -266,3 +266,8 @@ places-search-downloads =
 ##
 
 places-locked-prompt = O sistema de favoritos e histórico não funcionará agora porque um dos arquivos do { -brand-short-name } está sendo usado por outra aplicação. Alguns softwares de segurança podem causar este problema.
+# Share is a verb here. Meaning to "Share" the bookmark "Folder"
+# .badge used to promote the sharing menu item; keep it as short as possible.
+places-share-folder2 =
+    .label = Compartilhar pasta
+    .badge = Novidade

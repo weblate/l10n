@@ -1,24 +1,17 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
 
 
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = Настройки
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = Настройки…
+menu-application-set-as-default =
+    .label = Установите { -brand-shorter-name } своим браузером по умолчанию
 menu-application-services =
     .label = Службы
 menu-application-hide-this =
@@ -70,7 +63,7 @@ menu-file-new-private-window =
     .accesskey = е
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Waterfox is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = Открыть адрес…
 menu-file-open-file =
@@ -99,6 +92,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = Поделиться
     .accesskey = л
+menu-file-share-qrcode =
+    .label = Сгенерировать QR-код…
+    .accesskey = Й
+menu-file-share-qrcode2 =
+    .label = Сгенерировать QR-код
+    .accesskey = Й
 menu-file-print-setup =
     .label = Параметры страницы…
     .accesskey = м
@@ -147,8 +146,6 @@ menu-view-history-button =
     .label = Журнал
 menu-view-synced-tabs-sidebar =
     .label = Облачные вкладки
-menu-view-megalist-sidebar =
-    .label = Пароли
 menu-view-full-zoom =
     .label = Масштаб
     .accesskey = ш
@@ -256,6 +253,22 @@ menu-bookmarks-other =
 menu-bookmarks-mobile =
     .label = Мобильные закладки
 
+## Profiles Menu
+
+menu-profiles =
+    .label = Профили
+menu-profiles-manage-profiles =
+    .label = Управление профилями
+menu-profiles-new-profile =
+    .label = Новый профиль
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (текущий)
+menu-profiles-menu =
+    .label = Профили
+    .accesskey = П
+
 ## Tools Menu
 
 menu-tools =
@@ -264,6 +277,9 @@ menu-tools =
 menu-tools-downloads =
     .label = Загрузки
     .accesskey = З
+menu-tools-extensions-and-themes =
+    .label = Расширения и темы
+    .accesskey = У
 menu-tools-addons-and-themes =
     .label = Дополнения и темы
     .accesskey = п
@@ -289,8 +305,11 @@ menu-tools-page-source =
     .label = Исходный код страницы
     .accesskey = х
 menu-tools-page-info =
-    .label = Сведения о странице
+    .label = Информация о странице
     .accesskey = в
+menu-tools-edit-pdf =
+    .label = Изменить PDF…
+    .accesskey = З
 menu-settings =
     .label = Настройки
     .accesskey =

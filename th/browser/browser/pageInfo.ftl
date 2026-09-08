@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/. --
 
@@ -83,7 +83,7 @@ security-view =
 security-view-unknown = ไม่ทราบ
     .value = ไม่ทราบ
 security-view-identity =
-    .value = ข้อมูลประจำตัวเว็บไซต์
+    .value = ข้อมูลตัวตนของเว็บไซต์
 security-view-identity-owner =
     .value = เจ้าของ:
 security-view-identity-domain =

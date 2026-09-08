@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -7,7 +7,7 @@ synced-tabs-sidebar-noclients-subtitle = ¿Quieres ver las pestañas de tus otro
 synced-tabs-sidebar-intro = Ver una lista de pestañas de sus otros dispositivos.
 synced-tabs-sidebar-unverified = Tu cuenta necesita ser verificada.
 synced-tabs-sidebar-notabs = No hay pestañas abiertas
-synced-tabs-sidebar-open-settings = Abrir configuración de Sync
+synced-tabs-sidebar-open-settings = Abrir ajustes de Sync
 synced-tabs-sidebar-tabsnotsyncing = Activa la sincronización de pestañas para ver una lista de pestañas desde tus otros dispositivos.
 synced-tabs-sidebar-connect-another-device = Conectar otro dispositivo
 synced-tabs-sidebar-search =
@@ -54,8 +54,19 @@ synced-tabs-context-open-all-in-tabs =
 synced-tabs-context-manage-devices =
     .label = Administrar dispositivos…
     .accesskey = D
+synced-tabs-context-manage-this-device =
+    .label = Administrar este dispositivo
+    .accesskey = T
+synced-tabs-context-connect-another-device =
+    .label = Conectar otro dispositivo
+    .accesskey = A
 synced-tabs-context-sync-now =
     .label = Sincronizar ahora
     .accesskey = S
 synced-tabs-fxa-sign-in = Iniciar sesión para sincronizar
 synced-tabs-turn-on-sync = Activar sincronización
+# Context for hovering over the close tab button that will
+# send a push to the device to close said tab
+# Variables
+# $deviceName - the name of the device the user is closing a tab for
+synced-tabs-context-close-tab = Cerrar pestaña en { $deviceName }

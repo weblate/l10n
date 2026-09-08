@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -16,6 +16,12 @@ pw-remove-button =
     .label = Remover
 primary-password-dialog =
     .title = Palavra-passe principal
+set-password-old =
+    .label = Palavra-passe atual:
+set-password-new =
+    .label = Introduza a nova palavra-passe:
+set-password-reenter =
+    .label = Volte a introduzir a palavra-passe:
 set-password-old-password = Palavra-passe atual:
 set-password-new-password = Introduza a nova palavra-passe:
 set-password-reenter-password = Volte a introduzir a palavra-passe:
@@ -31,5 +37,10 @@ remove-info =
     .value = Tem de introduzir a palavra-passe atual para continuar:
 remove-primary-password-warning1 = A sua palavra-passe principal é utilizada para proteger informações sensíveis tais como credenciais e palavras-passe.
 remove-primary-password-warning2 = Se remover a palavra-passe principal, a sua informação não estará protegida se a segurança do seu computador for comprometida.
+remove-password-old =
+    .label = Palavra-passe atual:
 remove-password-old-password =
     .value = Palavra-passe atual:
+set-password-not-set =
+    .label = Palavra-passe atual:
+    .placeholder = (não definida)

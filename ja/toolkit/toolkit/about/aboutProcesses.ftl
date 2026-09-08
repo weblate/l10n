@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -11,7 +11,9 @@ about-processes-column-action =
 ## Tooltips
 
 about-processes-shutdown-process =
-    .title = タブを閉じプロセスを終了する
+    .title = タブを閉じてプロセスを強制終了する
+about-processes-kill-process =
+    .title = プロセスを強制終了する
 about-processes-shutdown-tab =
     .title = タブを閉じる
 # Profiler icons
@@ -19,10 +21,7 @@ about-processes-shutdown-tab =
 #    $duration (Number) The time in seconds during which the profiler will be running.
 #                       The value will be an integer, typically less than 10.
 about-processes-profile-process =
-    .title = { $duration ->
-   [one] このプロセスのすべてのスレッドを { $duration } 秒間プロファイルします
-  *[other] このプロセスのすべてのスレッドを { $duration } 秒間プロファイルします
-}
+    .title = このプロセスのすべてのスレッドを { $duration } 秒間プロファイルします
 
 ## Column headers
 
@@ -50,11 +49,26 @@ about-processes-remote-sandbox-broker-process = リモートサンドボック�
 about-processes-fork-server-process = フォークサーバー ({ $pid })
 about-processes-preallocated-process = 事前割り当て ({ $pid })
 about-processes-utility-process = ユーティリティ ({ $pid })
+about-processes-inference-process = 推論 ({ $pid })
 # Unknown process names
 # Variables:
 #    $pid (String) The process id of this process, assigned by the OS.
 #    $type (String) The raw type for this process.
 about-processes-unknown-process = その他: { $type } ({ $pid })
+
+## Properties of isolated web processes
+
+about-processes-web-isolated-property-private = プライベート
+about-processes-web-isolated-property-serviceworker = ServiceWorker
+about-processes-web-isolated-property-jit-disabled = JIT 無効
+about-processes-web-isolated-property-with-coop-coep = クロスオリジン隔離
+
+## Isolated process names
+## Variables:
+##    $origin (String) The domain name for this process.
+##    $properties (String) A formatted list of properties from the above strings.
+
+about-processes-web-isolated-process2 = { $origin } ({ $properties })
 
 ## Isolated process names
 ## Variables:
@@ -79,20 +93,14 @@ about-processes-with-coop-coep-process-private = { $origin } — プライベー
 #                     greater than $number.
 #    $list (String) Comma separated list of active threads.
 #                   Can be an empty string if the process is idle.
-about-processes-active-threads = { $active ->
-     [one] 実行中のスレッド数 { $active } / { $number }: { $list }
-    *[other] 実行中のスレッド数 { $active } / { $number }: { $list }
-}
+about-processes-active-threads = 実行中のスレッド数 { $active } / { $number }: { $list }
 # Single-line summary of threads (idle process)
 # Variables:
 #    $number (Number) The number of threads in the process. Typically larger
 #                     than 30. We don't expect to ever have processes with less
 #                     than 5 threads.
 #                     The process is idle so all threads are inactive.
-about-processes-inactive-threads = { $number ->
-     [one] 待機中のスレッド数 { $number }
-    *[other] 待機中のスレッド数 { $number }
-}
+about-processes-inactive-threads = 待機中のスレッド数 { $number }
 # Thread details
 # Variables:
 #   $name (String) The name assigned to the thread.
@@ -121,10 +129,11 @@ about-processes-utility-actor-audio-decoder-generic = 一般音声デコーダ�
 about-processes-utility-actor-audio-decoder-applemedia = Apple Media 音声デコーダー
 about-processes-utility-actor-audio-decoder-wmf = Windows Media Framework 音声デコーダー
 about-processes-utility-actor-mf-media-engine = Windows Media Foundation Media Engine CDM
-# "Oracle" refers to an internal Waterfox process and should be kept in English
+# "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = JavaScript Oracle
 about-processes-utility-actor-windows-utils = Windows Utils
 about-processes-utility-actor-windows-file-dialog = Windows ファイルダイアログ
+about-processes-utility-actor-pkcs11-module = セキュリティモジュールヘルパー
 
 ## Displaying CPU (percentage and total)
 ## Variables:
@@ -148,7 +157,6 @@ about-processes-cpu-almost-idle = < 0.1%
 about-processes-cpu-fully-idle = 待機
     .title = 合計 CPU 時間: { NUMBER($total, maximumFractionDigits: 0) }{ $unit }
 
-
 ## Displaying Memory (total and delta)
 ## Variables:
 ##    $total (Number) The amount of memory currently used by the process.
@@ -161,11 +169,10 @@ about-processes-cpu-fully-idle = 待機
 ##                        of `memory-unit-*`.
 
 # Common case.
-about-processes-total-memory-size-changed = { NUMBER($total, maximumFractionDigits:0) }{ $totalUnit }
-   .title = 増減: { $deltaSign }{ NUMBER($delta, maximumFractionDigits:0) }{ $deltaUnit }
-
+about-processes-total-memory-size-changed = { NUMBER($total, maximumFractionDigits: 0) }{ $totalUnit }
+   .title = 増減: { $deltaSign }{ NUMBER($delta, maximumFractionDigits: 0) }{ $deltaUnit }
 # Special case: no change.
-about-processes-total-memory-size-no-change = { NUMBER($total, maximumFractionDigits:0) }{ $totalUnit }
+about-processes-total-memory-size-no-change = { NUMBER($total, maximumFractionDigits: 0) }{ $totalUnit }
 
 ## Duration units
 

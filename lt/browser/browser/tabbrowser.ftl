@@ -1,20 +1,29 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 tabbrowser-empty-tab-title = Nauja kortelė
-
 tabbrowser-menuitem-close-tab =
     .label = Užverti kortelę
 tabbrowser-menuitem-close =
     .label = Užverti
-
 # Displayed as a tooltip on container tabs
 # Variables:
 #   $title (String): the title of the current tab.
 #   $containerName (String): the name of the current container.
 tabbrowser-container-tab-title = { $title } – { $containerName }
-
+# This text serves as an on-screen tooltip as well as an accessible name for
+# the "X" button that is shown on the active tab or, when multiple tabs are
+# selected, to all their "X" buttons.
+# Variables:
+#   $tabCount (Number): The number of tabs that will be closed.
+tabbrowser-close-tabs-button =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Užverti kortelę
+            [few] Užverti { $tabCount } korteles
+           *[other] Užverti { $tabCount } kortelių
+        }
 # Variables:
 #   $tabCount (Number): The number of tabs that will be closed.
 tabbrowser-close-tabs-tooltip =
@@ -133,7 +142,6 @@ tabbrowser-confirm-caretbrowsing-checkbox = Šio dialogo daugiau neberodyti.
 #   $domain (String): URL of the page that is trying to steal focus.
 tabbrowser-allow-dialogs-to-get-focus =
     .label = Leisti tokiems pranešimams iš { $domain } perkelti jus į jų kortelę
-
 tabbrowser-customizemode-tab-title = Tvarkyti „{ -brand-short-name }“
 
 ## Context menu buttons, of which only one will be visible at a time
@@ -163,6 +171,3 @@ tabbrowser-ctrl-tab-list-all-tabs =
             [few] Parodyti visas { $tabCount } korteles
            *[other] Parodyti visas { $tabCount } kortelių
         }
-
-## Tab manager menu buttons
-

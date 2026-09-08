@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -19,6 +19,14 @@ appmenuitem-banner-update-unsupported =
     .label = Nekompatibilní systém pro novou aktualizaci
 appmenuitem-banner-update-restart =
     .label = Nová aktualizace — restartovat
+appmenu-nova-fxa-sign-in = Přihlásit se
+appmenu-nova-switch-device-promo =
+    .message =
+        { -brand-short-name.case-status ->
+            [with-cases] Získáte v brzké době nové zařízení? Vezměte si { -brand-short-name(case: "acc") } s sebou!
+           *[no-cases] Získáte v brzké době nové zařízení? Vezměte si aplikaci { -brand-short-name } s sebou!
+        }
+appmenu-nova-switch-device-link = Jak převést vaše data
 appmenuitem-new-tab =
     .label = Nový panel
 appmenuitem-new-window =
@@ -27,10 +35,16 @@ appmenuitem-new-private-window =
     .label = Nové anonymní okno
 appmenuitem-history =
     .label = Historie
+appmenuitem-tab-groups =
+    .label = Skupiny panelů
 appmenuitem-downloads =
     .label = Stahování
 appmenuitem-passwords =
     .label = Hesla
+appmenuitem-extensions-and-themes =
+    .label = Rozšíření a vzhledy
+appmenuitem-extensions =
+    .label = Rozšíření
 appmenuitem-addons-and-themes =
     .label = Doplňky a vzhledy
 appmenuitem-print =
@@ -67,7 +81,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Celá obrazovka
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Přihlásit se k synchronizaci…
@@ -88,7 +102,7 @@ appmenu-remote-tabs-tabsnotsyncing = Zapněte synchronizaci panelů pro zobrazen
 appmenu-remote-tabs-opensettings =
     .label = Nastavení
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Chcete zde vidět své panely z ostatních zařízení?
 appmenu-remote-tabs-connectdevice =
     .label = Připojit další zařízení
@@ -112,8 +126,11 @@ appmenu-fxa-sync-and-save-data2 = Synchronizace a ukládání dat
 appmenu-fxa-signed-in-label = Přihlásit se
 appmenu-fxa-setup-sync =
     .label = Zapnout synchronizaci…
+appmenu-fxa-setup-sync-new = Zapnout
 appmenuitem-save-page =
     .label = Uložit stránku jako…
+appmenuitem-fxa-sync-off-title = Synchronizace je vypnutá
+appmenuitem-fxa-sync-off-description = Chraňte své záložky, hesla a další údaje a získejte k nim přístup odkudkoli.
 
 ## What's New panel in App menu.
 
@@ -124,7 +141,7 @@ whatsnew-panel-footer-checkbox =
     .label = Informovat o nových funkcích
     .accesskey = f
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -167,6 +184,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+profiler-button-dropmarker =
+    .label = Otevřít panel nástroje pro profilování
+    .tooltiptext = Otevřít panel nástroje pro profilování
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -205,6 +225,9 @@ profiler-popup-presets-media-description2 =
     }
 profiler-popup-presets-media-label =
     .label = Média
+profiler-popup-presets-ml-description = Doporučené nastavení pro ladění problémů se strojovým učením v aplikaci { -brand-shorter-name }.
+profiler-popup-presets-ml-label =
+    .label = Strojové učení
 profiler-popup-presets-networking-description =
     { -brand-shorter-name.case-status ->
         [with-cases] Doporučené nastavení pro ladění síťových problémů ve { -brand-shorter-name(case: "loc") }.
@@ -212,6 +235,13 @@ profiler-popup-presets-networking-description =
     }
 profiler-popup-presets-networking-label =
     .label = Síť
+profiler-popup-presets-networking-with-logs-description =
+    { -brand-product-name.case-status ->
+        [with-cases] Doporučené nastavení pro ladění síťových chyb ve { -brand-shorter-name(case: "gen") }, včetně síťových protokolů. Tyto protokoly mohou obsahovat citlivé informace, jako jsou například adresy URL, které navštěvujete.
+       *[no-cases] Doporučené nastavení pro ladění síťových chyb v aplikaci { -brand-shorter-name }, včetně síťových protokolů. Tyto protokoly mohou obsahovat citlivé informace, jako jsou například adresy URL, které navštěvujete.
+    }
+profiler-popup-presets-networking-with-logs-label =
+    .label = Práce v síti s protokoly
 profiler-popup-presets-power-description =
     { -brand-shorter-name.case-status ->
         [with-cases] Doporučené nastavení pro ladění chyb ve spotřebě { -brand-shorter-name(case: "gen") }.
@@ -222,11 +252,14 @@ profiler-popup-presets-power-label =
     .label = Napájení a spotřeba
 profiler-popup-presets-debug-description =
     { -brand-shorter-name.case-status ->
-        [with-cases] Přednastaveno pro ladění ve { -brand-shorter-name(case: "gen") }. Vysoká režie, nepoužívat pro zlepšení výkonu, ale spíše pro pochopení chování prohlížeče.
+        [with-cases] Přednastaveno pro ladění ve { -brand-shorter-name(case: "loc") }. Vysoká režie, nepoužívat pro zlepšení výkonu, ale spíše pro pochopení chování prohlížeče.
        *[no-cases] Přednastaveno pro ladění v aplikaci { -brand-shorter-name }. Vysoká režie, nepoužívat pro zlepšení výkonu, ale spíše pro pochopení chování prohlížeče.
     }
 profiler-popup-presets-debug-label =
     .label = Ladění
+profiler-popup-presets-web-compat-description = Doporučené nastavení pro ladění problémů s kompatibilitou webových stránek, spíše než pro sledování výkonu.
+profiler-popup-presets-web-compat-label =
+    .label = Webová kompatibilita
 profiler-popup-presets-custom-label =
     .label = Vlastní
 
@@ -290,16 +323,20 @@ appmenu-help-exit-troubleshoot-mode =
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
 appmenu-help-report-deceptive-site =
-    .label = Nahlásit klamavou stránku…
+    .label = Nahlásit podvodnou stránku…
     .accesskey = l
 appmenu-help-not-deceptive =
-    .label = Tato stránka není klamavá…
+    .label = Tato stránka není podvodná…
     .accesskey = l
 
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Nastavení tlačítek a lišt…
+appmenu-abouttranslations =
+    .label = Přeložit…
+appmenu-edit-pdf =
+    .label = Upravit PDF…
 appmenu-developer-tools-subheader = Nástroje prohlížeče
 appmenu-developer-tools-extensions =
     .label = Rozšíření pro vývojáře
@@ -308,10 +345,46 @@ appmenuitem-report-broken-site =
 
 ## Panel for privacy and security products
 
-appmenuitem-sign-in-account = Přihlaste se ke svému účtu
+appmenuitem-sign-in-account = Přihlaste se do svého účtu
+appmenuitem-monitor-title2 = Buďte o krok napřed před krádežemi identity
+appmenuitem-monitor-description2 = Nechte se upozornit na úniky dat
 appmenuitem-monitor-title = { -monitor-brand-short-name }
-appmenuitem-monitor-description = Získejte upozornění na úniky údajů
+appmenuitem-monitor-description = Dostávejte upozornění na úniky dat
 appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-title2 = Udržujte svůj e-mail v soukromí
+appmenuitem-relay-description2 = Pomáhá předcházet nevyžádané poště ve vaší e-mailové schránce
 appmenuitem-relay-description = Zamaskujte svůj skutečný e-mail a telefon
+appmenuitem-services-relay-description = Spustit nástěnku e-mailových masek
+appmenuitem-vpn-title2 = Skryjte svou polohu pomocí { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description3 = Učiňte těžší sledování vašeho prohlížení webu
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = Získejte ochranu celého zařízení
 appmenuitem-vpn-description = Chraňte svou online aktivitu
+appmenu-services-header = Mé služby
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = Nástroje pro ochranu soukromí
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = Vyzkoušejte další ochranné nástroje od Mozilly:
+appmenu-other-protection-header =
+    { -vendor-short-name.case-status ->
+        [with-cases] Vyzkoušejte další nástroje ochrany od { -vendor-short-name(case: "gen") }:
+       *[no-cases] Vyzkoušejte další nástroje ochrany od organizace { -vendor-short-name }:
+    }
+
+## Profiles panel
+
+appmenu-other-profiles = Další profily
+appmenu-manage-profiles =
+    .label = Správa profilů
+appmenu-copy-profile =
+    .label = Kopírovat tento profil
+appmenu-create-profile =
+    .label = Nový profil
+appmenu-edit-profile =
+    .aria-label = Upravit profil
+appmenu-profiles-2 =
+    .label = Profily

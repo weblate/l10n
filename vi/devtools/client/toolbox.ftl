@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -21,7 +21,7 @@ toolbox-meatball-menu-settings-label = Cài đặt
 toolbox-meatball-menu-documentation-label = Tài liệu…
 toolbox-meatball-menu-community-label = Cộng đồng…
 # This menu item is only available in the browser toolbox. It forces the popups/panels
-# to stay visible on blur, which is primarily useful for addon developers and Waterfox
+# to stay visible on blur, which is primarily useful for addon developers and Firefox
 # contributors.
 toolbox-meatball-menu-noautohide-label = Vô hiệu hóa tự động ẩn popup
 toolbox-meatball-menu-pseudo-locale-accented = Kích hoạt ngôn ngữ “accented”
@@ -43,3 +43,10 @@ toolbox-always-on-top-enabled2 = Tắt luôn ở trên cùng
     .title = Điều này sẽ khởi động lại Công cụ dành cho nhà phát triển
 toolbox-always-on-top-disabled2 = Bật luôn ở trên cùng
     .title = Điều này sẽ khởi động lại Công cụ dành cho nhà phát triển
+
+## These two labels are shown when navigating to a file:// URL while having DevTools opened,
+## in order to suggest enabling the Local Mode and load them from https instead.
+
+toolbox-local-mode-notice-add-to-settings-button = Thêm vào cài đặt
+toolbox-local-mode-notice-try-it-button = Thử ngay
+toolbox-local-mode-notice-always-hide = Đừng hỏi lại tôi điều này

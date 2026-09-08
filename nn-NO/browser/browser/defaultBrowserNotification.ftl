@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -14,7 +14,9 @@ default-browser-notification-button =
 
 default-browser-prompt-title-pin = Velje { -brand-short-name } som primærnettlesar?
 default-browser-prompt-message-pin = Ha alltid { -brand-short-name } tilgjengeleg — vel han som standard nettlesar og fest han til oppgåvelinja.
+default-browser-prompt-message-pin-msix = Ha alltid { -brand-short-name } tilgjengeleg — vel han som standard nettlesar og fest han til oppgåvelinja og startmenyen.
 default-browser-prompt-message-pin-mac = Ha alltid { -brand-short-name } tilgjengeleg — bruk han som standard nettlesar og behald han i Dock.
+default-browser-prompt-button-primary-set = Vel som primærnettlesar
 default-browser-prompt-button-primary-pin = Vel som primærnettlesar
 default-browser-prompt-title-alt = Bruke { -brand-short-name } som standardnettlesar?
 default-browser-prompt-message-alt = Få fart, sikkerheit og personvern kvar gong du surfar.
@@ -38,3 +40,6 @@ default-browser-guidance-notification-body-instruction-win11 =
     Steg 2: Vel «Bruk som standard» for { -brand-short-name }
 default-browser-guidance-notification-info-page = Vis meg
 default-browser-guidance-notification-dismiss = Ferdig
+default-browser-guidance-notification-v2-title = Fullfør i å gjere { -brand-short-name } til standardnettlesaren din
+default-browser-guidance-notification-v2-body = I Innstillingar vel du «Angje standard» for { -brand-short-name }.
+default-browser-guidance-notification-v2-title-only = Fullfør å gjere { -brand-short-name } til standardnettlesar i Innstillingar

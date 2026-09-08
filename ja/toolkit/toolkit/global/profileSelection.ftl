@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -28,3 +28,5 @@ profile-manager-work-offline =
 profile-manager-use-selected =
     .label = 今後このプロファイルを使用する
     .accesskey = s
+profile-has-selectable-profiles-title = 他のプロファイルとリンクしているプロファイルは削除できません
+profile-has-selectable-profiles-message = このプロファイルを削除するには、まずこのプロファイルを開き、{ -brand-short-name } メニューのプロファイルセクションから [プロファイルを管理]” を選択してください。ここで作成した追加のプロファイルを削除した後、about:profiles へ戻り、このプロファイルを削除してください。

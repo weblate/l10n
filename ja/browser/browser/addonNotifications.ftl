@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -34,8 +34,10 @@ xpinstall-prompt-install =
 
 # These messages are shown when a website invokes navigator.requestMIDIAccess.
 
-site-permission-install-first-prompt-midi-header = このサイトは MIDI (Musical Instrument Digital Interface) デバイスへのアクセスを要求しています。デバイスへのアクセスはアドオンをインストールすることにより有効化されます。
+site-permission-install-first-prompt-midi-header = このサイトは MIDI (Musical Instrument Digital Interface) デバイスへのアクセスを要求しています。デバイスへのアクセスはアドオンをインストールすることにより有効になります。
 site-permission-install-first-prompt-midi-message = このアクセスは安全性が保証されません。このサイトが信頼できる場合のみ続行してください。
+site-permission-install-first-prompt-serial-header = このサイトは端末のシリアルデバイスへのアクセスを要求しています。デバイスへのアクセスはアドオンをインストールすることにより有効になります。
+site-permission-install-first-prompt-serial-message = このアクセスは安全性が保証されません。このサイトが信頼できる場合のみ続行してください。
 
 ##
 
@@ -67,7 +69,7 @@ webext-perms-sideload-menu-item = { $addonName } が { -brand-short-name } に�
 #   $addonName (String): the localized name of the extension which has been updated.
 webext-perms-update-menu-item = { $addonName } が新たな権限を必要としています
 # This message is shown when one or more extensions have been imported from a
-# different browser into Waterfox, and the user needs to complete the import to
+# different browser into Firefox, and the user needs to complete the import to
 # start these extensions. This message is shown in the appmenu.
 webext-imported-addons = { -brand-short-name } にインポートされた拡張機能のインストールを完了しています
 
@@ -81,9 +83,15 @@ addon-removal-title = { $name } を削除しますか？
 addon-removal-message = { -brand-shorter-name } から { $name } を削除しますか？
 addon-removal-button = 削除
 addon-removal-abuse-report-checkbox = この拡張機能を { -vendor-short-name } に報告する
+# "it" refers to the local AI model that is paired to the AI feature
+addon-mlmodel-removal-body = このモデルを利用する機能や拡張機能を使用している場合は再び追加されます。
 # Variables:
 #   $addonCount (Number): the number of add-ons being downloaded
-addon-downloading-and-verifying = { $addonCount } 個のアドオンをダウンロードして検証しています...
+addon-downloading-and-verifying =
+    { $addonCount ->
+        [1] アドオンをダウンロードして検証しています...
+       *[other] { $addonCount } 個のアドオンをダウンロードして検証しています...
+    }
 addon-download-verifying = 検証中
 addon-install-cancel-button =
     .label = キャンセル
@@ -95,11 +103,22 @@ addon-install-accept-button =
 ## Variables:
 ##   $addonCount (Number): the number of add-ons being installed
 
-addon-confirm-install-message = このサイトが { -brand-short-name } に { $addonCount } 個のアドオンのインストールを求めています:
-addon-confirm-install-unsigned-message = 注意: このサイトが { -brand-short-name } に { $addonCount } 個の未検証アドオンのインストールを求めています。ご自身の責任でインストールしてください。
+addon-confirm-install-message =
+    { $addonCount ->
+        [1] このサイトが { -brand-short-name } にアドオンのインストールを求めています:
+       *[other] このサイトが { -brand-short-name } に { $addonCount } 個のアドオンのインストールを求めています:
+    }
+addon-confirm-install-unsigned-message =
+    { $addonCount ->
+        [1] 注意: このサイトが { -brand-short-name } に未検証アドオンのインストールを求めています。ご自身の責任でインストールしてください。
+       *[other] 注意: このサイトが { -brand-short-name } に { $addonCount } 個の未検証アドオンのインストールを求めています。ご自身の責任でインストールしてください。
+    }
 # Variables:
 #   $addonCount (Number): the number of add-ons being installed (at least 2)
-addon-confirm-install-some-unsigned-message = 注意: このサイトが { -brand-short-name } に { $addonCount } 個のアドオンのインストールを求めていますが、一部のアドオンは未検証です。ご自身の責任でインストールしてください。
+addon-confirm-install-some-unsigned-message =
+    { $addonCount ->
+       *[other] 注意: このサイトが { -brand-short-name } に { $addonCount } 個のアドオンのインストールを求めていますが、一部のアドオンは未検証です。ご自身の責任でインストールしてください。
+    }
 
 ## Add-on install errors
 ## Variables:
@@ -111,14 +130,19 @@ addon-install-error-corrupt-file = このサイトからダウンロードした
 addon-install-error-file-access = { -brand-short-name } が必要なファイルを変更できなかったため、{ $addonName } をインストールできませんでした。
 addon-install-error-not-signed = { -brand-short-name } はこのサイトからの未検証のアドオンのインストールをブロックしています。
 addon-install-error-invalid-domain = この場所からは { $addonName } アドオンをインストールできません。
+addon-install-error-no-addon-name-file-access = 必要なファイルを { -brand-short-name } が変更できないため、アドオンをインストールできませんでした。
 addon-local-install-error-network-failure = ファイルシステムエラーのため、アドオンをインストールできませんでした。
 addon-local-install-error-incorrect-hash = アドオンのハッシュ値が { -brand-short-name } に読み込んだものと一致しないため、インストールできませんでした。
 addon-local-install-error-corrupt-file = このアドオンは壊れているため、インストールできませんでした。
 addon-local-install-error-file-access = { -brand-short-name } が必要なファイルが変更できなかったため、{ $addonName } をインストールできませんでした。
 addon-local-install-error-not-signed = このアドオンは検証されていないため、インストールできませんでした。
+addon-local-install-no-addon-name-error-file-access = 必要なファイルを { -brand-short-name } が変更できないため、アドオンをインストールできませんでした。
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { -brand-short-name } { $appVersion } と互換性がないため、{ $addonName } をインストールできませんでした。
+addon-install-error-hard-blocked = { $addonName } は BrowserWorks のポリシーに違反しているため { -brand-short-name } にインストールできません。
+addon-install-error-soft-blocked2 = { $addonName } は制限されており、{ -brand-short-name } にインストールできません。
 addon-install-error-blocklisted = 安定性を大きく損なうかセキュリティに問題があるため、{ $addonName } をインストールできませんでした。
-# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Waterfox.
+addon-install-error-soft-blocked = { $addonName } アドオンが BrowserWorks のポリシーに違反しているため { -brand-short-name } にインストールできません。
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
 addon-install-error-admin-install-only = { $addonName } アドオンをエンドユーザー権限でインストールすることはできません。これはエンタープライズポリシーを使用する組織によりインストール可能です。

@@ -1,24 +1,17 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
 
 
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = Voorkeuren
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = Instellingen…
+menu-application-set-as-default =
+    .label = { -brand-shorter-name } instellen als standaardbrowser
 menu-application-services =
     .label = Services
 menu-application-hide-this =
@@ -70,7 +63,7 @@ menu-file-new-private-window =
     .accesskey = r
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Waterfox is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = Locatie openen…
 menu-file-open-file =
@@ -98,6 +91,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = Delen
     .accesskey = e
+menu-file-share-qrcode =
+    .label = QR-code aanmaken…
+    .accesskey = Q
+menu-file-share-qrcode2 =
+    .label = QR-code aanmaken
+    .accesskey = Q
 menu-file-print-setup =
     .label = Pagina-instellingen…
     .accesskey = i
@@ -146,8 +145,6 @@ menu-view-history-button =
     .label = Geschiedenis
 menu-view-synced-tabs-sidebar =
     .label = Gesynchroniseerde tabbladen
-menu-view-megalist-sidebar =
-    .label = Wachtwoorden
 menu-view-full-zoom =
     .label = Zoomen
     .accesskey = o
@@ -255,6 +252,22 @@ menu-bookmarks-other =
 menu-bookmarks-mobile =
     .label = Mobiel-bladwijzers
 
+## Profiles Menu
+
+menu-profiles =
+    .label = Profielen
+menu-profiles-manage-profiles =
+    .label = Profielen beheren
+menu-profiles-new-profile =
+    .label = Nieuw profiel
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (huidige)
+menu-profiles-menu =
+    .label = Profielen
+    .accesskey = P
+
 ## Tools Menu
 
 menu-tools =
@@ -263,6 +276,9 @@ menu-tools =
 menu-tools-downloads =
     .label = Downloads
     .accesskey = D
+menu-tools-extensions-and-themes =
+    .label = Extensies en Thema’s
+    .accesskey = E
 menu-tools-addons-and-themes =
     .label = Add-ons en thema’s
     .accesskey = A
@@ -290,6 +306,9 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Pagina-info
     .accesskey = i
+menu-tools-edit-pdf =
+    .label = PDF bewerken…
+    .accesskey = P
 menu-settings =
     .label = Instellingen
     .accesskey =

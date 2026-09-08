@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/. --
 
@@ -95,6 +95,9 @@ security-view-identity-validity =
     .value = 有効期限:
 security-view-privacy =
     .value = プライバシーと履歴
+security-view-qwac =
+    .label = 適格証明書を表示
+    .accesskey = Q
 security-view-privacy-history-value = 昨日までにこのサイトを表示したことがあるか
 security-view-privacy-sitedata-value = このサイトはコンピューターに情報を保存しているか
 security-view-privacy-clearsitedata =
@@ -159,7 +162,7 @@ security-no-visits = いいえ
 # Variables:
 #   $tags (number) - The number of meta tags
 general-meta-tags =
-    .value = Meta 要素一覧 ({ $tags } 要素)
+    .value = Meta 要素一覧 (タグ { $tags } 個)
 # This string is used to display the number of times
 # the user has visited the website prior
 # Variables:

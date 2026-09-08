@@ -1,15 +1,20 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 url-classifier-title = Información del clasificador de URL
 url-classifier-search-title = Buscar
 url-classifier-search-result-title = Resultados
+# Variables:
+#   $uri (string) - URI of blocked page
 url-classifier-search-result-uri = URI: { $uri }
+# Variables:
+#   $list (string) - List of tables where the page is blocked
 url-classifier-search-result-list = Lista de tablas: { $list }
 url-classifier-search-input = URL
 url-classifier-search-error-invalid-url = URL no válida
 url-classifier-search-error-no-features = No se ha seleccionado ninguna característica
+url-classifier-search-error-no-results = No se han encontrado entradas para URL
 url-classifier-search-btn = Comenzar la búsqueda
 url-classifier-search-features = Características
 url-classifier-search-listType = Tipo de lista
@@ -40,7 +45,6 @@ url-classifier-debug-sb-modules = Módulos de registro de navegación segura
 url-classifier-debug-modules = Módulos actuales de registro
 url-classifier-debug-sbjs-modules = Registro JS de navegación segura
 url-classifier-debug-file = Archivo actual de registro
-
 url-classifier-trigger-update = Disparar actualización
 url-classifier-not-available = N/D
 url-classifier-disable-sbjs-log = Desactivar registro JS de navegación segura

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -19,6 +19,10 @@ support-addons-type = Typ
 support-addons-enabled = Włączone
 support-addons-version = Wersja
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = Położenie
 legacy-user-stylesheets-title = Przestarzałe arkusze stylów użytkownika
 legacy-user-stylesheets-enabled = Aktywne
 legacy-user-stylesheets-stylesheet-types = Arkusze stylów
@@ -133,6 +137,10 @@ place-database-stats-efficiency-perc = Wydajność (%)
 place-database-stats-sequentiality-perc = Sekwencyjność (%)
 place-database-integrity = Integralność
 place-database-verify-integrity = Sprawdź integralność
+place-database-last-idle-maintenance-data = Data ostatniej konserwacji w czasie bezczynności
+# Vacuum refers to a type of database maintenance process
+place-database-last-vacuum-date = Data ostatniego odkurzania
+place-database-last-integrity-corruption-date = Data ostatniego uszkodzenia integralności
 a11y-title = Ułatwienia dostępu
 a11y-activated = Aktywne
 a11y-force-disabled = Zablokuj ułatwienia dostępu
@@ -185,6 +193,8 @@ media-capabilities-enumerate = Wyświetl zawartość bazy danych
 
 media-codec-support-sw-decoding = Dekodowanie programowe
 media-codec-support-hw-decoding = Dekodowanie sprzętowe
+media-codec-support-sw-encoding = Kodowanie programowe
+media-codec-support-hw-encoding = Kodowanie sprzętowe
 media-codec-support-codec-name = Nazwa kodeku
 media-codec-support-supported = Obsługiwane
 media-codec-support-unsupported = Nieobsługiwane
@@ -222,7 +232,7 @@ intl-regional-prefs = Preferencje regionalne
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.
@@ -353,6 +363,9 @@ has-seccomp-bpf = Seccomp-BPF (filtrowanie wywołań systemowych)
 has-seccomp-tsync = Synchronizacja wątków Seccomp
 has-user-namespaces = Przestrzenie nazw użytkownika
 has-privileged-user-namespaces = Przestrzenie nazw użytkownika dla uprzywilejowanych procesów
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } — Ta funkcja nie jest dozwolona w Twoim systemie. Może to ograniczyć funkcje zabezpieczeń { -brand-short-name(case: "gen") }.
 can-sandbox-content = Separacja procesów treści
 can-sandbox-media = Separacja wtyczek multimedialnych
 content-sandbox-level = Poziom separacji procesów treści

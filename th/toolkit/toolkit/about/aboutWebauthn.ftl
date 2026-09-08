@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -75,7 +75,7 @@ about-webauthn-cancel-button = ยกเลิก
 about-webauthn-send-pin-button = ตกลง
 about-webauthn-delete-button = ลบ
 about-webauthn-start-enrollment-button = เริ่มการลงทะเบียน
-about-webauthn-update-button = ปรับปรุง
+about-webauthn-update-button = อัปเดต
 
 ## Authenticator options fields
 ## Option fields correspond to the CTAP2 option IDs and definitions found in https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-20210615.html#option-id

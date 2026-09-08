@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,17 +30,24 @@
 -focus-brand-name = Waterfox Focus
 -relay-brand-name = Waterfox Relay
 -relay-brand-short-name = Relay
-# “Suggest” can be localized, “Waterfox” must be treated as a brand
+-solo-ai-brand-name = Solo
+-thunderbird-brand-name = BrowserWorks Thunderbird
+-thunderbird-brand-short-name = Thunderbird
+-yelp-brand-name = Yelp
+
+##
+
+# “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefox-suggest-brand-name = „Waterfox“ pasiūlymai
-# ”Home" can be localized, “Waterfox” must be treated as a brand
+# ”Home" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefox-home-brand-name = „Waterfox“ pradžios tinklalapis
-# View" can be localized, “Waterfox” must be treated as a brand
+# View" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefoxview-brand-name = „Waterfox“ apžvalga
-# Waterfox Labs is the name for a page in Settings to allow users to learn about
+# Firefox Labs is the name for a page in Settings to allow users to learn about
 # experimental and in-development features, and turn those features on and off.
-# The "Labs" portion can be localized, “Waterfox” must be treated as a brand
+# The "Labs" portion can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefoxlabs-brand-name = Waterfox Labs

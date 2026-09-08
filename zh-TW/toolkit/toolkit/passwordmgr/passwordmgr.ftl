@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,10 +30,8 @@ password-manager-password-password-button-allow =
 password-manager-update-password-button-deny =
     .label = 不要更新
     .accesskey = D
+primary-password-prompt-message = 請輸入您的主控密碼。
 # This is displayed in place of the username when it is missing.
 password-manager-no-username-placeholder = 無使用者名稱
-password-manager-toggle-password =
-    .label = 顯示密碼
-    .accesskey = h
 password-manager-confirm-password-change = 確定變更密碼
 password-manager-select-username = 選擇要更新哪筆登入資訊:

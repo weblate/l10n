@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 about-telemetry-ping-data-source = แหล่งข้อมูล Ping:
 about-telemetry-show-current-data = ข้อมูลปัจจุบัน
 about-telemetry-show-archived-ping-data = ข้อมูล ping ที่เก็บถาวร
-about-telemetry-show-subsession-data = แสดงข้อมูลการส่ง
+about-telemetry-show-subsession-data = แสดงข้อมูลเซสชันย่อย
 about-telemetry-choose-ping = เลือก ping:
 about-telemetry-archive-ping-type = ชนิด Ping
 about-telemetry-archive-ping-header = Ping
@@ -21,11 +21,11 @@ about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">เอก�
 about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">เอกสารเกี่ยวกับไคลเอนต์การวัดและส่งข้อมูลทางไกลของ Waterfox</a> มีคำจำกัดความสำหรับหลักการทำงาน, เอกสาร API และการอ้างอิงข้อมูล
 about-telemetry-telemetry-dashboard = <a data-l10n-name="dashboard-link">แดชบอร์ดการวัดและส่งข้อมูลทางไกล</a>ช่วยให้คุณเห็นภาพข้อมูลที่ BrowserWorks ได้รับผ่านการวัดและส่งข้อมูลทางไกล
 about-telemetry-telemetry-probe-dictionary = <a data-l10n-name="probe-dictionary-link">Probe Dictionary</a> มีรายละเอียดและคำอธิบายสำหรับโพรบที่รวบรวมโดยการวัดและส่งข้อมูลทางไกล
-about-telemetry-show-in-Waterfox-json-viewer = เปิดในตัวดู JSON
+about-telemetry-show-in-Firefox-json-viewer = เปิดในตัวดู JSON
 about-telemetry-home-section = หน้าแรก
 about-telemetry-general-data-section = ข้อมูลทั่วไป
 about-telemetry-environment-data-section = ข้อมูลสภาพแวดล้อม
-about-telemetry-session-info-section = ข้อมูลวาระ
+about-telemetry-session-info-section = ข้อมูลเซสชัน
 about-telemetry-scalar-section = สเกลาร์
 about-telemetry-keyed-scalar-section = สเกลาร์ที่สำคัญ
 about-telemetry-histograms-section = ฮิสโทแกรม
@@ -66,8 +66,8 @@ about-telemetry-histogram-stats =
        *[other] { $sampleCount } ตัวอย่าง, เฉลี่ย = { $prettyAverage }, ผลรวม = { $sum }
     }
 # Variables:
-#   $telemetryServerOwner (string) - the value of the toolkit.telemetry.server_owner preference. Typically "BrowserWorks"
-about-telemetry-page-subtitle = หน้านี้แสดงข้อมูลเกี่ยวกับประสิทธิภาพ, ฮาร์ดแวร์, การใช้งาน และการปรับแต่งที่เก็บรวบรวมไว้โดยตัววัดและส่งข้อมูลทางไกล ข้อมูลนี้จะถูกส่งไปยัง { $telemetryServerOwner } เพื่อช่วยปรับปรุง { -brand-full-name }
+#   $telemetryServerOwner (string) - the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
+about-telemetry-page-subtitle = หน้านี้แสดงข้อมูลเกี่ยวกับประสิทธิภาพ, ฮาร์ดแวร์, การใช้งาน และการปรับแต่งที่รวบรวมไว้โดยตัววัดและส่งข้อมูลทางไกล ข้อมูลนี้จะถูกส่งไปยัง { $telemetryServerOwner } เพื่อช่วยปรับปรุง { -brand-full-name }
 about-telemetry-settings-explanation = การวัดและส่งข้อมูลทางไกลกำลังรวบรวม { about-telemetry-data-type } และการอัปโหลด<a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>
 # Variables:
 #   $name (string) - Ping name, e.g. “saved-session”

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -54,8 +54,19 @@ synced-tabs-context-open-all-in-tabs =
 synced-tabs-context-manage-devices =
     .label = 기기 관리…
     .accesskey = D
+synced-tabs-context-manage-this-device =
+    .label = 이 기기 관리
+    .accesskey = T
+synced-tabs-context-connect-another-device =
+    .label = 다른 기기 연결
+    .accesskey = A
 synced-tabs-context-sync-now =
     .label = 지금 동기화
     .accesskey = S
 synced-tabs-fxa-sign-in = Sync에 로그인
 synced-tabs-turn-on-sync = Sync 켜기
+# Context for hovering over the close tab button that will
+# send a push to the device to close said tab
+# Variables
+# $deviceName - the name of the device the user is closing a tab for
+synced-tabs-context-close-tab = { $deviceName }에서 탭 닫기

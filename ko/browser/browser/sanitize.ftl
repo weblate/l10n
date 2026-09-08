@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -41,6 +41,10 @@ clear-time-duration-value-last-2-hours =
     .label = 최근 2시간
 clear-time-duration-value-last-4-hours =
     .label = 최근 4시간
+# Variables:
+#   $midnightTime (String) - Time of midnight (00:00 hours) - to inform the user that history will be cleared after midnight
+clear-time-duration-value-since-midnight =
+    .label = { $midnightTime } 이후
 clear-time-duration-value-today =
     .label = 오늘
 clear-time-duration-value-everything =
@@ -55,10 +59,7 @@ history-section-label = 기록
 item-history-and-downloads =
     .label = 방문 및 다운로드 기록
     .accesskey = B
-item-history-form-data-downloads =
-    .label = 기록
-    .accesskey = H
-item-history-form-data-downloads-description = 사이트 및 다운로드 기록과 저장된 양식 정보 및 검색을 지움
+item-history-and-downloads-description2 = 사이트 및 다운로드 기록 지우기
 item-cookies =
     .label = 쿠키
     .accesskey = C
@@ -94,6 +95,10 @@ item-form-search-history =
 item-site-prefs =
     .label = 사이트 설정
     .accesskey = i
+item-formdata-prefs =
+    .label = 저장된 양식 정보
+    .accesskey = o
+item-formdata-description = 이름, 이메일 및 양식에 입력 한 기타 항목과 같은 것을 지움
 item-site-prefs-description = 권한 및 사이트 설정을 원래대로 재설정
 data-section-label = 데이터
 item-site-settings =
@@ -123,3 +128,6 @@ sanitize-everything-warning = 모든 기록이 지워집니다.
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = 모든 선택한 항목이 지워집니다.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = 계산 중…

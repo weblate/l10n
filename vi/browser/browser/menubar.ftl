@@ -1,24 +1,17 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
 
 
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = Tùy chỉnh
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = Cài đặt…
+menu-application-set-as-default =
+    .label = Đặt { -brand-shorter-name } làm trình duyệt mặc định
 menu-application-services =
     .label = Dịch vụ
 menu-application-hide-this =
@@ -70,7 +63,7 @@ menu-file-new-private-window =
     .accesskey = W
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Waterfox is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = Mở địa chỉ…
 menu-file-open-file =
@@ -97,6 +90,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = Chia sẻ
     .accesskey = h
+menu-file-share-qrcode =
+    .label = Tạo mã QR…
+    .accesskey = Q
+menu-file-share-qrcode2 =
+    .label = Tạo mã QR
+    .accesskey = Q
 menu-file-print-setup =
     .label = Thiết lập trang…
     .accesskey = u
@@ -145,8 +144,6 @@ menu-view-history-button =
     .label = Lịch sử
 menu-view-synced-tabs-sidebar =
     .label = Các thẻ đã đồng bộ
-menu-view-megalist-sidebar =
-    .label = Mật khẩu
 menu-view-full-zoom =
     .label = Thu phóng
     .accesskey = Z
@@ -160,7 +157,7 @@ menu-view-full-zoom-actual-size =
     .label = Kích thước thực
     .accesskey = A
 menu-view-full-zoom-toggle =
-    .label = Chỉ phóng to văn bản
+    .label = Chỉ thu phóng văn bản
     .accesskey = T
 menu-view-page-style-menu =
     .label = Kiểu của trang
@@ -254,6 +251,22 @@ menu-bookmarks-other =
 menu-bookmarks-mobile =
     .label = Dấu trang trên di động
 
+## Profiles Menu
+
+menu-profiles =
+    .label = Hồ sơ
+menu-profiles-manage-profiles =
+    .label = Quản lý hồ sơ
+menu-profiles-new-profile =
+    .label = Hồ sơ mới
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (hiện tại)
+menu-profiles-menu =
+    .label = Hồ sơ
+    .accesskey = P
+
 ## Tools Menu
 
 menu-tools =
@@ -262,6 +275,9 @@ menu-tools =
 menu-tools-downloads =
     .label = Tải xuống
     .accesskey = D
+menu-tools-extensions-and-themes =
+    .label = Tiện ích mở rộng và chủ đề
+    .accesskey = E
 menu-tools-addons-and-themes =
     .label = Tiện ích mở rộng và chủ đề
     .accesskey = A
@@ -273,7 +289,7 @@ menu-tools-turn-on-sync2 =
     .accesskey = n
 menu-tools-sync-now =
     .label = Đồng bộ ngay
-    .accesskey = S
+    .accesskey = o
 menu-tools-fxa-re-auth =
     .label = Kết nối lại vào { -brand-product-name }…
     .accesskey = R
@@ -289,6 +305,9 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Thông tin trang
     .accesskey = I
+menu-tools-edit-pdf =
+    .label = Chỉnh sửa PDF…
+    .accesskey = P
 menu-settings =
     .label = Cài đặt
     .accesskey =

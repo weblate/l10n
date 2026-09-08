@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,7 +30,7 @@ customize-mode-uidensity-menu-compact-unsupported =
     .accesskey = C
     .tooltiptext = 緊密（不支援）
 customize-mode-undo-cmd =
-    .label = 復原
+    .label = 還原
 customize-mode-lwthemes-link = 管理佈景主題
 customize-mode-touchbar-cmd =
     .label = 自訂觸控列…

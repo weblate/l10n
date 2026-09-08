@@ -1,24 +1,17 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
 
 
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = Preferencias
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = Ajustes…
+menu-application-set-as-default =
+    .label = Hacer que { -brand-shorter-name } sea el navegador predeterminado
 menu-application-services =
     .label = Servicios
 menu-application-hide-this =
@@ -70,7 +63,7 @@ menu-file-new-private-window =
     .accesskey = P
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Waterfox is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = Abrir dirección…
 menu-file-open-file =
@@ -98,6 +91,9 @@ menu-file-email-link =
 menu-file-share-url =
     .label = Compartir
     .accesskey = C
+menu-file-share-qrcode =
+    .label = Generar código QR…
+    .accesskey = Q
 menu-file-print-setup =
     .label = Configurar página…
     .accesskey = u
@@ -146,8 +142,6 @@ menu-view-history-button =
     .label = Historial
 menu-view-synced-tabs-sidebar =
     .label = Pestañas sincronizadas
-menu-view-megalist-sidebar =
-    .label = Contraseñas
 menu-view-full-zoom =
     .label = Tamaño
     .accesskey = m
@@ -255,6 +249,22 @@ menu-bookmarks-other =
 menu-bookmarks-mobile =
     .label = Marcadores del móvil
 
+## Profiles Menu
+
+menu-profiles =
+    .label = Perfiles
+menu-profiles-manage-profiles =
+    .label = Administrar perfiles
+menu-profiles-new-profile =
+    .label = Nuevo perfil
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (actual)
+menu-profiles-menu =
+    .label = Perfiles
+    .accesskey = P
+
 ## Tools Menu
 
 menu-tools =
@@ -263,6 +273,9 @@ menu-tools =
 menu-tools-downloads =
     .label = Descargas
     .accesskey = D
+menu-tools-extensions-and-themes =
+    .label = Extensiones y temas
+    .accesskey = E
 menu-tools-addons-and-themes =
     .label = Complementos y temas
     .accesskey = C

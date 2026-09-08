@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Waterfox Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = Перевести эту страницу
-# The button for "Waterfox Translations" in the url bar. Note that here "Beta" should
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
 # not be translated, as it is a reflection of the un-localized BETA icon that is in the
 # panel.
 urlbar-translations-button2 =
@@ -33,7 +33,7 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } БЕТА
 
-## Options in the Waterfox Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = Управление языками
@@ -44,7 +44,7 @@ translations-panel-settings-about2 =
 # Variables:
 #   $language (string) - The localized display name of the detected language
 translations-panel-settings-always-translate-language =
-    .label = Всегда переводить с { $language }
+    .label = Всегда переводить { $language }
 translations-panel-settings-always-translate-unknown-language =
     .label = Всегда переводить с этого языка
 translations-panel-settings-always-offer-translation =
@@ -53,7 +53,7 @@ translations-panel-settings-always-offer-translation =
 # Variables:
 #   $language (string) - The localized display name of the detected language
 translations-panel-settings-never-translate-language =
-    .label = Никогда не переводить с { $language }
+    .label = Никогда не переводить { $language }
 translations-panel-settings-never-translate-unknown-language =
     .label = Никогда не переводить с этого языка
 # Text displayed for the option to never translate this website
@@ -83,6 +83,14 @@ translations-panel-error-dismiss-button =
     .label = Понятно
 translations-panel-error-change-button =
     .label = Сменить исходный язык
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from this language yet: { $language }
+#
+# Variables:
+#   $language (string) - The language of the document.
+translations-panel-error-unsupported-hint-known-2 = К сожалению, мы пока не поддерживаем перевод с { $language }.
+translations-panel-error-unsupported-hint-unknown-2 = Извините, мы пока не поддерживаем перевод с этого языка.
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }
@@ -116,7 +124,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = Показать оригинал
 
-## Waterfox Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = Переводы
 translations-manage-settings-button =
@@ -124,28 +132,20 @@ translations-manage-settings-button =
     .accesskey = а
 translations-manage-description = Загрузка языков для перевода без связи с Интернетом.
 translations-manage-all-language = Все языки
-translations-manage-download-button = Загрузить
+translations-manage-download-button = Скачать
 translations-manage-delete-button = Удалить
-translations-manage-intro = Задайте настройки языка и перевода сайта и управляйте языками, установленными для автономного перевода.
-translations-manage-install-description = Установите языки для автономного перевода
-translations-manage-language-install-button =
-    .label = Установить
-translations-manage-language-install-all-button =
-    .label = Установить все
-    .accesskey = е
-translations-manage-intro-2 = Задайте настройки языка и перевода сайта и управляйте языками, загруженными для автономного перевода.
+translations-manage-intro-2 = Задайте настройки языка и перевода сайта и управляйте языками, скачанными для автономного перевода.
 translations-manage-download-description = Загрузка языков для автономного перевода
 translations-manage-language-download-button =
-    .label = Загрузить
+    .label = Скачать
 translations-manage-language-download-all-button =
-    .label = Загрузить все
+    .label = Скачать все
     .accesskey = В
 translations-manage-language-remove-button =
     .label = Удалить
 translations-manage-language-remove-all-button =
     .label = Удалить все
     .accesskey = и
-translations-manage-error-install = Возникла проблема с установкой языковых файлов. Пожалуйста, попробуйте ещё раз.
 translations-manage-error-download = При загрузке языковых файлов возникла проблема, пожалуйста, попробуйте ещё раз.
 translations-manage-error-delete = При удалении языковых файлов произошла ошибка, пожалуйста, попробуйте ещё раз.
 translations-manage-error-remove = Произошла ошибка при удалении языковых файлов. Пожалуйста, попробуйте ещё раз.
@@ -236,6 +236,16 @@ select-translations-panel-init-failure-message =
 # Text displayed when the translation fails to complete.
 select-translations-panel-translation-failure-message =
     .message = При переводе возникла проблема, пожалуйста, попробуйте ещё раз.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from { $language } yet.
+#
+# Variables:
+#   $language (string) - The language of the document.
+select-translations-panel-unsupported-language-message-known-2 =
+    .message = К сожалению, мы пока не поддерживаем перевод с { $language }.
+select-translations-panel-unsupported-language-message-unknown-2 =
+    .message = Извините, мы пока не поддерживаем перевод с этого языка.
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }

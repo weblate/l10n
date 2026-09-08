@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -26,4 +26,4 @@ identity-credential-sign-in-button =
     .label = Logg inn
     .accesskey = L
 identity-credential-policy-title = Bruk { $provider } som inloggningsleverandør
-identity-credential-policy-description = Å logge på { $host } med en { $provider }-konto er underlagt <label data-l10n-name="privacy-url">personvernerklæringa</label> og <label data-l10n-name="tos-url">tenestevilkåra</label> deira.
+identity-credential-policy-description = Å logge på { $host } med en { $provider }-konto er underlagt <label data-l10n-name="privacy-url">personvernfråsegna</label> og <label data-l10n-name="tos-url">tenestevilkåra</label> deira.

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -23,10 +23,17 @@ default-browser-prompt-title-pin =
     }
 default-browser-prompt-message-pin =
     { -brand-short-name.gender ->
-        [masculine] Mějte { -brand-short-name(case: "acc") } nastavený jako výchozí prohlížeč a připnutý na své liště.
-        [feminine] Mějte { -brand-short-name(case: "acc") } nastavenou jako výchozí prohlížeč a připnutou na své liště.
-        [neuter] Mějte { -brand-short-name(case: "acc") } nastavené jako výchozí prohlížeč a připnuté na své liště.
-       *[other] Mějte aplikaci { -brand-short-name } nastavenou jako výchozí prohlížeč a připnutou na své liště.
+        [masculine] Mějte { -brand-short-name(case: "acc") } nastavený jako výchozí prohlížeč a připnutý na systémovém hlavním panelu.
+        [feminine] Mějte { -brand-short-name(case: "acc") } nastavenou jako výchozí prohlížeč a připnutou na systémovém hlavním panelu.
+        [neuter] Mějte { -brand-short-name(case: "acc") } nastavené jako výchozí prohlížeč a připnuté na systémovém hlavním panelu.
+       *[other] Mějte aplikaci { -brand-short-name } nastavenou jako výchozí prohlížeč a připnutou na systémovém hlavním panelu.
+    }
+default-browser-prompt-message-pin-msix =
+    { -brand-short-name.gender ->
+        [masculine] Mějte { -brand-short-name(case: "acc") } nastavený jako výchozí prohlížeč a připnutý na systémovém hlavním panelu a v nabídce start.
+        [feminine] Mějte { -brand-short-name(case: "acc") } nastavenou jako výchozí prohlížeč a připnutou na systémovém hlavním panelu a v nabídce start.
+        [neuter] Mějte { -brand-short-name(case: "acc") } nastavené jako výchozí prohlížeč a připnuté na systémovém hlavním panelu a v nabídce start.
+       *[other] Mějte aplikaci { -brand-short-name } nastavenou jako výchozí prohlížeč a připnutou na systémovém hlavním panelu a v nabídce start.
     }
 default-browser-prompt-message-pin-mac =
     { -brand-short-name.gender ->
@@ -35,6 +42,7 @@ default-browser-prompt-message-pin-mac =
         [neuter] Mějte { -brand-short-name(case: "acc") } nastavené jako výchozí prohlížeč a připnuté ve svém docku.
        *[other] Mějte aplikaci { -brand-short-name } nastavenou jako výchozí prohlížeč a připnutou ve svém docku.
     }
+default-browser-prompt-button-primary-set = Nastavit jako výchozí prohlížeč
 default-browser-prompt-button-primary-pin = Nastavit jako hlavní prohlížeč
 default-browser-prompt-title-alt =
     { -brand-short-name.case-status ->
@@ -52,30 +60,45 @@ default-browser-prompt-button-secondary = Teď ne
 
 default-browser-guidance-notification-title =
     { -brand-short-name.case-status ->
-        [with-cases] Dokončete nastavení { -brand-short-name(case: "gen") } jako výchozího prohlížeče
-       *[no-cases] Dokončete nastavení aplikace { -brand-short-name } jako výchozího prohlížeče
+        [with-cases] Dokončete nastavování { -brand-short-name(case: "gen") } jako výchozího prohlížeče
+       *[no-cases] Dokončete nastavování aplikace { -brand-short-name } jako výchozího prohlížeče
     }
 # Quoted text are keywords to look for in the Windows Settings app.
 default-browser-guidance-notification-body-instruction-win10 =
     { -brand-short-name.case-status ->
         [with-cases]
-            Krok 1: Přejděte do Nastavení > Výchozí aplikace
-            Krok 2: Přejděte dolů na „Webový prohlížeč“
+            Krok 1: Jděte do Nastavení > Výchozí aplikace
+            Krok 2: Sjeďte dolů k položce „Webový prohlížeč“
             Krok 3: Vyberte { -brand-short-name(case: "acc") }
        *[no-cases]
-            Krok 1: Přejděte do Nastavení > Výchozí aplikace
-            Krok 2: Přejděte dolů na „Webový prohlížeč“
+            Krok 1: Jděte do Nastavení > Výchozí aplikace
+            Krok 2: Sjeďte dolů k položce „Webový prohlížeč“
             Krok 3: Vyberte aplikaci { -brand-short-name }
     }
 # Quoted text are keywords to look for in the Windows Settings app.
 default-browser-guidance-notification-body-instruction-win11 =
     { -brand-short-name.case-status ->
         [with-cases]
-            Krok 1: Přejděte do Nastavení > Výchozí aplikace
+            Krok 1: Jděte do Nastavení > Výchozí aplikace
             Krok 2: Vyberte { -brand-short-name(case: "acc") } a klepněte na „Nastavit jako výchozí“
        *[no-cases]
-            Krok 1: Přejděte do Nastavení > Výchozí aplikace
+            Krok 1: Jděte do Nastavení > Výchozí aplikace
             Krok 2: Vyberte aplikaci { -brand-short-name } a klepněte na „Nastavit jako výchozí“
     }
 default-browser-guidance-notification-info-page = Zobrazit
 default-browser-guidance-notification-dismiss = Hotovo
+default-browser-guidance-notification-v2-title =
+    { -brand-short-name.case-status ->
+        [with-cases] Dokončete nastavování { -brand-short-name(case: "gen") } jako svého výchozího prohlížeče
+       *[no-cases] Dokončete nastavování aplikace { -brand-short-name } jako svého výchozího prohlížeče
+    }
+default-browser-guidance-notification-v2-body =
+    { -brand-short-name.case-status ->
+        [with-cases] V Nastavení vyberte pro { -brand-short-name(case: "acc") } možnost „Nastavit jako výchozí“.
+       *[no-cases] V Nastavení vyberte pro aplikaci { -brand-short-name } možnost „Nastavit jako výchozí“.
+    }
+default-browser-guidance-notification-v2-title-only =
+    { -brand-short-name.case-status ->
+        [with-cases] V Nastavení dokončete nastavování { -brand-short-name(case: "gen") } jako výchozího prohlížeče
+       *[no-cases] V Nastavení dokončete nastavování aplikace { -brand-short-name } jako výchozího prohlížeče
+    }

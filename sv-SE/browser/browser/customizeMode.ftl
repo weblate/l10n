@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -31,6 +31,8 @@ customize-mode-uidensity-menu-compact-unsupported =
     .tooltiptext = Kompakt (stöds inte)
 customize-mode-undo-cmd =
     .label = Ångra
+customize-mode-uidensity-link = Inställningar för fönsterdensitet
+customize-mode-lwthemes-link-2 = Hantera teman
 customize-mode-lwthemes-link = Hantera teman
 customize-mode-touchbar-cmd =
     .label = Anpassa Touch Bar…

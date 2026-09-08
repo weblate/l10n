@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -13,9 +13,9 @@ origin-controls-no-access =
 origin-controls-quarantined =
     .label = Extensão sem permissão para ler e alterar dados
 origin-controls-quarantined-status =
-    .label = Extensão não permitida em sites restritos
+    .label = Extensão não permitida em sites com restrição
 origin-controls-quarantined-allow =
-    .label = Permitir em sites restritos
+    .label = Permitir em sites com restrição
 origin-controls-options =
     .label = A extensão pode ler e alterar dados
 origin-controls-option-all-domains =

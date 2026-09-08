@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -14,8 +14,10 @@ default-browser-notification-button =
 
 default-browser-prompt-title-pin = { -brand-short-name } を優先ブラウザーに設定しますか？
 default-browser-prompt-message-pin = { -brand-short-name } をあなたの手元に。既定のブラウザーに設定して、タスクバーにピン留めしましょう。
+default-browser-prompt-message-pin-msix = { -brand-short-name } をあなたの手元に。既定のブラウザーに設定して、タスクバーとスタートメニューにピン留めしましょう。
 default-browser-prompt-message-pin-mac = { -brand-short-name } をあなたの手元に。既定のブラウザーに設定して、Dock に追加しましょう。
-default-browser-prompt-button-primary-pin = 優先ブラウザーに設定する
+default-browser-prompt-button-primary-set = 優先ブラウザーに設定する
+default-browser-prompt-button-primary-pin = 優先ブラウザーにする
 default-browser-prompt-title-alt = { -brand-short-name } を既定のブラウザーに設定しますか？
 default-browser-prompt-message-alt = いつでも高速、安全、プライベートに。
 default-browser-prompt-button-primary-alt = 既定のブラウザーに設定する
@@ -38,3 +40,6 @@ default-browser-guidance-notification-body-instruction-win11 =
     ステップ 2: { -brand-short-name } を選択し、[既定値に設定] をクリックしてください
 default-browser-guidance-notification-info-page = 詳細表示
 default-browser-guidance-notification-dismiss = 完了
+default-browser-guidance-notification-v2-title = { -brand-short-name } を既定のブラウザーにしましょう
+default-browser-guidance-notification-v2-body = 設定で、{ -brand-short-name } を "既定に設定" してください。
+default-browser-guidance-notification-v2-title-only = 設定で { -brand-short-name } を既定のブラウザーにしましょう

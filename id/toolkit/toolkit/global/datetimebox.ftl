@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -32,7 +32,7 @@ datetime-millisecond =
 datetime-dayperiod =
     .aria-label = AM/PM
 
-## Calendar button for input type=date
+## Date/time picker buttons
 
 
 # This label is used by screenreaders and other assistive technology

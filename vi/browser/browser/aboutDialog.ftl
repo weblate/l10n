@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,23 +12,37 @@ update-updateButton =
     .label = Khởi động lại để cập nhật { -brand-shorter-name }
     .accesskey = R
 update-checkingForUpdates = Đang kiểm tra cập nhật…
+settings-update-checking-for-updates =
+    .label = Đang kiểm tra cập nhật…
 
 ## Variables:
 ##   $transfer (string) - Transfer progress.
 
-settings-update-downloading = <img data-l10n-name="icon"/>Đang tải cập nhật — <label data-l10n-name="download-status">{ $transfer }</label>
+settings-update-downloading = <img data-l10n-name="icon"/>Đang tải xuống bản cập nhật — <label data-l10n-name="download-status">{ $transfer }</label>
 aboutdialog-update-downloading = Đang tải xuống bản cập nhật — <label data-l10n-name="download-status">{ $transfer }</label>
+settings-update-downloading-2 =
+    .label = Đang tải xuống bản cập nhật — { $transfer }
 
 ##
 
-update-applying = Đang cài đặt cập nhật…
+update-applying = Đang cài đặt bản cập nhật…
+settings-update-applying =
+    .label = Đang cài đặt bản cập nhật…
 update-failed = Cập nhật thất bại. <label data-l10n-name="failed-link">Tải phiên bản mới nhất</label>
 update-failed-main = Cập nhật thất bại. <a data-l10n-name="failed-link-main">Tải phiên bản mới nhất</a>
 update-adminDisabled = Cập nhật bị vô hiệu hóa bởi quản trị hệ thống
 update-policy-disabled = Cập nhật bị vô hiệu hoá bởi tổ chức của bạn
+settings-update-policy-disabled =
+    .label = Cập nhật bị vô hiệu hoá bởi tổ chức của bạn
 update-noUpdatesFound = { -brand-short-name } đã được cập nhật
+settings-update-no-updates-found =
+    .label = { -brand-short-name } đã được cập nhật
 aboutdialog-update-checking-failed = Không thể kiểm tra bản cập nhật.
+settings-update-checking-failed =
+    .label = Không thể kiểm tra bản cập nhật.
 update-otherInstanceHandlingUpdates = { -brand-short-name } đang được cập nhật bởi tiến trình khác
+settings-update-other-instance-handling-updates =
+    .label = { -brand-short-name } đang được cập nhật bởi tiến trình khác
 
 ## Variables:
 ##   $displayUrl (String): URL to page with download instructions. Example: www.mozilla.org/firefox/nightly/
@@ -36,8 +50,12 @@ update-otherInstanceHandlingUpdates = { -brand-short-name } đang được cập
 aboutdialog-update-manual-with-link = Cập nhật có tại <label data-l10n-name="manual-link">{ $displayUrl }</label>
 settings-update-manual-with-link = Cập nhật có tại <a data-l10n-name="manual-link">{ $displayUrl }</a>
 update-unsupported = Bạn không thể cập nhật thêm trên hệ thống này nữa. <label data-l10n-name="unsupported-link">Tìm hiểu thêm</label>
+settings-update-unsupported = Bạn không thể cập nhật thêm trên hệ thống này nữa. <a data-l10n-name="unsupported-link">Tìm hiểu thêm</a>
 update-restarting = Đang khởi động lại…
+settings-update-restarting =
+    .label = Đang khởi động lại…
 update-internal-error2 = Không thể kiểm tra các bản cập nhật do lỗi nội bộ. Các bản cập nhật có sẵn tại <label data-l10n-name="manual-link">{ $displayUrl }</label>
+settings-update-internal-error = Không thể kiểm tra các bản cập nhật do lỗi nội bộ. Các bản cập nhật có sẵn tại <a data-l10n-name="manual-link">{ $displayUrl }</a>
 
 ##
 
@@ -51,16 +69,29 @@ community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-shor
 community-2 = { -brand-short-name } được thiết kế bởi <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label>, một <label data-l10n-name="community-creditsLink">cộng đồng toàn cầu</label> cùng chung sức bảo vệ Web mở và cho phép ai cũng truy cập được.
 helpus = Bạn muốn giúp đỡ? <label data-l10n-name="helpus-donateLink">Quyên góp tài chính</label>, hoặc <label data-l10n-name="helpus-getInvolvedLink">tham gia đóng góp!</label>
 bottomLinks-license = Thông tin giấy phép
+bottom-links-terms = Điều khoản sử dụng
+bottom-links-privacy = Thông báo về quyền riêng tư
 bottomLinks-rights = Quyền hạn người dùng cuối
 bottomLinks-privacy = Chính sách riêng tư
 # Example of resulting string: 66.0.1 (64-bit)
 # Variables:
-#   $version (String): version of Waterfox, e.g. 66.0.1
+#   $version (String): version of Firefox, e.g. 66.0.1
 #   $bits (Number): bits of the architecture (32 or 64)
 aboutDialog-version = { $version } ({ $bits }-bit)
 # Example of resulting string: 66.0a1 (2019-01-16) (64-bit)
 # Variables:
-#   $version (String): version of Waterfox for Nightly builds, e.g. 66.0a1
+#   $version (String): version of Firefox for Nightly builds, e.g. 66.0a1
 #   $isodate (String): date in ISO format, e.g. 2019-01-16
 #   $bits (Number): bits of the architecture (32 or 64)
 aboutDialog-version-nightly = { $version } ({ $isodate }) ({ $bits }-bit)
+# Example of resulting string: 131.0a1 (aarch64)
+# Variables:
+#   $version (String): version of Firefox, e.g. 66.0.1
+#   $arch (String): name of the architecture (arm, aarch64, etc.)
+aboutdialog-version-arch = { $version } ({ $arch })
+# Example of resulting string: 131.0a1 (2024-08-27) (aarch64)
+# Variables:
+#   $version (String): version of Firefox for Nightly builds, e.g. 66.0a1
+#   $isodate (String): date in ISO format, e.g. 2019-01-16
+#   $arch (String): name of the architecture (arm, aarch64, etc.)
+aboutdialog-version-arch-nightly = { $version } ({ $isodate }) ({ $arch })

@@ -1,24 +1,17 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
 
 
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = Innstillingar
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = Innstillingar…
+menu-application-set-as-default =
+    .label = Bruk { -brand-shorter-name } som standardnettlesar
 menu-application-services =
     .label = Tenester
 menu-application-hide-this =
@@ -60,8 +53,8 @@ menu-file-new-tab =
     .label = Ny fane
     .accesskey = f
 menu-file-new-container-tab =
-    .label = Ny innhaldsfane
-    .accesskey = i
+    .label = Ny behaldarfane
+    .accesskey = b
 menu-file-new-window =
     .label = Nytt vindauge
     .accesskey = N
@@ -70,7 +63,7 @@ menu-file-new-private-window =
     .accesskey = v
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Waterfox is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = Opne adresse…
 menu-file-open-file =
@@ -97,6 +90,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = Del
     .accesskey = e
+menu-file-share-qrcode =
+    .label = Generer QR-kode…
+    .accesskey = G
+menu-file-share-qrcode2 =
+    .label = Generer QR-kode
+    .accesskey = G
 menu-file-print-setup =
     .label = Utskriftsformat…
     .accesskey = m
@@ -145,8 +144,6 @@ menu-view-history-button =
     .label = Historikk
 menu-view-synced-tabs-sidebar =
     .label = Synkroniserte faner
-menu-view-megalist-sidebar =
-    .label = Passord
 menu-view-full-zoom =
     .label = Skalering
     .accesskey = r
@@ -254,6 +251,22 @@ menu-bookmarks-other =
 menu-bookmarks-mobile =
     .label = Mobile bokmerke
 
+## Profiles Menu
+
+menu-profiles =
+    .label = Profilar
+menu-profiles-manage-profiles =
+    .label = Handsam profilar
+menu-profiles-new-profile =
+    .label = Ny profil
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (gjeldande)
+menu-profiles-menu =
+    .label = Profilar
+    .accesskey = P
+
 ## Tools Menu
 
 menu-tools =
@@ -262,6 +275,9 @@ menu-tools =
 menu-tools-downloads =
     .label = Nedlastingar
     .accesskey = N
+menu-tools-extensions-and-themes =
+    .label = Utvidingar og tema
+    .accesskey = U
 menu-tools-addons-and-themes =
     .label = Tillegg og tema
     .accesskey = T
@@ -289,6 +305,9 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Sideinformasjon
     .accesskey = d
+menu-tools-edit-pdf =
+    .label = Rediger PDF…
+    .accesskey = R
 menu-settings =
     .label = Innstillingar
     .accesskey =
@@ -339,7 +358,7 @@ menu-help-exit-troubleshoot-mode =
     .label = Slå av feilsøkingsmodus
     .accesskey = S
 menu-help-switch-device =
-    .label = Byter til ei ny eining
+    .label = Byte til ei ny eining
     .accesskey = B
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.

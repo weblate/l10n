@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -78,7 +78,7 @@ webrtc-indicator-sharing-browser =
 ## These strings are only used on Mac for menus attached to icons
 ## near the clock on the mac menubar.
 ## Variables:
-##   $streamTitle (String): the title of the tab using the share.
+##   $streamTitle (String): the host of the tab using the share.
 ##   $tabCount (Number): the title of the tab using the share.
 
 webrtc-indicator-menuitem-control-sharing =
@@ -197,4 +197,4 @@ webrtc-remember-allow-checkbox-camera-and-microphone = จำไว้สำห�
 webrtc-mute-notifications-checkbox = ปิดเสียงการแจ้งเตือนเว็บไซต์ขณะแบ่งปัน
 webrtc-reason-for-no-permanent-allow-screen = { -brand-short-name } ไม่สามารถอนุญาตการเข้าถึงแบบถาวรให้กับหน้าจอของคุณได้
 webrtc-reason-for-no-permanent-allow-audio = { -brand-short-name } ไม่อนุญาตให้เข้าถึงแท็บของคุณแบบถาวรโดยไม่ถามว่าจะแบ่งปันแท็บไหน
-webrtc-reason-for-no-permanent-allow-insecure = การเชื่อมต่อของคุณไปยังไซต์นี้ไม่ปลอดภัย เพื่อปกป้องคุณ { -brand-short-name } จะอนุญาตให้เข้าถึงเฉพาะในวาระนี้เท่านั้น
+webrtc-reason-for-no-permanent-allow-insecure = การเชื่อมต่อของคุณไปยังไซต์นี้ไม่ปลอดภัย เพื่อปกป้องคุณ { -brand-short-name } จะอนุญาตให้เข้าถึงเฉพาะในเซสชันนี้เท่านั้น

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -44,9 +44,3 @@ about-networking-rcwn-avg-long = متوسط الطويل
 about-networking-rcwn-std-dev-long = الانحراف المعياري الطويل
 about-networking-rcwn-cache-slow = مرات بطء الخبيئة
 about-networking-rcwn-cache-not-slow = مرات عدم بطء الخبيئة
-
-## Link is intended as "network link"
-
-
-##
-

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,5 +12,5 @@ speech-dispatcher-missing-symbol = Nem használhatja a beszédszintézist, mert 
 speech-dispatcher-open-fail = Nem használhatja a beszédszintézist, mert a Speech Dispatcher nem nyílik meg.
 speech-dispatcher-no-voices = Nem használhatja a beszédszintézist, mert a hangok nem érhetők el a Speech Dispatcherben.
 speech-dispatcher-dismiss-button =
-    .label = Ne mutassa ezt újra
+    .label = Ne jelenjen meg újra
     .accesskey = N

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -53,6 +53,10 @@ fxviewtabrow-move-tab-end = Mover al final
     .accesskey = E
 fxviewtabrow-move-tab-window = Mover a una nueva ventana
     .accesskey = W
+fxviewtabrow-send-to-device = Enviar al dispositivo
+    .accesskey = n
+fxviewtabrow-send-to-mobile = Enviar al celular
+    .accesskey = n
 fxviewtabrow-send-tab = Enviar pestaña al dispositivo
     .accesskey = n
 fxviewtabrow-pin-tab = Fijar Pestaña
@@ -63,8 +67,23 @@ fxviewtabrow-mute-tab = Silenciar pestaña
     .accesskey = S
 fxviewtabrow-unmute-tab = Desilenciar Pestaña
     .accesskey = s
+# Variables:
+#   $tabTitle (string) - Title of the tab to which the context menu is associated
+fxviewtabrow-options-menu-button =
+    .title = Opciones para { $tabTitle }
 
-## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 fxviewtabrow-mute-tab-button-no-context =
     .title = Silenciar pestaña
+fxviewtabrow-unmute-tab-button-no-context =
+    .title = Habilitar sonido de la pestaña
+fxviewtabrow-send-to-mobile-connect-device = Conectar un dispositivo para enviar pestañas
+fxviewtabrow-send-to-mobile-device-missing2 = ¿No ves tu dispositivo?
+fxviewtabrow-send-to-mobile-not-verified = Cuenta no verificada
+fxviewtabrow-send-to-mobile-verify-account = Verifica tu cuenta
+
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
+
+fxviewtabrow-send-to-mobile-sign-in = Inicia sesión para enviar pestañas
+fxviewtabrow-send-to-mobile-turn-on-sync = Activar Sincronización para enviar pestañas

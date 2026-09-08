@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -18,7 +18,7 @@ rights-safebrowsing = <strong>التصفح الآمن: </strong>لا يُنصح 
 rights-safebrowsing-term-1 = افتح تفضيلات البرنامج
 rights-safebrowsing-term-2 = اختر الأمن
 rights-safebrowsing-term-3 = ألغ تحديد الخيار لأجل "{ enableSafeBrowsing-label }"
-enableSafeBrowsing-label = احجب المحتوى الخطير و المخادع
+enableSafeBrowsing-label = احجب المحتوى الخطير والمخادع
 rights-safebrowsing-term-4 = أصبح التصفح الآمن معطلًا الآن
 rights-locationawarebrowsing = <strong>التصفح المُدرِك للمكان: </strong>هو دائمًا اختياري.  لن تُرسل معلومات عن مكانك من غير إذنك.  إذا أردت تعطيل هذه الميزة كليًا، اتبع الخطوات التالية:
 rights-locationawarebrowsing-term-1 = في شريط العنوان، اكتب <code>about:config</code>

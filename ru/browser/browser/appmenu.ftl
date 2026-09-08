@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -6,15 +6,19 @@
 ## App Menu
 
 appmenuitem-banner-update-downloading =
-    .label = Загрузка обновления { -brand-shorter-name }
+    .label = Скачивание обновления { -brand-shorter-name }
 appmenuitem-banner-update-available =
-    .label = Доступно обновление — загрузить сейчас
+    .label = Доступно обновление — скачать сейчас
 appmenuitem-banner-update-manual =
-    .label = Доступно обновление — загрузить сейчас
+    .label = Доступно обновление — скачать сейчас
 appmenuitem-banner-update-unsupported =
     .label = Не удалось выполнить обновление — несовместимая система
 appmenuitem-banner-update-restart =
     .label = Доступно обновление — перезапустить сейчас
+appmenu-nova-fxa-sign-in = Войти
+appmenu-nova-switch-device-promo =
+    .message = Скоро появится новое устройство? Возьмите { -brand-short-name } с собой!
+appmenu-nova-switch-device-link = Как перенести ваши данные
 appmenuitem-new-tab =
     .label = Новая вкладка
 appmenuitem-new-window =
@@ -23,10 +27,16 @@ appmenuitem-new-private-window =
     .label = Новое приватное окно
 appmenuitem-history =
     .label = Журнал
+appmenuitem-tab-groups =
+    .label = Группы вкладок
 appmenuitem-downloads =
     .label = Загрузки
 appmenuitem-passwords =
     .label = Пароли
+appmenuitem-extensions-and-themes =
+    .label = Расширения и темы
+appmenuitem-extensions =
+    .label = Расширения
 appmenuitem-addons-and-themes =
     .label = Дополнения и темы
 appmenuitem-print =
@@ -67,10 +77,10 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Полный экран
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
-    .label = Войти для синхронизации…
+    .label = Войти в синхронизацию…
 appmenu-remote-tabs-turn-on-sync =
     .label = Включить синхронизацию…
 # This is shown after the tabs list if we can display more tabs by clicking on the button
@@ -88,7 +98,7 @@ appmenu-remote-tabs-tabsnotsyncing = Включите синхронизацию
 appmenu-remote-tabs-opensettings =
     .label = Настройки
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Хотите увидеть здесь ваши вкладки с других устройств?
 appmenu-remote-tabs-connectdevice =
     .label = Подключить другое устройство
@@ -97,7 +107,7 @@ appmenu-remote-tabs-unverified = Ваш аккаунт должен быть п�
 appmenuitem-fxa-toolbar-sync-now2 = Синхронизировать
 appmenuitem-fxa-sign-in = Войти в { -brand-product-name }
 appmenuitem-fxa-manage-account = Управление аккаунтом
-appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name(case: "nominative_uppercase") }
 appmenu-account-header = Аккаунт
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
@@ -108,8 +118,11 @@ appmenu-fxa-sync-and-save-data2 = Синхронизация и сохранен
 appmenu-fxa-signed-in-label = Войти
 appmenu-fxa-setup-sync =
     .label = Включить синхронизацию…
+appmenu-fxa-setup-sync-new = Включить
 appmenuitem-save-page =
     .label = Сохранить как…
+appmenuitem-fxa-sync-off-title = Синхронизация отключена
+appmenuitem-fxa-sync-off-description = Защитите и получите доступ к своим закладкам, паролям и многому другому из любого места.
 
 ## What's New panel in App menu.
 
@@ -120,7 +133,7 @@ whatsnew-panel-footer-checkbox =
     .label = Уведомлять о новых функциях
     .accesskey = в
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -163,6 +176,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+profiler-button-dropmarker =
+    .label = Открыть панель профайлера
+    .tooltiptext = Открыть панель профайлера
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -189,9 +205,15 @@ profiler-popup-presets-graphics-label =
 profiler-popup-presets-media-description2 = Настройки для выявления ошибок аудио и видео в { -brand-shorter-name }.
 profiler-popup-presets-media-label =
     .label = Медиа
+profiler-popup-presets-ml-description = Настройки для выявления ошибок машинного обучения в { -brand-shorter-name }.
+profiler-popup-presets-ml-label =
+    .label = Машинное обучение
 profiler-popup-presets-networking-description = Настройки для выявления сетевых ошибок в { -brand-shorter-name }.
 profiler-popup-presets-networking-label =
     .label = Сеть
+profiler-popup-presets-networking-with-logs-description = Настройки для выявления сетевых ошибок в { -brand-shorter-name }, включая сетевые журналы. Эти журналы могут содержать конфиденциальную информацию, такую как URL-адреса, которые вы посещали.
+profiler-popup-presets-networking-with-logs-label =
+    .label = Сетевой обмен и журналы
 profiler-popup-presets-power-description = Настройки для выявления ошибок потребления энергии в { -brand-shorter-name }, с небольшими накладными расходами.
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
@@ -199,6 +221,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = Предустановка для отладки в { -brand-shorter-name }. Большие накладные расходы, не используйте для работы с производительностью, а используйте для понимания поведения браузера.
 profiler-popup-presets-debug-label =
     .label = Отладка
+profiler-popup-presets-web-compat-description = Рекомендуемые преднастройки для отладки проблем веб-совместимости на веб-сайтах, а не для отслеживания производительности.
+profiler-popup-presets-web-compat-label =
+    .label = Веб-совместимость
 profiler-popup-presets-custom-label =
     .label = Персональный
 
@@ -264,6 +289,10 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = Настройка панели инструментов…
+appmenu-abouttranslations =
+    .label = Перевести…
+appmenu-edit-pdf =
+    .label = Изменить PDF…
 appmenu-developer-tools-subheader = Инструменты браузера
 appmenu-developer-tools-extensions =
     .label = Расширения для разработчиков
@@ -273,9 +302,41 @@ appmenuitem-report-broken-site =
 ## Panel for privacy and security products
 
 appmenuitem-sign-in-account = Войдите в свой аккаунт
+appmenuitem-monitor-title2 = Защитите себя от кражи личных данных
+appmenuitem-monitor-description2 = Получайте оповещения об утечках данных
 appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Получайте уведомления об утечках данных
 appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-title2 = Приватность вашей электронной почты
+appmenuitem-relay-description2 = Помогает предотвратить спам в вашем почтовом ящике
 appmenuitem-relay-description = Скройте свои настоящие электронную почту и телефон
+appmenuitem-services-relay-description = Запустить панель псевдонимов электронной почты
+appmenuitem-vpn-title2 = Скройте свое местоположение с помощью { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description3 = Усложните отслеживание вашего веб-сёрфинга
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = Получите полную защиту устройства
 appmenuitem-vpn-description = Защитите свою активность в Интернете
+appmenu-services-header = Мои сервисы
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = Инструменты приватности
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = Попробуйте другие инструменты защиты от BrowserWorks:
+appmenu-other-protection-header = Попробуйте другие инструменты защиты от { -vendor-short-name }:
+
+## Profiles panel
+
+appmenu-other-profiles = Другие профили
+appmenu-manage-profiles =
+    .label = Управление профилями
+appmenu-copy-profile =
+    .label = Копировать этот профиль
+appmenu-create-profile =
+    .label = Новый профиль
+appmenu-edit-profile =
+    .aria-label = Редактировать профиль
+appmenu-profiles-2 =
+    .label = Профили

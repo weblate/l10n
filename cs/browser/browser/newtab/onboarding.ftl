@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -29,6 +29,8 @@ return-to-amo-subtitle =
 return-to-amo-addon-title = Teď zpět k doplňku <img data-l10n-name="icon"/> <b>{ $addon-name }</b>.
 return-to-amo-add-extension-label = Přidat rozšíření
 return-to-amo-add-theme-label = Přidat motiv vzhledu
+return-to-amo-theme-install-complete-label = Vzhled nainstalován
+return-to-amo-extension-install-complete-label = Rozšíření nainstalováno
 
 ##  Variables: $addon-name (String) - Name of the add-on to be installed
 
@@ -56,9 +58,9 @@ onboarding-welcome-steps-indicator-label =
     .aria-label = Postup: krok { $current } z { $total }
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Vypnout animace
-# String for the Waterfox Accounts button
+# String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = Přihlásit se
-# The primary import button label will depend on whether we can detect which browser was used to download Waterfox.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Importovat z prohlížeče { $previous }
@@ -69,9 +71,6 @@ mr1-onboarding-theme-subtitle =
        *[no-cases] Přizpůsobte si vzhled aplikace { -brand-short-name }
     }
 mr1-onboarding-theme-secondary-button-label = Teď ne
-newtab-wallpaper-onboarding-title = Zkuste barevný nádech
-newtab-wallpaper-onboarding-subtitle = Vyberte si tapetu, která dodá každému novému panelu nový vzhled.
-newtab-wallpaper-onboarding-primary-button-label = Nastavit tapetu
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = Podle systému
 mr1-onboarding-theme-label-light = Světlý
@@ -79,6 +78,15 @@ mr1-onboarding-theme-label-dark = Tmavý
 # "Alpenglow" here is the name of the theme, and should be kept in English.
 mr1-onboarding-theme-label-alpenglow = Alpenglow
 onboarding-theme-primary-button-label = Hotovo
+
+## Accessible labels for the icon-only play/pause toggle that controls animated
+## illustrations on the onboarding screen. The button replaces the animation
+## with a static image when clicked.
+
+onboarding-animation-pause-button =
+    .aria-label = Pozastavit animaci
+onboarding-animation-play-button =
+    .aria-label = Přehrát animaci
 
 ## Please make sure to split the content of the title attribute into lines whose
 ## width corresponds to about 40 Latin characters, to ensure that the tooltip
@@ -88,42 +96,42 @@ onboarding-theme-primary-button-label = Hotovo
 # Tooltip displayed on hover of system theme
 mr1-onboarding-theme-tooltip-system =
     .title =
-        Vzhled s barevným tématem
+        Vzhled s barevným motivem
         podle nastavení operačního systému.
 # Input description for system theme
 mr1-onboarding-theme-description-system =
     .aria-description =
-        Vzhled s barevným tématem
+        Vzhled s barevným motivem
         podle nastavení operačního systému.
 # Tooltip displayed on hover of light theme
 mr1-onboarding-theme-tooltip-light =
     .title =
-        Vzhled se světlým barevným tématem
+        Vzhled se světlým barevným motivem
         pro tlačítka, nabídky a okna.
 # Input description for light theme
 mr1-onboarding-theme-description-light =
     .aria-description =
-        Vzhled se světlým barevným tématem
+        Vzhled se světlým barevným motivem
         pro tlačítka, nabídky a okna.
 # Tooltip displayed on hover of dark theme
 mr1-onboarding-theme-tooltip-dark =
     .title =
-        Vzhled s tmavým barevným tématem
+        Vzhled s tmavým barevným motivem
         pro tlačítka, nabídky a okna.
 # Input description for dark theme
 mr1-onboarding-theme-description-dark =
     .aria-description =
-        Vzhled s tmavým barevným tématem
+        Vzhled s tmavým barevným motivem
         pro tlačítka, nabídky a okna.
 # Tooltip displayed on hover of Alpenglow theme
 mr1-onboarding-theme-tooltip-alpenglow =
     .title =
-        Vzhled s barevným tématem
+        Vzhled s barevným motivem
         pro tlačítka, nabídky a okna.
 # Input description for Alpenglow theme
 mr1-onboarding-theme-description-alpenglow =
     .aria-description =
-        Vzhled s barevným tématem
+        Vzhled s barevným motivem
         pro tlačítka, nabídky a okna.
 # Selector description for default themes
 mr2-onboarding-default-theme-label = Vyzkoušet výchozí vzhledy.
@@ -160,7 +168,7 @@ mr2022-onboarding-live-language-continue-in = Ponechat jazyk { $appLanguage }
 onboarding-live-language-secondary-cancel-download = Zrušit
 onboarding-live-language-skip-button-label = Přeskočit
 
-## Waterfox 100 Thank You screens
+## Firefox 100 Thank You screens
 
 # "Hero Text" displayed on left side of welcome screen. This text can be
 # formatted to span multiple lines as needed. The <span data-l10n-name="zap">
@@ -182,8 +190,8 @@ fx100-thank-you-pin-primary-button-label =
             }
        *[other]
             { -brand-short-name.case-status ->
-                [with-cases] Připnout { -brand-short-name(case: "acc") } na lištu
-               *[no-cases] Připnout aplikaci { -brand-short-name } na lištu
+                [with-cases] Připnout { -brand-short-name(case: "acc") } na systémový hlavní panel
+               *[no-cases] Připnout aplikaci { -brand-short-name } na systémový hlavní panel
             }
     }
 fx100-upgrade-thanks-header = Děkujeme 100krát
@@ -215,20 +223,20 @@ mr2022-onboarding-easy-setup-set-default-checkbox-label =
 # Import action checkbox label used on new user onboarding first screen
 mr2022-onboarding-easy-setup-import-checkbox-label = Importovat z dříve používaného prohlížeče
 
-## MR2022 New User Pin Waterfox screen strings
+## MR2022 New User Pin Firefox screen strings
 
-# Title used on about:welcome for new users when Waterfox is not pinned.
+# Title used on about:welcome for new users when Firefox is not pinned.
 # In this context, open up is synonymous with "Discover".
-# The metaphor is that when they open their Waterfox browser, it helps them discover an amazing internet.
+# The metaphor is that when they open their Firefox browser, it helps them discover an amazing internet.
 # If this translation does not make sense in your language, feel free to use the word "discover."
 mr2022-onboarding-welcome-pin-header = Objevte úžasný internet
-# Subtitle is used on onboarding page for new users page when Waterfox is not pinned
+# Subtitle is used on onboarding page for new users page when Firefox is not pinned
 mr2022-onboarding-welcome-pin-subtitle =
     { -brand-short-name.case-status ->
         [with-cases] Spusťte { -brand-short-name(case: "acc") } odkudkoli jediným klepnutím. Pokaždé, když to uděláte, volíte otevřenější a nezávislejší web.
        *[no-cases] Spusťte aplikaci { -brand-short-name } odkudkoli jediným klepnutím. Pokaždé, když to uděláte, volíte otevřenější a nezávislejší web.
     }
-# Primary button string used on welcome page for when Waterfox is not pinned.
+# Primary button string used on welcome page for when Firefox is not pinned.
 mr2022-onboarding-pin-primary-button-label =
     { PLATFORM() ->
         [macos]
@@ -238,28 +246,34 @@ mr2022-onboarding-pin-primary-button-label =
             }
        *[other]
             { -brand-short-name.case-status ->
-                [with-cases] Připnout { -brand-short-name(case: "acc") } na hlavní panel
-               *[no-cases] Připnout aplikaci { -brand-short-name } na hlavní panel
+                [with-cases] Připnout { -brand-short-name(case: "acc") } na systémový hlavní panel
+               *[no-cases] Připnout aplikaci { -brand-short-name } na systémový hlavní panel
             }
     }
-# Subtitle will be used when user already has Waterfox pinned, but
+# Primary button string used on welcome page for when Firefox is not pinned on MSIX
+mr2022-onboarding-pin-primary-button-label-msix =
+    { -brand-short-name.case-status ->
+        [with-cases] Připnout { -brand-short-name(case: "acc") } na systémový hlavní panel a do nabídky start
+       *[no-cases] Připnout aplikaci { -brand-short-name } na systémový hlavní panel a do nabídky start
+    }
+# Subtitle will be used when user already has Firefox pinned, but
 # has not set it as their default browser.
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
 mr2022-onboarding-set-default-only-subtitle = Začněte s prohlížečem podporovaným neziskovou organizací. Chráníme vaše soukromí, když se pohybujete po webu.
 
-## MR2022 Existing User Pin Waterfox Screen Strings
+## MR2022 Existing User Pin Firefox Screen Strings
 
-# Title used on multistage onboarding page for existing users when Waterfox is not pinned
+# Title used on multistage onboarding page for existing users when Firefox is not pinned
 mr2022-onboarding-existing-pin-header =
     { -brand-product-name.case-status ->
         [with-cases] Děkujeme, že máte rádi { -brand-product-name(case: "acc") }
        *[no-cases] Děkujeme, že máte rádi aplikaci { -brand-product-name }
     }
-# Subtitle is used on onboarding page for existing users when Waterfox is not pinned
+# Subtitle is used on onboarding page for existing users when Firefox is not pinned
 mr2022-onboarding-existing-pin-subtitle = Spusťte zdravější internet odkudkoli jediným klepnutím. Naše nejnovější aktualizace je plná nových věcí, o kterých si myslíme, že si je zamilujete.
 # Subtitle will be used on the welcome screen for existing users
-# when they already have Waterfox pinned but not set as default
+# when they already have Firefox pinned but not set as default
 mr2022-onboarding-existing-set-default-only-subtitle = Používejte prohlížeč, který chrání vaše soukromí při procházení webu. Naše nejnovější aktualizace je plná věcí, které si zamilujete.
 mr2022-onboarding-existing-pin-checkbox-label =
     { -brand-short-name.case-status ->
@@ -286,14 +300,16 @@ mr2022-onboarding-set-default-subtitle = Používejte prohlížeč podporovaný 
 
 ## MR2022 Get Started screen strings.
 ## These strings will be used on the welcome page
-## when Waterfox is already set to default and pinned.
+## when Firefox is already set to default and pinned.
 
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
-mr2022-onboarding-get-started-primary-subtitle = Naše nejnovější verze je postavená podle vás, díky čemuž je procházení webu snazší než kdykoli předtím. Je nabitá funkcemi, které si podle nás zamilujete.
+mr2022-onboarding-get-started-primary-subtitle = Naše nejnovější verze je postavená podle vás, díky čemuž je procházení webu snazší než kdykoliv předtím. Je nabitá funkcemi, které si podle nás zamilujete.
 mr2022-onboarding-get-started-primary-button-label = Nastavení během okamžiku
 
-## MR2022 Import Settings screen strings
+## MR2022 Get Started screen strings.
+## These strings will be used on the welcome page
+## when Firefox is already set to default and pinned.
 
 mr2022-onboarding-import-header = Bleskové nastaveni
 mr2022-onboarding-import-subtitle =
@@ -369,7 +385,7 @@ mr2022-onboarding-no-mobile-download-cta-text =
     }
 
 ## MR2022 Upgrade Dialog screens
-## Pin private window screen shown only for users who don't have Waterfox private pinned
+## Pin private window screen shown only for users who don't have Firefox private pinned
 
 mr2022-upgrade-onboarding-pin-private-window-header = Získejte svobodu soukromého prohlížení jediným klepnutím
 mr2022-upgrade-onboarding-pin-private-window-subtitle = Žádné uložené cookies ani historie, přímo z vaší plochy. Prohlížejte, jako když se nikdo nedívá.Žádné uložené soubory cookies ani historie, přímo z vaší plochy. Prohlížejte, jako by se nikdo nedíval.
@@ -382,8 +398,8 @@ mr2022-upgrade-onboarding-pin-private-window-primary-button-label =
             }
        *[other]
             { -brand-short-name.case-status ->
-                [with-cases] Připnout anonymní prohlížení { -brand-short-name(case: "gen") } na hlavní panel
-               *[no-cases] Připnout anonymní prohlížení aplikace { -brand-short-name } na hlavní panel
+                [with-cases] Připnout anonymní prohlížení { -brand-short-name(case: "gen") } na systémový hlavní panel
+               *[no-cases] Připnout anonymní prohlížení aplikace { -brand-short-name } na systémový hlavní panel
             }
     }
 
@@ -466,8 +482,26 @@ onboarding-device-migration-image-alt =
     .aria-label = Liška na obrazovce přenosného počítače mává. V notebooku je připojena myš.
 onboarding-device-migration-title = Vítejte zpět!
 onboarding-device-migration-subtitle = Přihlaste se ke svému { -fxaccount-brand-name(capitalization: "sentence", case: "dat") } a přeneste si své záložky, hesla a historii do nového zařízení.
-onboarding-device-migration-subtitle2 = Přihlaste se ke svému účtu a přeneste své záložky, hesla a historii na vaše nové zařízení.
+onboarding-device-migration-subtitle2 = Přihlaste se do svého účtu a přeneste své záložky, hesla a historii na vaše nové zařízení.
 onboarding-device-migration-primary-button-label = Přihlásit se
+
+## Add-ons Picker screen
+
+amo-picker-title =
+    { -brand-short-name.gender ->
+        [masculine] Přizpůsobte si svůj { -brand-short-name(case: "acc") }
+        [feminine] Přizpůsobte si svou { -brand-short-name(case: "acc") }
+        [neuter] Přizpůsobte si své { -brand-short-name(case: "acc") }
+       *[other] Přizpůsobte si svou aplikaci { -brand-short-name }
+    }
+amo-picker-subtitle = Rozšíření jsou něco jako aplikace pro váš prohlížeč. Umožňují vám chránit hesla, stahovat videa, hledat akční nabídky, blokovat obtěžující reklamy, měnit vzhled prohlížeče a mnoho dalšího.
+amo-picker-install-button-label =
+    { -brand-short-name.case-status ->
+        [with-cases] Přidat do { -brand-short-name(case: "gen") }
+       *[no-cases] Přidat do aplikace { -brand-short-name }
+    }
+amo-picker-install-complete-label = Nainstalováno
+amo-picker-collection-link = Prozkoumat další doplňky
 
 ## The following screens have been updated to use security and privacy focused strings:
 
@@ -484,6 +518,11 @@ onboarding-gratitude-security-and-privacy-subtitle =
         [with-cases] Děkujeme, že používáte { -brand-short-name(case: "acc") }, za kterým stojí nadace BrowserWorks. S vaší podporou pracujeme na tom, aby byl internet bezpečnější a přístupnější pro všechny.
        *[no-cases] Děkujeme, že používáte aplikaci { -brand-short-name }, za kterým stojí nadace BrowserWorks. S vaší podporou pracujeme na tom, aby byl internet bezpečnější a přístupnější pro všechny.
     }
+# Sign up or Sign in screen
+onboarding-sign-up-title = Synchronizujte svoje údaje mezi zařízeními
+onboarding-sign-up-description = Zaregistrujte si účet a všechny vaše důležité informace — hesla, záložky a další — budou bezpečně uloženy a dostupné při přihlášení na jakémkoli zařízení.
+onboarding-sign-up-button = Přihlásit nebo registrovat
+onboarding-sign-up-secondary-button = Začít pohlížet
 
 ## New user time and familiarity survey strings
 
@@ -515,3 +554,337 @@ onboarding-new-user-survey-familiarity-based-option-1 = Jsem nováček
 onboarding-new-user-survey-familiarity-based-option-2 = Několikrát jsem ho použil
 onboarding-new-user-survey-familiarity-based-option-3 = Znám jej velmi dobře
 onboarding-new-user-survey-familiarity-based-option-4 = V minulosti jsem jej používal, ale už je to nějaký čas
+
+## UI strings for the sidebar and vertical tabs
+
+# Setup screen for vertical tabs
+onboarding-new-tabs-title = Sdělte nám, kde chcete mít své panely
+# Setup screen for vertical tabs - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-new-tabs-subtitle = Přepněte si ho kdykoliv chcete v nastavení postranní lišty.
+# Setup screen for vertical tabs - too many tabs variation
+onboarding-many-tabs-title = Vaše panely, vaše volba
+# Setup screen for vertical tabs - subtitle for too many tabs variation
+onboarding-many-tabs-subtitle = Máte otevřeno mnoho panelů? Vyzkoušejte panely na boční straně a získejte tak přehlednější zobrazení. Nebo si zachovejte klasický vzhled s panely nahoře. Přepnout můžete kdykoliv.
+# Setup screen for vertical tabs - focused variation
+onboarding-focused-tabs-title = Vyberte si rozložení panelů
+# Setup screen for vertical tabs - subtitle for focused variation
+onboarding-focused-tabs-subtitle = Chcete-li mít přehlednější zobrazení, které vám pomůže udržet pozornost, vyzkoušejte svislé panely. Nebo zůstaňte u klasického zobrazení s panely nahoře. Přepnout mezi nimi můžete kdykoliv.
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-new-vertical-tabs-label = Panely na straně
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-new-horizontal-tabs-label = Panely v horní části
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title = Svislé panely jsou tady
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title2 = Představujeme svislé panely
+# Setup screen for vertical tabs for existing users - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-existing-tabs-subtitle = Vyzkoušejte panely nalevo. Zobrazení panelů můžete kdykoliv přepnout v nastavení postranní lišty.
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-existing-vertical-tabs-label = Vyzkoušet svislé panely
+onboarding-flair-text = Novinka!
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-existing-horizontal-tabs-label = Ponechat panely vodorovně
+# Tooltip displayed on hover for vertical tabs image
+onboarding-vertical-tabs-tooltip =
+    .title =
+        { -brand-shorter-name.case-status ->
+            [with-cases] Okno prohlížeče zobrazující panely podél obrazovky jako součást postranní lišty { -brand-shorter-name(case: "gen") }.
+           *[no-cases] Okno prohlížeče zobrazující panely podél obrazovky jako součást postranní lišty aplikace { -brand-shorter-name }.
+        }
+# Description for vertical tabs image
+onboarding-vertical-tabs-description =
+    .aria-description =
+        { -brand-shorter-name.case-status ->
+            [with-cases] Okno prohlížeče zobrazující panely podél obrazovky jako součást postranní lišty { -brand-shorter-name(case: "gen") }.
+           *[no-cases] Okno prohlížeče zobrazující panely podél obrazovky jako součást postranní lišty aplikace { -brand-shorter-name }.
+        }
+# Tooltip displayed on hover for horizontal tabs image
+onboarding-horizontal-tabs-tooltip =
+    .title = Okno prohlížeče s panely v horní části.
+# Description for horizontal tabs image
+onboarding-horizontal-tabs-description =
+    .aria-description = Okno prohlížeče s panely v horní části.
+# Additional setup card for setting up aichatbot in the sidebar
+onboarding-genai-sidebar-title = Vyzkoušejte AI chatbota v postranní liště
+# Setup card for setting up AI chatbot in the sidebar; "Providers" refers to AI chatbot providers (e.g. OpenAI, etc). "Switch anytime" refers to allowing the user to switch to a different chatbot.
+onboarding-genai-sidebar-subtitle = Shrnujte webový obsah, využívejte nové nápady, koncepty zpráv – to vše během prohlížení. Vyberte si z více poskytovatelů. Přepnout můžete kdykoliv. <a data-l10n-name="learn-more">Zjistit více</a>
+onboarding-genai-sidebar-primary-button = Vyberte si chatbota
+onboarding-genai-sidebar-secondary-button = Začít prohlížet
+
+## New user onboarding checklist
+
+onboarding-checklist-title =
+    { -brand-short-name.case-status ->
+        [with-cases] Dokončení nastavení { -brand-short-name(case: "gen") }
+       *[no-cases] Dokončení nastavení aplikace { -brand-short-name }
+    }
+onboarding-checklist-subtitle = Dokončete tyto kroky a využijte tak své prohlížení na maximum.
+onboarding-checklist-set-default =
+    { -brand-short-name.case-status ->
+        [with-cases] Nastavit { -brand-short-name(case: "acc") } jako výchozí prohlížeč
+       *[no-cases] Nastavit aplikaci { -brand-short-name } jako výchozí prohlížeč
+    }
+onboarding-checklist-pin =
+    { -brand-short-name.case-status ->
+        [with-cases] Připnout { -brand-short-name(case: "acc") } na systémový hlavní panel
+       *[no-cases] Připnout aplikaci { -brand-short-name } na systémový hlavní panel
+    }
+onboarding-checklist-import = Importovat z dříve používaného prohlížeče
+onboarding-checklist-extension = Přidat rozšíření
+onboarding-checklist-sign-up = Přihlaste se do svého účtu nebo si ho vytvořte
+onboarding-checklist-minimize =
+    .label = Minimalizovat
+onboarding-checklist-remove =
+    .label = Odstranit kontrolní seznam
+
+## Tab Groups feature onboarding strings
+
+tab-groups-onboarding-feature-callout-title = Vyzkoušejte skupiny panelů, abyste měli méně nepořádku a více se soustředili.
+tab-groups-onboarding-feature-callout-subtitle = Utřiďte si panely přesunutím jednoho na druhý, čímž vytvoříte svoji první skupinu.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-create-group-title-3 = Skupiny panelů najdete vždy v nabídce Seznam všech panelů.
+tab-groups-onboarding-create-group-title-2 = Kdykoliv zde najdete své skupiny panelů.
+tab-groups-onboarding-create-group-no-alltabs-button-title = Skupiny najdete vyhledáním v adresním řádku.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-saved-groups-title-3 = Když skupinu panelů zavřete, můžete ji kdykoliv znovu otevřít z nabídky Seznam všech panelů.
+tab-groups-onboarding-saved-groups-title-2 = Když skupinu panelů zavřete, můžete ji zde kdykoliv znovu otevřít.
+tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = Uzavřené skupiny najdete vyhledáním v adresním řádku.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-session-restore-title-2 = Skupiny panelů můžete kdykoli znovu otevřít z nabídky Seznam všech panelů.
+tab-groups-onboarding-session-restore-title = Zde můžete kdykoliv znovu otevřít skupiny panelů.
+tab-groups-onboarding-dismiss = OK
+
+## Multi Profiles feature onboarding messages
+
+multi-profile-spotlight-title =
+    { -brand-product-name.case-status ->
+        [with-cases] Pozdravte profily { -brand-product-name(case: "gen") }
+       *[no-cases] Pozdravte profily aplikace { -brand-product-name }
+    }
+multi-profile-spotlight-body = Snadno přepínejte mezi prohlížením pro práci a pro zábavu. Profily uchovávají informace o procházení internetu, včetně historie vyhledávání a hesel, zcela odděleně, takže si můžete ve věcech udržet pořádek.
+multi-profile-spotlight-cta = Vytvořit profil
+multi-profile-callout-title = Vytvořte si různé profily pro práci a zábavu
+multi-profile-callout-subtitle = Profily umožňují uchovávat informace o procházení internetu, jako je historie vyhledávání a hesla, zcela odděleně.
+multi-profile-callout-cta = Vytvořit profil
+
+## Desktop to Mobile Adoption feature callout strings
+
+# If translating the headline is challenging, consider using a simplified alternative as a reference: 'Sync your browsing with Firefox for mobile.'
+desktop-to-mobile-headline = Stáhněte, synchronizujte a vyrazte na cesty!
+# The phrase, 'on the go', is used to describe when people are very busy and are traveling from place to place.
+desktop-to-mobile-subtitle =
+    { -brand-product-name.case-status ->
+        [with-cases] Naskenujte QR kód a stáhněte si { -brand-product-name(case: "acc") } pro mobily. Po instalaci vyberte možnost "Synchronizovat s mobilním telefonem" a získejte přístup ke svým heslům, záložkám a dalším údajům na cestách.
+       *[no-cases] Naskenujte QR kód a stáhněte si aplikaci { -brand-product-name } pro mobily. Po instalaci vyberte možnost "Synchronizovat s mobilním telefonem" a získejte přístup ke svým heslům, záložkám a dalším údajům na cestách.
+    }
+dismiss-button-label = Zavřít
+sync-to-mobile-button-label = Synchronizace s mobilem
+desktop-to-mobile-qr-code-alt =
+    .aria-label =
+        { -brand-product-name.case-status ->
+            [with-cases] QR kód pro stažení { -brand-product-name(case: "gen") } pro mobily
+           *[no-cases] QR kód pro stažení aplikace { -brand-product-name } pro mobily
+        }
+
+## Fx Backup onboarding: Create Backup spotlight
+
+create-backup-screen-1-title =
+    Chcete aktualizovat na Windows 11?
+    Pojďme zazálohovat data aplikace { -brand-product-name }.
+create-backup-screen-1-subtitle = Automaticky chraňte svá hesla, záložky a další data během 1–2 minut.
+create-backup-screen-1-flair = Doporučeno
+create-backup-learn-more-link = <a data-l10n-name="learn-more-label">Zjistit více</a>
+create-backup-screen-1-sync-label =
+    { -brand-product-name.case-status ->
+        [with-cases] Synchronizace s { -brand-product-name(case: "ins") }
+       *[no-cases] Synchronizace s aplikací { -brand-product-name }
+    }
+create-backup-screen-1-sync-body = Zálohuje všechna přihlášená zařízení
+create-backup-screen-1-backup-label = Zálohovat do PC
+create-backup-screen-1-backup-body = Uloží na vaše zařízení nebo na OneDrive
+create-backup-select-tile-button-label = Vybrat
+create-backup-back-button-label = Zpět
+create-backup-show-fewer =
+    .label = Zobrazovat méně podobných
+create-backup-screen-2-title =
+    { -brand-product-name.case-status ->
+        [with-cases] Vyberte údaje { -brand-product-name(case: "gen") }, které chcete zálohovat
+       *[no-cases] Vyberte údaje aplikace { -brand-product-name }, které chcete zálohovat
+    }
+create-backup-screen-2-subtitle = Trvá to jen minutku. Vaše data jsou zálohována jednou denně.
+# Label for the "Easy setup" backup option
+create-backup-screen-2-easy-label = Snadné nastavení
+# Preceded by a green check mark indicating that these are included in "Easy setup" backup
+create-backup-screen-2-easy-list-1 = Záložky, historie, nastavení a další
+# Preceded by a red X indicating that these are not included in the "Easy setup" backup
+create-backup-screen-2-easy-list-2 = Nezahrnuje hesla a platební metody
+# Preceded by a red X indicating that "Easy setup" backups are not encrypted
+create-backup-screen-2-easy-list-3 = Není zašifrováno
+# Label for the "All data" backup option
+create-backup-screen-2-all-label = Všechna data
+# Preceded by a green check mark indicating that these are included in the "All data" backup
+create-backup-screen-2-all-list-2 = Zahrnuje hesla a platební metody
+# Preceded by a green check mark and shield indicating "All data" backups are encrypted
+create-backup-screen-2-all-list-3 = Zašifrováno heslem
+# Title for a screen asking users to choose a file location
+create-backup-screen-3-location = Kam chcete zálohu uložit?
+# Title for a screen asking users to create a password that will encrypt the backup
+create-backup-screen-3-title = Vytvoření hesla pro soubor se zálohou
+create-backup-screen-3-subtitle = Vyžadováno pro šifrování vašich dat. Uložte si ho na místo, které si budete pamatovat.
+fx-backup-opt-in-header = Vyberte umístění souboru
+fx-backup-opt-in-filepath-label = Vyberte místo, které plánujete přenést do nového zařízení, například OneDrive.
+fx-backup-opt-in-create-password-label = Zadejte heslo
+fx-backup-opt-in-confirm-btn-label = Pokračovat
+fx-backup-opt-in-cancel-btn-label = Zpět
+
+## Fx Backup confirmation screen strings
+
+fx-backup-confirmation-screen-title = Vaše záloha je naplánována
+fx-backup-confirmation-screen-close-button = Zavřít
+
+## These strings appear as a confirmation of which items will or won't be included as part of the selected backup method.
+
+fx-backup-confirmation-screen-all-data-item-text-1 = Všechna data o prohlížení jsou zahrnuta
+fx-backup-confirmation-screen-all-data-item-text-2 = Uloženo do vašeho zařízení
+fx-backup-confirmation-screen-all-data-item-text-3 = Zašifrováno a chráněno heslem
+fx-backup-confirmation-screen-easy-setup-item-text-1 = Obsahuje záložky, historii, nastavení a další data.
+fx-backup-confirmation-screen-easy-setup-item-text-2 = Uloženo do vašeho zařízení
+fx-backup-confirmation-screen-easy-setup-item-text-3 = Hesla a platební metody nejsou zahrnuty
+fx-backup-confirmation-screen-easy-setup-item-subtext-3 = Přejděte do <a data-l10n-name="settings">Nastavení</a> a zahrňte svá důvěrná data.
+fx-backup-confirmation-screen-item-subtext-1 = Zálohování začne za několik minut a bude probíhat jednou denně. Stav můžete zkontrolovat v <a data-l10n-name="settings">Nastavení</a>.
+fx-backup-confirmation-screen-item-subtext-2 = { -brand-short-name } vyhledá vaši zálohu, pokud budete potřebovat přeinstalovat.
+
+## Restore from Backup Flow about:welcome screens
+
+restore-from-backup-secondary-top-button = Obnova ze zálohy
+restore-from-backup-title =
+    { -brand-short-name.case-status ->
+        [with-cases] Vraťme { -brand-short-name(case: "acc") } zpět do podoby, jaká se vám líbí
+       *[no-cases] Vraťme aplikaci { -brand-short-name } zpět do podoby, jaká se vám líbí
+    }
+restore-from-backup-subtitle = Obnovte všechny své záložky, historii a další data, abyste se mohli vrátit k prohlížení.
+restore-from-backup-secondary-button = Neobnovovat
+multiple-backups-info-tile = <strong>Nalezeno více souborů se zálohou.</strong> Je vybrán nejnovější soubor. Ostatní profily můžete obnovit v <a data-l10n-name="settings-label">Nastavení</a>.
+
+## Restored from Backup spotlight
+
+restored-from-backup-success-title =
+    { -brand-short-name.case-status ->
+        [with-cases] Jsme zpět! Vaše data { -brand-short-name(case: "gen") } byla obnovena.
+       *[no-cases] Jsme zpět! Vaše data aplikace { -brand-short-name } byla obnovena.
+    }
+restored-from-backup-success-with-checklist-subtitle = Chcete mít svůj oblíbený prohlížeč zaměřený na ochranu soukromí po ruce?
+restored-from-backup-success-no-checklist-subtitle = Zálohování pro toto zařízení můžete zapnout v <a data-l10n-name="settings">Nastavení</a>.
+restored-from-backup-success-with-checklist-primary-button = Uložit a pokračovat
+restored-from-backup-success-with-checklist-secondary-button = Přeskočit tento krok
+restored-from-backup-success-no-checklist-primary-button = Pokračovat
+restored-from-backup-error-title = Hmm, vyskytl se problém se záložním souborem.
+restored-from-backup-error-subtitle =
+    { -brand-short-name.case-status ->
+        [with-cases] Pokud máte další zálohu { -brand-short-name(case: "gen") }, zkuste provést obnovu z tohoto souboru. <a data-l10n-name="restore-problems">Stále přetrvávají problémy?</a>
+       *[no-cases] Pokud máte další zálohu aplikace { -brand-short-name }, zkuste provést obnovu z tohoto souboru. <a data-l10n-name="restore-problems">Stále přetrvávají problémy?</a>
+    }
+restored-from-backup-error-primary-button = Zavřít
+
+## Onboarding Personalization Screen
+## A screen shown to users during the onboarding process that asks them two qualifying questions about their use of the browser
+
+onboarding-personalization-title =
+    { -brand-short-name.case-status ->
+        [with-cases] Přizpůsobte si svůj zážitek z { -brand-short-name(case: "gen") }
+       *[no-cases] Přizpůsobte si svůj zážitek z aplikace { -brand-short-name }
+    }
+onboarding-personalization-subtitle =
+    { -brand-short-name.case-status ->
+        [with-cases] Odpovězte na několik otázek a my vám odporučíme funkce a rozšíření, které vám { -brand-short-name(case: "acc") } vylepší.
+       *[no-cases] Odpovězte na několik otázek a my vám odporučíme funkce a rozšíření, které vám aplikaci { -brand-short-name } vylepší.
+    }
+onboarding-personalization-use-case-title =
+    { -brand-short-name.case-status ->
+        [with-cases] K čemu budete { -brand-short-name(case: "acc") } používat?
+       *[no-cases] K čemu budete aplikaci { -brand-short-name } používat?
+    }
+onboarding-personalization-use-case-personal-option = Osobní
+onboarding-personalization-use-case-school-option = Škola
+onboarding-personalization-use-case-work-option = Práce
+onboarding-personalization-motivation-title =
+    { -brand-short-name.case-status ->
+        [with-cases] Které funkce { -brand-short-name(case: "gen") } jsou pro vás nejdůležitější?
+       *[no-cases] Které funkce aplikace { -brand-short-name } jsou pro vás nejdůležitější?
+    }
+onboarding-personalization-motivation-privacy-option = Soukromí a zabezpečení
+onboarding-personalization-motivation-productivity-option = Produktivita
+onboarding-personalization-motivation-other-option = Jiné
+
+## Onboarding 2026 brand refresh
+
+onboarding-refresh-pin-set-default-subtitle = Chráníme vaše data a automaticky bráníme společnostem ve špehování vašeho klikání.
+# "safe paws" is a play on "safe hands", meaning you're being well taken care of or protected
+# If it doesn’t translate well, you can use the alternative: “You’re safe with Firefox.”
+onboarding-refresh-pin-set-default-title = Jste v bezpečí
+onboarding-refresh-import-subtitle = Přeneste si svoje hesla, záložky, historii a další.
+onboarding-refresh-import-title =
+    { -brand-short-name.case-status ->
+        [with-cases] Přizpůsobte si { -brand-short-name(case: "acc") }, abyste se v něm cítili jako doma
+       *[no-cases] Přizpůsobte si aplikaci { -brand-short-name }, abyste se v ní cítili jako doma
+    }
+onboarding-refresh-onboarding-addons-subtitle =
+    { -brand-short-name.case-status ->
+        [with-cases] Rozšíření jsou malé aplikace, které vám umožní přizpůsobit si { -brand-short-name(case: "acc") }. Mohou zlepšit vaše soukromí, zvýšit produktivitu, změnit vzhled { -brand-short-name(case: "gen") } a mnoho dalšího.
+       *[no-cases] Rozšíření jsou malé aplikace, které vám umožní přizpůsobit si aplikaci { -brand-short-name }. Mohou zlepšit vaše soukromí, zvýšit produktivitu, změnit vzhled aplikace { -brand-short-name } a mnoho dalšího.
+    }
+# "Give your browsing a boost" means to enhance or improve the browsing experience
+onboarding-refresh-onboarding-addons-title = Dopřejte svému prohlížení impuls
+onboarding-refresh-sync-subtitle =
+    { -brand-short-name.case-status ->
+        [with-cases] Získejte své záložky, hesla a další data, kdekoli se přihlásíte do { -brand-short-name(case: "gen") }. Navíc jsou vaše data zašifrována, takže je vidíte jen vy.
+       *[no-cases] Získejte své záložky, hesla a další data, kdekoli se přihlásíte do aplikace { -brand-short-name }. Navíc jsou vaše data zašifrována, takže je vidíte jen vy.
+    }
+onboarding-refresh-sync-title = Jděte kamkoli. Synchronizujte vše.
+onboarding-refresh-gratitude-subtitle =
+    { -brand-short-name.case-status ->
+        [with-cases] Děkujeme, že používáte { -brand-short-name(case: "acc") }, jediný přední prohlížeč, za kterým stojí nezisková organizace. S vaší podporou pracujeme na tom, aby byl internet bezpečnější a přístupnější pro každého.
+       *[no-cases] Děkujeme, že používáte aplikaci { -brand-short-name }, jediný přední prohlížeč, za kterým stojí nezisková organizace. S vaší podporou pracujeme na tom, aby byl internet bezpečnější a přístupnější pro každého.
+    }
+# "has your back" is an idiom suggesting support and protection
+onboarding-refresh-gratitude-title = { -brand-short-name } vám kryje záda
+
+## Smart window switcher callout
+
+smartwindow-switcher-callout = Přepínejte kdykoliv mezi chytrými a klasickými okny.
+
+## Smart Window ToU modal
+
+# Existing users
+smartwindow-existing-user-fx-tou-title =
+    { -brand-product-name.case-status ->
+        [with-cases] Podmínky používání { -brand-product-name(case: "gen") }
+       *[no-cases] Podmínky používání aplikace { -brand-product-name }
+    }
+smartwindow-existing-user-fx-tou-body = Chcete-li používat { -smart-window-brand-name }, přijměte prosím <a data-l10n-name="terms_of_use">Podmínky použití</a> a aktualizované <a data-l10n-name="privacy_notice">Zásady ochrany osobních údajů</a>.
+smartwindow-existing-user-fx-tou-accept = Přijmout
+smartwindow-existing-user-fx-tou-go-back = Zpátky
+
+## Smart Window about:welcome screen
+
+smartwindow-onboarding-title = Udělejte si z { -smart-window-brand-name } svou první volbu
+smartwindow-onboarding-subtitle = Vytvářejte souhrny, porovnávejte a ptejte se bez zaváhání.
+smartwindow-onboarding-primary-button = Pokračovat
+# Kit is referring to the Firefox mascot
+smartwindow-onboarding-image-alt =
+    .aria-label =
+        { -brand-product-name.case-status ->
+            [with-cases] Maskot { -brand-product-name(case: "gen") } (Kit) s hvězdami
+           *[no-cases] Maskot aplikace { -brand-product-name } (Kit) s hvězdami
+        }
+
+## Smart Window Sidebar Auto-Open Pref
+
+smartwindow-sidebar-auto-open-callout-title = Chcete nechat asistenta zavřeného?
+smartwindow-sidebar-auto-open-callout-body = Stále si ho můžete otevřít, kdykoli ho budete potřebovat.
+smartwindow-sidebar-auto-open-callout-accept = Ano, ponechat zavřené
+smartwindow-sidebar-auto-open-callout-dismiss = Ne, děkuji
+smartwindow-sidebar-auto-open-callout-accepted-title = Asistent zůstane zavřený
+smartwindow-sidebar-auto-open-callout-accepted-subtitle = Pomocí funkce Zeptat se jej můžete otevřít na jakékoli stránce. Tuto volbu můžete kdykoli změnit v <a data-l10n-name="settings">Nastavení</a>.
+smartwindow-sidebar-auto-open-callout-rejected-title = Rozumím
+smartwindow-sidebar-auto-open-callout-rejected-subtitle = Pokud si to rozmyslíte, můžete výchozí nastavení kdykoli změnit v <a data-l10n-name="settings">Nastavení</a>.

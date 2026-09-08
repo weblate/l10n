@@ -1,9 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 about-networking-title = Tentang Jaringan
 about-networking-http = HTTP
+about-networking-http-clear-cache-button = Bersihkan Singgahan HTTP
 about-networking-sockets = Soket
 about-networking-dns = DNS
 about-networking-dns-clear-cache-button = Bersihkan Tembolok DNS
@@ -38,6 +39,7 @@ about-networking-dns-lookup = Pencarian DNS
 about-networking-dns-lookup-button = Selesaikan
 about-networking-dns-domain = Domain:
 about-networking-dns-lookup-table-column = IP
+about-networking-dns-https-rrs-lookup-table-column = RR HTTPS
 about-networking-dns-https-rr-lookup-table-column = HTTP RRs
 about-networking-rcwn = Statistik RCWN
 about-networking-rcwn-status = Status RCWN
@@ -63,6 +65,3 @@ about-networking-moved-about-logging = Laman ini telah dipindahkan ke <a data-l1
 
 about-networking-networkid-is-up = Sambungan nyala
 about-networking-networkid-status-known = Status sambungan diketahui
-
-##
-

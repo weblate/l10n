@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -41,6 +41,10 @@ clear-time-duration-value-last-2-hours =
     .label = Last two hours
 clear-time-duration-value-last-4-hours =
     .label = Last four hours
+# Variables:
+#   $midnightTime (String) - Time of midnight (00:00 hours) - to inform the user that history will be cleared after midnight
+clear-time-duration-value-since-midnight =
+    .label = Since { $midnightTime }
 clear-time-duration-value-today =
     .label = Today
 clear-time-duration-value-everything =
@@ -55,10 +59,7 @@ history-section-label = History
 item-history-and-downloads =
     .label = Browsing & download history
     .accesskey = B
-item-history-form-data-downloads =
-    .label = History
-    .accesskey = H
-item-history-form-data-downloads-description = Clears site and download history, saved form info, and searches
+item-history-and-downloads-description2 = Clears site and download history
 item-cookies =
     .label = Cookies
     .accesskey = C
@@ -71,7 +72,7 @@ item-cookies-site-data-with-size =
 item-cookies-site-data =
     .label = Cookies and site data
     .accesskey = e
-item-cookies-site-data-description = May sign you out of sites or empty shopping carts
+item-cookies-site-data-description = May sign you out of sites or empty shopping baskets
 item-active-logins =
     .label = Active logins
     .accesskey = L
@@ -87,13 +88,17 @@ item-cached-content-with-size =
 item-cached-content =
     .label = Temporary cached files and pages
     .accesskey = f
-item-cached-content-description = Clears items that helps sites load faster
+item-cached-content-description = Clears items that help sites load faster
 item-form-search-history =
     .label = Form & search history
     .accesskey = F
 item-site-prefs =
     .label = Site settings
     .accesskey = i
+item-formdata-prefs =
+    .label = Saved form info
+    .accesskey = o
+item-formdata-description = Clears things like names, emails and other items you enter in forms
 item-site-prefs-description = Resets your permissions and site preferences to original settings
 data-section-label = Data
 item-site-settings =
@@ -123,3 +128,6 @@ sanitize-everything-warning = All history will be cleared.
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = All selected items will be cleared.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = Calculating…

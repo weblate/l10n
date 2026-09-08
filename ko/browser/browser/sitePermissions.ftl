@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -9,3 +9,5 @@ site-permissions-open-blocked-popups =
     { $count ->
        *[other] 차단된 팝업 { $count }개 열기…
     }
+# This string is used to display the option to unblock a third-party redirect.
+site-permissions-unblock-redirect = 제3자 리디렉션 차단 해제…

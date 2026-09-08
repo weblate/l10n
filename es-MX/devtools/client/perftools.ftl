@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -33,19 +33,39 @@ perftools-description-local-build =
     Si estás perfilando una compilación que hiciste tu, en este
     equipo, por favor añade el objdir de tu compilación a la lista a continuación para que
     pueda utilizarse para buscar información simbólica.
+perftools-pick-local-build-directory = Seleccionar el directorio de compilación
 
 ## The controls for the interval at which the profiler samples the code.
 
 perftools-range-interval-label = Intervalo de muestra:
 perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } ms
 
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } B
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } KiB
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } MiB
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } GiB
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } TiB
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } PiB
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } EiB
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } ZiB
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } YiB
+
 ##
 
 # The size of the memory buffer used to store things in the profiler.
 perftools-range-entries-label = Tamaño del buffer:
-
 perftools-custom-threads-label = Agregar hilos personalizados por nombre:
-
 perftools-devtools-interval-label = Intervalo:
 perftools-devtools-threads-label = Hilos:
 perftools-devtools-settings-label = Ajustes
@@ -70,6 +90,14 @@ perftools-button-restart = Reiniciar
 perftools-button-add-directory = Agregar un directorio
 perftools-button-remove-directory = Eliminar lo seleccionado
 perftools-button-edit-settings = Editar ajustes…
+
+## More actions menu
+
+perftools-menu-more-actions-button =
+    .title = Más acciones
+perftools-menu-more-actions-restart-with-profiling = Reiniciar { -brand-shorter-name } con el perfilado de inicio activado
+perftools-menu-more-actions-copy-for-startup = Copiar variables de entorno para el análisis de inicio
+perftools-menu-more-actions-copy-for-perf-tests = Copiar parámetros para pruebas de rendimiento
 
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 
@@ -113,7 +141,6 @@ perftools-thread-jvm-pool =
 ##
 
 perftools-record-all-registered-threads = Omitir las selecciones de arriba y grabar todos los hilos registrados
-
 perftools-tools-threads-input-label =
     .title = Estos nombres de hilos son una lista separada por comas que se utiliza para habilitar la creación de perfiles de los hilos en el perfilador. El nombre debe ser solo una coincidencia parcial del nombre del hilo para que se incluya. Es sensible a los espacios en blanco.
 
@@ -121,7 +148,6 @@ perftools-tools-threads-input-label =
 ## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>Nuevo</b>: { -profiler-brand-name } ahora está integrado en las herramientas para desarrolladores. <a>Saber más</a> sobre esta poderosa herramienta.
-
 perftools-onboarding-close-button =
     .aria-label = Cerrar el mensaje introductorio
 
@@ -129,33 +155,31 @@ perftools-onboarding-close-button =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
 # The same labels and descriptions are also defined in appmenu.ftl.
 
+
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/shared/background.jsm.js
+# devtools/client/performance-new/shared/background.sys.mjs
 # The same labels and descriptions are also defined in appmenu.ftl.
 
 perftools-presets-web-developer-label = Desarrollador web
 perftools-presets-web-developer-description = Configuración recomendada para la depuración de la mayoría de aplicaciones web, con poca sobrecarga.
-
 perftools-presets-firefox-label = { -brand-shorter-name }
 perftools-presets-firefox-description = Configuración preestablecida recomendada para crear perfiles de { -brand-shorter-name }.
-
 perftools-presets-graphics-label = Gráficos
 perftools-presets-graphics-description = Preestablecido para investigar errores gráficos en { -brand-shorter-name }.
-
 perftools-presets-media-label = Multimedia
 perftools-presets-media-description2 = Preestablecido para investigar errores de audio y video en { -brand-shorter-name }.
-
+perftools-presets-ml-label = Machine Learning
+perftools-presets-ml-description2 = Ajustes para investigar errores de Machine Learning en { -brand-shorter-name }.
 perftools-presets-networking-label = Redes
 perftools-presets-networking-description = Preestablecido para investigar errores de red en { -brand-shorter-name }.
-
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = Energía
 perftools-presets-power-description = Preestablecido para investigar errores de uso de energía en { -brand-shorter-name }, con poca sobrecarga.
-
+perftools-presets-debug-label = Depurar
+perftools-presets-debug-description = Preestablecido para depuración en { -brand-shorter-name }. Alta sobrecarga, no lo uses para mejoras de rendimiento sino para enfocarte en comprender el comportamiento del navegador.
+perftools-presets-web-compat-label = Compatibilidad web
+perftools-presets-web-compat-description = Ajuste preestablecido recomendado para depurar problemas de compatibilidad web en sitios web, en lugar de rastrear el rendimiento.
 perftools-presets-custom-label = Personalizado
-
-##
-

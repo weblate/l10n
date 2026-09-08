@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,6 +15,10 @@ support-addons-type = Type
 support-addons-enabled = Slått på
 support-addons-version = Versjon
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = Plassering
 legacy-user-stylesheets-title = Eldre brukar-stilsett
 legacy-user-stylesheets-enabled = Aktiv
 legacy-user-stylesheets-stylesheet-types = Stilsett
@@ -71,7 +75,7 @@ app-basics-launcher-process-status = Oppstartsprosess
 app-basics-multi-process-support = Multiprosess-vindauge
 app-basics-fission-support = Fission-vindauge
 app-basics-remote-processes-count = Fjernprosessar
-app-basics-enterprise-policies = Bedriftspolitikk
+app-basics-enterprise-policies = Bedriftspolicyar
 app-basics-location-service-key-google = Google Location Service-nøkkel
 app-basics-safebrowsing-key-google = Google Safebrowsing-nøkkel
 app-basics-key-mozilla = BrowserWorks Location Service-nykel
@@ -129,9 +133,13 @@ place-database-stats-efficiency-perc = Effektivitet (%)
 place-database-stats-sequentiality-perc = Sekvensitet (%)
 place-database-integrity = Integritet
 place-database-verify-integrity = Stadfest integritet
-a11y-title = Tilgjenge
+place-database-last-idle-maintenance-data = Dato for siste vedlikehald i inaktiv periode
+# Vacuum refers to a type of database maintenance process
+place-database-last-vacuum-date = Dato for siste databaseopprydding
+place-database-last-integrity-corruption-date = Dato for siste integritetskorrupsjon
+a11y-title = Tilgjengelegheit
 a11y-activated = Aktivert
-a11y-force-disabled = Hindra tilgjenge
+a11y-force-disabled = Hindra tilgjengelegheit
 a11y-handler-used = Tilgjengeleg handsamar brukt
 a11y-instantiator = Tilgjenge-instantiator
 library-version-title = Bibliotekversjonar
@@ -181,6 +189,8 @@ media-capabilities-enumerate = Telje opp databasen
 
 media-codec-support-sw-decoding = Programvaredekoding
 media-codec-support-hw-decoding = Maskinvaredekoding
+media-codec-support-sw-encoding = Programvarekoding
+media-codec-support-hw-encoding = Maskinvarekoding
 media-codec-support-codec-name = Kodeknamn
 media-codec-support-supported = Støtta
 media-codec-support-unsupported = Ikkje støtta
@@ -218,7 +228,7 @@ intl-regional-prefs = Regionale innstillingar
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.
@@ -344,6 +354,9 @@ has-seccomp-bpf = Seccomp-BPF (Systemkall-filtrering)
 has-seccomp-tsync = Seccomp-trådsynkronisering
 has-user-namespaces = Brukarnamnområde
 has-privileged-user-namespaces = Brukarnamnområde for priviligerte prosessar
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } — Denne funksjonen er ikkje tillaten av systemet ditt. Dette kan avgrense sikkerheitsfunksjonane til { -brand-short-name }.
 can-sandbox-content = Sandkasse for innhaldsprosessar
 can-sandbox-media = Sandkasse for media-programtillegg
 content-sandbox-level = Nivå for sandkasse for innhaldsprosessar
